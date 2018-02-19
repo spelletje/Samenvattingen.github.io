@@ -19,63 +19,63 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
- 
+
 function openNav() {
 		document.getElementById("navBar").style.width = "350px";
 };
 function closeNav() {
 		document.getElementById("navBar").style.width = "0";
 };
-function openPopupAard() {
+function changeAard() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_aard.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_aard.pdf');
 			}		
 };
-function openPopupBio() {
+function changeBio() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_bio.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_bio.pdf');
 			}		
 };
-function openPopupChem() {
+function changeChem() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_chem.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem.pdf');
 			}		
 };
-function openPopupEng() {
+function changeEng() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_eng.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_eng.pdf');
 			}		
 };
-function openPopupFrans() {
+function changeFrans() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_frans.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_frans.pdf');
 			}	
 };
-function openPopupFys() {
+function changeFys() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_fys.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_fys.pdf');
 			}		
 };
-function openPopupGesch() {
+function changeGesch() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_gesch.pdf');
 			if (isMobile.any()) {
 				objData.setAttribute('data', 'http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_gesch.pdf');
 			}		
 };
-function openPopupWisk() {
+function changeWisk() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'summ_wisk.pdf');
 			if (isMobile.any()) {
@@ -87,7 +87,7 @@ if (x == 1) {
 	document.getElementById("navBar").style.width = "50%";
 	document.getElementById("navBar").style.backgroundColor = "blue";
 };
- 
+
 function openPopupWisk() {
 	document.getElementById('popupWisk').style.display = "block";
 }
