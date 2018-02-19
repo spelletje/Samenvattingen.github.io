@@ -3,30 +3,34 @@
 <script type="text/javascript" src="script.js"></script>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-	<title>5WEWA</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Samenvattingen</title>
+	<link rel="stylesheet" type="text/css" href="samenvattingen.css">
 	
 </head>
 <body>
-<div id="navBar">
-		<a href="javascript:void(0)" id="vak" onClick="closeNav()">&times;</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupAard()">Aardrijkskunde</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupBio()">Biologie</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupChem()">Chemie</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupEng()">Engels</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupFrans()">Frans</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupFys()">Fysica</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupGesch()">Gechiedenis</a>
-		<a href="javascript:void(0)" id="vak" onClick="openPopupWisk()">Wiskunde</a>
+<div class="navBar" id="navBar">
+		<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+		<a href="javascript:void(0)" onClick="changeAard()">Aardrijkskunde</a>
+		<a href="javascript:void(0)" onClick="changeBio()">Biologie</a>
+		<a href="javascript:void(0)" id="open_popupChem" onClick="popupChem()">Chemie</a>
+		<a href="javascript:void(0)" onClick="changeEng()">Engels</a>
+		<a href="javascript:void(0)" onClick="changeFrans()">Frans</a>
+		<a href="javascript:void(0)" onClick="changeFys()">Fysica</a>
+		<a href="javascript:void(0)" onClick="changeGesch()">Gechiedenis</a>
+		<a href="javascript:void(0)" id="open_popupWisk" onClick="openPopupWisk()">Wiskunde</a>
 </div>
-<button Click="openNav()" id="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
-<div id="homeScreen">
-	<p>homescreen lol</p>
+<button id="open_popupWisk" onClick="openNav()" class="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
+<div class="pdf">
+	<object id="pdf" class="pdf" data="http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_aard.pdf">
+		
+	</object>
 </div>
-<div id="popupWisk">
-	<div id="popupWisk_content">
-		<p id="popuptext">Samenvattingen wiskunde:</p>
-		<span id="closePopupWisk" onClick="closePopupWisk()">&times;</span>
+<div id="popupWisk" class="popupWisk">
+	<div class="popupWisk_content">
+		<p class="popuptext">Welke samenvatting van chemie wil je openen?</p>
+		<span class="closePopup" onClick="closePopupWisk()">&times;</span>
+		<button onClick="changeWisk_reeleFunc"></button>
+		<button onClick="changeWisk_complex"></button>
 	</div>
 </div>
 </body>
