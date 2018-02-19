@@ -4,33 +4,247 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 	<title>Samenvattingen</title>
-	<link rel="stylesheet" type="text/css" href="samenvattingen.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 <body>
-<div class="navBar" id="navBar">
-		<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
-		<a href="javascript:void(0)" onClick="changeAard()">Aardrijkskunde</a>
-		<a href="javascript:void(0)" onClick="changeBio()">Biologie</a>
-		<a href="javascript:void(0)" id="open_popupChem" onClick="popupChem()">Chemie</a>
-		<a href="javascript:void(0)" onClick="changeEng()">Engels</a>
-		<a href="javascript:void(0)" onClick="changeFrans()">Frans</a>
-		<a href="javascript:void(0)" onClick="changeFys()">Fysica</a>
-		<a href="javascript:void(0)" onClick="changeGesch()">Gechiedenis</a>
-		<a href="javascript:void(0)" id="open_popupWisk" onClick="openPopupWisk()">Wiskunde</a>
+<div id="navBar">
+		<a class="vakken" onClick="closeNav()" id="closebtn">&times;</a>
+		<a class="vakken" onClick="openPopupAard()">Aardrijkskunde</a>
+		<a class="vakken" onClick="openPopupBio()">Biologie</a>
+		<a class="vakken" onClick="openPopupChem()">Chemie</a>
+		<a class="vakken" onClick="openPopupEng()">Engels</a>
+		<a class="vakken" onClick="openPopupFrans()">Frans</a>
+		<a class="vakken" onClick="openPopupFys()">Fysica</a>
+		<a class="vakken" onClick="openPopupGesch()">Gechiedenis</a>
+		<a class="vakken" onClick="openPopupWisk()">Wiskunde</a>
 </div>
-<button id="open_popupWisk" onClick="openNav()" class="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
-<div class="pdf">
-	<object id="pdf" class="pdf" data="http://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_aard.pdf">
-		
-	</object>
+<button onClick="openNav()" id="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
+<div id="homescreen">
+	<p>homescreen mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmlol</p>
 </div>
-<div id="popupWisk" class="popupWisk">
-	<div class="popupWisk_content">
-		<p class="popuptext">Welke samenvatting van chemie wil je openen?</p>
-		<span class="closePopup" onClick="closePopupWisk()">&times;</span>
-		<button onClick="changeWisk_reeleFunc"></button>
-		<button onClick="changeWisk_complex"></button>
+<div id="popupWisk">
+	<div id="popupWiskContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen wiskunde:</font>
+		<span id="closePopup" onClick="closePopupWisk()">&times;</span>
+		<table id="tableWisk" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td>samenvatting 1</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 2</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 3</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 4</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 5</td>
+				<td>download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupGesch">
+	<div id="popupGeschContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen geschiedenis:</font>
+		<span id="closePopup" onClick="closePopupGesch()">&times;</span>
+		<table id="tableGesch" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td>samenvatting 1</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 2</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 3</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 4</td>
+				<td>download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td>samenvatting 5</td>
+				<td>download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupFys">
+	<div id="popupFysContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen fysica:</font>
+		<span id="closePopup" onClick="closePopupFys()">&times;</span>
+		<table id="tableFys" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td style="width: 50%">samenvatting 1</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 2</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 3</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 4</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 5</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupFrans">
+	<div id="popupFransContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen frans:</font>
+		<span id="closePopup" onClick="closePopupFrans()">&times;</span>
+		<table id="tableFrans" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td style="width: 50%">samenvatting 1</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 2</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 3</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 4</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 5</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupEng">
+	<div id="popupEngContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen engels:</font>
+		<span id="closePopup" onClick="closePopupEng()">&times;</span>
+		<table id="tableEng" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td style="width: 50%">samenvatting 1</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 2</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 3</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 4</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 5</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupChem">
+	<div id="popupChemContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen chemie:</font>
+		<span id="closePopup" onClick="closePopupChem()">&times;</span>
+		<table id="tableChem" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td style="width: 50%">samenvatting 1</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 2</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 3</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 4</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 5</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupBio">
+	<div id="popupBioContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen biologie:</font>
+		<span id="closePopup" onClick="closePopupBio()">&times;</span>
+		<table id="tableBio" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td style="width: 50%">samenvatting 1</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 2</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 3</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 4</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 5</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		</table>
+	</div>
+</div>
+<div id="popupAard">
+	<div id="popupAardContent">
+		<font id="popupText" style="font-weight: bold">Samenvattingen aardrijkskunde:</font>
+		<span id="closePopup" onClick="closePopupAard()">&times;</span>
+		<table id="tableAard" style="height: 80%; width: 80%">
+			<tr style="height: 20%">
+				<td style="width: 50%">samenvatting 1</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 2</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 3</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 4</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		    <tr style="height: 20%">
+				<td style="width: 50%">samenvatting 5</td>
+				<td style="width: 50%">download</td>
+		    </tr>
+		</table>
 	</div>
 </div>
 </body>
