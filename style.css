@@ -6,7 +6,8 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	font-family: helvetica bold;
+	font-family: Comic Sans MS;
+	font-size: 15px;
 }
 #homescreen {
 	border-radius: 20px;
@@ -87,6 +88,26 @@ body {
 	color: black;
 	font-size: 36px;
 	font-weight: bold;
+}
+#homescreen2 {
+	margin-left: 5%;
+	float: left;
+}
+#homescreen3 {
+	float: right;
+}
+.abdel {
+	border-radius: 25%;
+}
+.finger {
+	margin-top: 10%;
+}
+.cool {
+	float: right;
+	margin-right: 10%;
+}
+#list {
+	margin-left: 10%;
 }
 #popupWisk {
 	display: none;
