@@ -19,10 +19,11 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
-
-if (isMobile.any()) {
-	var objData = document.getElementById('pdf');
-	objData.setAttribute('data', 'coolHome.html');
+window.onload = function (){
+	if (isMobile.any()) {
+		var objData = document.getElementById('pdf');
+		objData.setAttribute('data', 'coolHome.html');
+	}
 }
 
 function openNav() {
