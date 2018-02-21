@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: helvetica bold;
+	background-color: #999999;
 }
 object {
 	float: right;
@@ -120,17 +121,15 @@ a {
 	cursor: pointer;
 }
 #homescreen {
-	font-family: Comic Sans MS;
 	border-radius: 20px;
 	border-color: grey;
-	background-color: grey;
+	background-color: #999999;
 	margin-top: 2.25%;
 	height: 90%;
-	width: 70%;
-	box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.75);
+	width: 90%;
 	float: right;
 	position: absolute;
-	margin-left: 15%;
+	margin-left: 5%;
 }
 .abdel {
 	border-radius: 25%;
@@ -144,23 +143,32 @@ a {
 }
 #homescreen2 {
 	margin-left: 2%;
-	height: 40%;
-	width: 98%;
+	margin-right: 2%;
+	margin-top: 2%;
+	height: 44%;
+	width: 96%;
+	border:1px solid black;
+	border-radius: 15px;
+	background-color: lightgrey;
+	box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.75);
 }
 #homescreen3 {
 	margin-left: 2%;
-	width: 98%;
-	height: 40%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	width: 96%;
+	height: 44%;
+	border:1px solid black;
+	border-radius: 15px;
+	background-color: lightgrey;
+	box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.75);
 }
 .LijstSamenvattingen {
 	margin-left: 2%;
+	margin-right: 2%;
 	overflow-y: auto;
 	height: 50%;
-	width: 60%;
-}
-.abdel {
-	float: right;
-	border-color: black;
-	border-radius: 25%;
-	margin-right: 2%; 
+	max-width: 96%;
+	display: inline-block;
 }
