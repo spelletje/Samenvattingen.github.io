@@ -1,268 +1,94 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" src="script.js"></script>
 <head>
+	<script src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 	<title>Samenvattingen</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 <body>
-<div id="navBar">
-		<a class="vakken" onClick="closeNav()" id="closebtn">&times;</a>
-		<a class="vakken" onClick="openPopupAard()">Aardrijkskunde</a>
-		<a class="vakken" onClick="openPopupBio()">Biologie</a>
-		<a class="vakken" onClick="openPopupChem()">Chemie</a>
-		<a class="vakken" onClick="openPopupEng()">Engels</a>
-		<a class="vakken" onClick="openPopupFrans()">Frans</a>
-		<a class="vakken" onClick="openPopupFys()">Fysica</a>
-		<a class="vakken" onClick="openPopupGesch()">Gechiedenis</a>
-		<a class="vakken" onClick="openPopupWisk()">Wiskunde</a>
+<div class="navBar" id="navBar">
+		<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+		<a href="javascript:void(0)" class="navList" onclick="home()">Home</a>
+		<a href="javascript:void(0)" class="navList" onclick="aard()">Aardrijkskunde</a>
+		<a href="javascript:void(0)" class="navList" onclick="bio()">Biologie</a>
+		<a href="javascript:void(0)" class="navList" onclick="chem()">Chemie</a>
+		<a href="javascript:void(0)" class="navList" onclick="eng()">Engels</a>
+		<a href="javascript:void(0)" class="navList" onclick="frans()">Frans</a>
+		<a href="javascript:void(0)" class="navList" onclick="fys()">Fysica</a>
+		<a href="javascript:void(0)" class="navList" onclick="gesch()">Gechiedenis</a>
+		<a href="javascript:void(0)" class="navList" onclick="wisk()">Wiskunde</a>
 </div>
-<button onClick="openNav()" id="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
-<div id="homescreen">
-	<h1 align="middle" style="font-size: 40px;">Abdellah's samenvattingen</h1>
-	<div style="height: 80%; width: 34%" id="homescreen2">
-	<img src="abdellah.jpg" alt="" width="99%" height="62.5%" border="2px" class="abdel">
-	<font style="font-style: italic">Ik ben nog nooit zo trots geweest<br>- Abdellah</font>
-	<font style="font-style: italic"><br><br>Kijk naar al deze samenvattingen, WOW<br>- Laghmouch</font>
-	<font style="font-style: italic"><br><br>DANKU LANDER<br>- Babdeller</font>
-	</div>
-	<div style="height: 80%; width: 60%" id="homescreen3">
-		<img src="cool.jpg" alt="" height="90%" width="30%" class="cool">
-		<h2>Deze website bevat:</h2>
-		<div id="list">
-		<li>- samenvattingen</li>
-		<li>- abdellah</li>
-		<li>- mooie download knop</li>
-		<li>- GRATIS</li>
-		</div>
-		<font><br><br><br><------------SAMENVATTINGEN<br></font>
-		<img src="http://www.animatedimages.org/data/media/111/animated-arrow-image-0044.gif" alt="" height="30%" width="30%" class="finger">
+<button onClick="openNav()" class="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
+<div class="pdf">
+	<object id="pdf" class="pdf" data="home.html">
+		
+	</object>
+</div>
+<div id="wisk" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeWisk()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_wisk_complex()">Complexe Getallen</a>
+		<a href="summ_wisk_complex.pdf" download="Samenvatting Complexe Getallen"><img src="dl.png" alt="download" height="15" width="15"></a>
+		<br><br>
+		<a href="javascript:void(0)" onclick="summ_wisk_funct()">Reële Functies</a>
+		<a href="summ_wisk_funct.pdf" download="Samenvatting Reële Functies">&nbsp;&nbsp;<img src="dl.png" alt="download" height="15" width="15"></a>
+		<br><br>
+		<a href="javascript:void(0)" onclick="summ_wisk_gon()">Goniometrie</a>
+		<a href="summ_wisk_gon.pdf" download="Samenvatting Goniometrie">&nbsp;&nbsp;<img src="dl.png" alt="download" height="15" width="15"></a>
 	</div>
 </div>
-<div id="popupWisk">
-	<div id="popupWiskContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen wiskunde:</font>
-		<span id="closePopup" onClick="closePopupWisk()">&times;</span>
-		<table id="tableWisk" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_wisk_complex.pdf">Samenvatting complexe getallen</a></td>
-				<td style="width: 50%"><a href="summ_wisk_complex.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="aard" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeAard()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_aard()">Aard</a>
+		<a href="summ_aard.pdf" download="Samenvatting Aardrijkskunde">&nbsp;&nbsp;<img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
-<div id="popupGesch">
-	<div id="popupGeschContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen geschiedenis:</font>
-		<span id="closePopup" onClick="closePopupGesch()">&times;</span>
-		<table id="tableGesch" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_gesch.pdf">Samenvatting geschiedenis</a></td>
-				<td style="width: 50%"><a href="summ_gesch.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="bio" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeBio()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_bio()">Module 2</a>
+		<a href="summ_bio_m2.pdf" download="Samenvatting Bio M2"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
-<div id="popupFys">
-	<div id="popupFysContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen fysica:</font>
-		<span id="closePopup" onClick="closePopupFys()">&times;</span>
-		<table id="tableFys" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_frans.pdf">Samenvatting fysica</a></td>
-				<td style="width: 50%"><a href="summ_frans.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="chem" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeChem()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_chem_atom()">Atomen en Moleculen</a>
+		<a href="summ_chem_atom.pdf" download="Samenvatting Atomen en Moleculen"><img src="dl.png" alt="download" width="15" height="15"></a>
+		<br><br>
+		<a href="javascript:void(0)" onclick="summ_chem_even()">Chemisch Evenwicht</a>
+		<a href="summ_chem_even.pdf" download="Samenvatting Chemisch Evenwicht"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
-<div id="popupFrans">
-	<div id="popupFransContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen frans:</font>
-		<span id="closePopup" onClick="closePopupFrans()">&times;</span>
-		<table id="tableFrans" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_frans.pdf">Samenvatting frans</a></td>
-				<td style="width: 50%"><a href="summ_frans.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="eng" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeEng()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_eng_u3_4()">Unit 3 + 4</a>
+		<a href="summ_eng_u3_4.pdf" download="Samenvatting Engels U3 + 4"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
-<div id="popupEng">
-	<div id="popupEngContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen engels:</font>
-		<span id="closePopup" onClick="closePopupEng()">&times;</span>
-		<table id="tableEng" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_chem.pdf">Samenvatting engels</a></td>
-				<td style="width: 50%"><a href="summ_chem.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="frans" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeFrans()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_frans_pronom()">Pronom Relatif + Negation</a>
+		<a href="summ_frans_pronom.pdf" download="Samenvatting Frans Pronom + Negation"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
-<div id="popupChem">
-	<div id="popupChemContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen chemie:</font>
-		<span id="closePopup" onClick="closePopupChem()">&times;</span>
-		<table id="tableChem" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_chem.pdf">Samenvatting chemie</a></td>
-				<td style="width: 50%"><a href="summ_chem.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="fys" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeFys()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_fys()">Module 2</a>
+		<a href="summ_fys.pdf" download="Samenvatting Fysica M2"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
-<div id="popupBio">
-	<div id="popupBioContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen biologie:</font>
-		<span id="closePopup" onClick="closePopupBio()">&times;</span>
-		<table id="tableBio" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_bio.pdf">Samenvatting biologie</a></td>
-				<td style="width: 50%"><a href="summ_bio.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
-	</div>
-</div>
-<div id="popupAard">
-	<div id="popupAardContent">
-		<font id="popupText" style="font-weight: bold">Samenvattingen aardrijkskunde:</font>
-		<span id="closePopup" onClick="closePopupAard()">&times;</span>
-		<table id="tableAard" style="height: 80%; width: 90%">
-			<tr style="height: 20%">
-				<td style="width: 50%"><a href="summ_aard.pdf">Samenvatting aardrijkskunde</a></td>
-				<td style="width: 50%"><a href="summ_aard.pdf" download><img src="download.jpg" alt="" width="25%" height="70%"></a></td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 2</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 3</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 4</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		    <tr style="height: 20%">
-				<td style="width: 50%">samenvatting 5</td>
-				<td style="width: 50%">download</td>
-		    </tr>
-		</table>
+<div id="gesch" class="popup">
+	<div class="popup_content">
+		<span class="closePopup" onClick="closeGesch()">&times;</span>
+		<a href="javascript:void(0)" onclick="summ_strijd()">Sociale Strijd</a>
+		<a href="summ_strijd.pdf" download="Samenvatting Sociale Strijd"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
 </body>
