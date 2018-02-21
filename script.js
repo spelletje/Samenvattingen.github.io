@@ -20,6 +20,11 @@ var isMobile = {
     }
 }
 
+if (isMobile.any()) {
+	var objData = document.getElementById('pdf');
+	objData.setAttribute('data', 'coolHome.html');
+}
+
 function openNav() {
 	document.getElementById("navBar").style.width = "250px";
 }
@@ -93,9 +98,16 @@ function summ_wisk_gon() {
 		closeWisk();		
 }
 function home() {
+	if (isMobile.any()) {
+	var objData = document.getElementById('pdf');
+	objData.setAttribute('data', 'coolHome.html');
+	closeNav();
+	}
+	else {
 	objData = document.getElementById('pdf')
 	objData.setAttribute('data', 'home.html');
 	closeNav();
+	}
 }
 function aard() {
 	document.getElementById('aard').style.display = "block";
