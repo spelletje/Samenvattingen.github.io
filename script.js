@@ -19,7 +19,8 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
-window.onload = function (){
+
+function Mobile () { 
 	if (isMobile.any()) {
 		var objData = document.getElementById('pdf');
 		objData.setAttribute('data', 'coolHome.html');
