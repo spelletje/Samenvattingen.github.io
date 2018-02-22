@@ -94,8 +94,14 @@ function summ_wisk_gon() {
 			closeWisk();		
 };
 function home() {
-	objData = document.getElementById('pdf')
-	objData.setAttribute('data', 'home.html');
+	if (isMobile.any()) {
+		objData = document.getElementById('pdf')
+		objData.setAttribute('data', 'homeMobile.html');
+		}
+		else {
+		objData = document.getElementById('pdf')
+		objData.setAttribute('data', 'home.html');
+		}
 	closeNav();
 }
 function aard() {
@@ -148,9 +154,13 @@ function closeWisk() {
 }
 function mobile() {
 	if (isMobile.any()) {
+		objData = document.getElementById('pdf')
+		objData.setAttribute('data', 'homeMobile.html');
+		document.getElementById("obj").style.height = '40%';
 		var popupContent = document.getElementsByClassName('popup_content');
 		var navList = document.getElementsByClassName('navList');
 		var home = document.getElementsByClassName('home');
+		var txt = document.getElementsByClassName('txt');
 		for (var i = 0; i < popupContent.length; i++) {
 			//alert("MOBILE");
 			popupContent[i].style.width = "80%";
@@ -160,9 +170,7 @@ function mobile() {
 		}
 		for (var i = 0; i < navList.length; i++) {
 			navList[i].style.fontSize = "20px";
-		}
-		for (var i = 0; i < home.length; i++) {
-			home[i].style.marginTop = "5%";
+			document.getElementById("obj").style.height = '40%';
 		}
 	}
 }
