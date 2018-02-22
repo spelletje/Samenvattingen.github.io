@@ -18,98 +18,85 @@ var isMobile = {
     any: function() {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
-}
-
-function Mobile () { 
-	if (isMobile.any()) {
-		var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'coolHome.html');
-	}
-}
+};
 
 function openNav() {
-	document.getElementById("navBar").style.width = "250px";
-}
+		document.getElementById("navBar").style.width = "250px";
+		document.getElementById("navBar").style.fontSize = "25px";
+};
 function closeNav() {
-	document.getElementById("navBar").style.width = "0";
-}
+		document.getElementById("navBar").style.width = "0";
+};
 function summ_aard() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_aard.pdf');
-		closeNav();
-		closeAard();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_aard.pdf');
+			closeNav();
+			closeAard();		
+};
 function summ_bio() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_bio_m2.pdf');
-		closeNav();
-		closeBio();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_bio.pdf');
+			closeNav();
+			closeBio();		
+};
 function summ_chem_atom() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem_atom.pdf');
-		closeNav();
-		closeChem();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem_atom.pdf');
+			closeNav();
+			closeChem();		
+};
 function summ_chem_even() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem_even.pdf');
-		closeNav();
-		closeChem();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem_even.pdf');
+			closeNav();
+			closeChem();		
+};
 function summ_eng_u3_4() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_eng_u3_4.pdf');
-		closeNav();
-		closeEng();	
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_eng_u3_4.pdf');
+			closeNav();
+			closeEng();	
+};
 function summ_frans_pronom() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_frans_pronom.pdf');
-		closeNav();
-		closeFrans();	
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_frans_pronom.pdf');
+			closeNav();
+			closeFrans();	
+};
 function summ_fys() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_fys.pdf');
-		closeNav();
-		closeFys();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_fys.pdf');
+			closeNav();
+			closeFys();		
+};
 function summ_strijd() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_strijd.pdf');
-		closeNav();
-		closeGesch();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_strijd.pdf');
+			closeNav();
+			closeGesch();		
+};
 function summ_wisk_complex() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_complex.pdf');
-		closeNav();
-		closeWisk();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_complex.pdf');
+			closeNav();
+			closeWisk();		
+};
 function summ_wisk_funct() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_funct.pdf');
-		closeNav();
-		closeWisk();	
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_funct.pdf');
+			closeNav();
+			closeWisk();	
+};
 function summ_wisk_gon() {
-	var objData = document.getElementById('pdf');
-		objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_gon.pdf');
-		closeNav();
-		closeWisk();		
-}
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_gon.pdf');
+			closeNav();
+			closeWisk();		
+};
 function home() {
-	if (isMobile.any()) {
-	var objData = document.getElementById('pdf');
-	objData.setAttribute('data', 'coolHome.html');
-	closeNav();
-	}
-	else {
 	objData = document.getElementById('pdf')
 	objData.setAttribute('data', 'home.html');
 	closeNav();
-	}
 }
 function aard() {
 	document.getElementById('aard').style.display = "block";
@@ -163,6 +150,7 @@ function mobile() {
 	if (isMobile.any()) {
 		var popupContent = document.getElementsByClassName('popup_content');
 		var navList = document.getElementsByClassName('navList');
+		var home = document.getElementsByClassName('home');
 		for (var i = 0; i < popupContent.length; i++) {
 			//alert("MOBILE");
 			popupContent[i].style.width = "80%";
@@ -173,5 +161,8 @@ function mobile() {
 		for (var i = 0; i < navList.length; i++) {
 			navList[i].style.fontSize = "20px";
 		}
-	}	
+		for (var i = 0; i < home.length; i++) {
+			home[i].style.marginTop = "5%";
+		}
+	}
 }
