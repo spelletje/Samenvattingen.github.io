@@ -136,8 +136,8 @@ h1 {
 	cursor: pointer;
 }
 #homescreen {		
-	border-color: grey;
-	background-color: grey;	
+	border-color: lightgrey;
+	background-color: lightgrey;	
 	height: 100%;
 	width: 93%;	
 	float: right;
