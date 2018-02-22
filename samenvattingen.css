@@ -23,6 +23,8 @@ h1 {
 	font-weight: bold;
 }
 .home {
+	display: block;
+	min-height:40%;
 	border-radius: 3px;
 	margin: 2%;
 	margin-top: 5%;
