@@ -154,9 +154,6 @@ function closeWisk() {
 }
 function mobile() {
 	if (isMobile.any()) {
-		objData = document.getElementById('pdf')
-		objData.setAttribute('data', 'homeMobile.html');
-		document.getElementById("obj").style.height = '40%';
 		var popupContent = document.getElementsByClassName('popup_content');
 		var navList = document.getElementsByClassName('navList');
 		var home = document.getElementsByClassName('home');
@@ -170,7 +167,8 @@ function mobile() {
 		}
 		for (var i = 0; i < navList.length; i++) {
 			navList[i].style.fontSize = "20px";
-			document.getElementById("obj").style.height = '40%';
 		}
+		objData = document.getElementById('pdf')
+		objData.setAttribute('data', 'homeMobile.html');
 	}
 }

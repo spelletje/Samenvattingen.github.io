@@ -43,6 +43,26 @@ h1 {
 	height: 35%;
 	margin-top: 3%;
 }
+.txtMobile {
+	margin-top: 5%;
+	font-size: 12px;
+}
+.homeMobile {
+	height: 45%;
+	border-radius: 3px;
+	margin-left: 3.35%;
+	margin-right: 3.35%;
+	margin-bottom: 1%;
+	background-color: lightgray;
+	border: 1px solid black;
+	-webkit-box-shadow: 1px 2px 58px -10px rgba(0,0,0,0.59);
+	-moz-box-shadow: 1px 2px 58px -10px rgba(0,0,0,0.59);
+	box-shadow: 1px 2px 58px -10px rgba(0,0,0,0.59);
+}
+.objMobile {
+	height: 45%;
+	margin-top: 3%;
+}
 .mobile {
 	width: 100%;
 	height: 100%;
