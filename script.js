@@ -21,8 +21,8 @@ var isMobile = {
 };
 
 function openNav() {
-		document.getElementById("navBar").style.width = "250px";
-		document.getElementById("navBar").style.fontSize = "25px";
+		document.getElementById("navBar").style.width = "25%";
+		document.getElementById("navBar").style.fontSize = "2vmax";
 };
 function closeNav() {
 		document.getElementById("navBar").style.width = "0";
