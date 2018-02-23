@@ -39,7 +39,7 @@ h2 {
 	margin-top: 3%;
 	margin-left: 20%;
 	margin-right: 20%;
-	font-size: 1.5vw;
+	font-size: 1.5vmax;
 	overflow-y: auto;
 }
 .home {
@@ -60,7 +60,7 @@ h2 {
 }
 .txtMobile {
 	margin-top: 5%;
-	font-size: 2.1vh;
+	font-size: 2.1vmax;
 	overflow-y: auto;
 }
 .homeMobile {
