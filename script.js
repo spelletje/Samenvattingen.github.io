@@ -33,6 +33,12 @@ function summ_aard() {
 			closeNav();
 			closeAard();		
 };
+function Samenvattingaardrijkskunde() {
+		var objData = document.getElementById('pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/Samenvattingaardrijkskunde.pdf');
+			closeNav();
+			closeAard();		
+};
 function summ_bio() {
 		var objData = document.getElementById('pdf');
 			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_bio.pdf');
