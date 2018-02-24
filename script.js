@@ -21,81 +21,81 @@ var isMobile = {
 };
 
 function openNav() {
-		document.getElementById("navBar").style.width = "250px";
-		document.getElementById("navBar").style.fontSize = "25px";
+		document.getElementById("navBar").style.width = "25%";
+		document.getElementById("navBar").style.fontSize = "2vmax";
 };
 function closeNav() {
 		document.getElementById("navBar").style.width = "0";
 };
-function summ_aard() {
+function summ_aard_HO() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_aard.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_aard_HO.pdf');
 			closeNav();
 			closeAard();		
 };
-function Samenvattingaardrijkskunde() {
+function summ_aard() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/Samenvattingaardrijkskunde.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_aard.pdf');
 			closeNav();
 			closeAard();		
 };
 function summ_bio() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_bio.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_bio.pdf');
 			closeNav();
 			closeBio();		
 };
 function summ_chem_atom() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem_atom.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_chem_atom.pdf');
 			closeNav();
 			closeChem();		
 };
 function summ_chem_even() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_chem_even.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_chem_even.pdf');
 			closeNav();
 			closeChem();		
 };
 function summ_eng_u3_4() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_eng_u3_4.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_eng_u3_4.pdf');
 			closeNav();
 			closeEng();	
 };
 function summ_frans_pronom() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_frans_pronom.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_frans_pronom.pdf');
 			closeNav();
 			closeFrans();	
 };
 function summ_fys() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_fys.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_fys.pdf');
 			closeNav();
 			closeFys();		
 };
-function summ_strijd() {
+function summ_gesch_strijd() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_strijd.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_strijd.pdf');
 			closeNav();
 			closeGesch();		
 };
 function summ_wisk_complex() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_complex.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_complex.pdf');
 			closeNav();
 			closeWisk();		
 };
 function summ_wisk_funct() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_funct.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_funct.pdf');
 			closeNav();
 			closeWisk();	
 };
 function summ_wisk_gon() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://stepantaz.github.io/summ_wisk_gon.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_gon.pdf');
 			closeNav();
 			closeWisk();		
 };
