@@ -49,13 +49,13 @@ function summ_aard() {
         closeNav();
         closeAard();    
 }
-function summ_bio_m2() {
+function summ_bio() {
 		var objData = document.getElementById("pdf");
 		if (isMobile.any()) {
-        objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_bio_m2.pdf');
+        objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_bio.pdf');
         }
         else {
-            objData.setAttribute('data', 'summ_bio_m2.pdf');
+            objData.setAttribute('data', 'summ_bio.pdf');
         }    
         closeNav();
         closeBio();    
