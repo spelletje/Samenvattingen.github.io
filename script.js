@@ -27,123 +27,24 @@ function openNav() {
 function closeNav() {
 		document.getElementById("navBar").style.width = "0";
 }
-function summ_aard_HO() {
+function openSumm(summ, mobileSumm) {
 		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_aard_HO.pdf");
+        	objData.setAttribute("data", mobileSumm);
         }
         else {
-            objData.setAttribute("data", "summ_aard_HO.pdf");
+        	var objData = document.getElementById("pdf");
+            objData.setAttribute("data", summ);
         }    
         closeNav();
-        closeAard();    
-}
-function summ_bio() {		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_bio.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_bio.pdf");
-        }    
-        closeNav();
-        closeBio();    
-}
-function summ_chem_atom() {		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_chem_atom.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_chem_atom.pdf");
-        }    
-        closeNav();
-        closeChem();    
-}
-function summ_chem_even() {		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_chem_even.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_chem_even.pdf");
-        }    
-        closeNav();
-        closeChem();    
-}
-function summ_eng_u3_4() {
-		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_eng_u3_4.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_eng_u3_4.pdf");
-        }    
-        closeNav();
-        closeEng();    
-}
-function summ_frans_pronom() {
-		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_frans_pronom.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_frans_pronom.pdf");
-        }    
-        closeNav();
-        closeFrans();    
-}
-function summ_fys() {
-		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_fys.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_fys.pdf");
-        }    
-        closeNav();
-        closeFys();    
-}
-function summ_gesch_strijd() {
-		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_gesch_strijd.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_gesch_strijd.pdf");
-        }    
-        closeNav();
-        closeGesch();    
-}
-function summ_wisk_complex() {
-		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_complex.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_wisk_complex.pdf");
-        }    
-        closeNav();
-        closeWisk();    
-}
-function summ_wisk_funct() {
-		
-		if (isMobile.any()) {
-        	objData.setAttribute("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_funct.pdf");
-        }
-        else {
-            objData.setAttribute("data", "summ_wisk_funct.pdf");
-        }    
-        closeNav();
-        closeWisk();    
-}
-function summ_wisk_gon() {
-		
-		if (isMobile.any()) {
-        	$("#pdf").attr("data", "https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_gon.pdf");
-        }
-        else {
-            $("#pdf").attr("data", "summ_wisk_gon.html");
-        }    
-        closeNav();
-        closeWisk();    
-}
+        closeAard();
+        closeBio();
+        closeChem();
+        closeEng();
+        closeFrans();
+        closeFys();
+        closeGesch();
+        closeWisk();   
+};
 function home() {
 	if (isMobile.any()) {
 		$("#pdf").attr("data", "homeMobile.html");
