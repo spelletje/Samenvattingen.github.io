@@ -77,7 +77,7 @@ function summ_fys() {
 };
 function summ_gesch_strijd() {
 		var objData = document.getElementById('pdf');
-			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_strijd.pdf');
+			objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_gesch_strijd.pdf');
 			closeNav();
 			closeGesch();		
 };
