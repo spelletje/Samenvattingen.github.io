@@ -19,7 +19,6 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
-var objData = document.getElementById("pdf");
 function openNav() {
 		document.getElementById("navBar").style.width = "250px";
 		document.getElementById("navBar").style.fontSize = "2vmax";
@@ -28,11 +27,11 @@ function closeNav() {
 		document.getElementById("navBar").style.width = "0";
 }
 function openSumm(summ, mobileSumm) {
+		var objData = document.getElementById("pdf");
 		if (isMobile.any()) {
         	objData.setAttribute("data", mobileSumm);
         }
         else {
-        	var objData = document.getElementById("pdf");
             objData.setAttribute("data", summ);
         }    
         closeNav();
