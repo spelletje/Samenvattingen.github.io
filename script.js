@@ -36,18 +36,7 @@ function summ_aard_HO() {
             objData.setAttribute('data', 'summ_aard_HO.pdf');
         }    
         closeNav();
-        closeAard();    
-}
-function summ_aard() {
-		var objData = document.getElementById("pdf");
-		if (isMobile.any()) {
-        objData.setAttribute('data', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_aard.pdf');
-        }
-        else {
-            objData.setAttribute('data', 'summ_aard.pdf');
-        }    
-        closeNav();
-        closeAard();    
+        close(aard);    
 }
 function summ_bio() {
 		var objData = document.getElementById("pdf");
@@ -58,7 +47,7 @@ function summ_bio() {
             objData.setAttribute('data', 'summ_bio.pdf');
         }    
         closeNav();
-        closeBio();    
+        close(bio);    
 }
 function summ_chem_atom() {
 		var objData = document.getElementById("pdf");
@@ -69,7 +58,7 @@ function summ_chem_atom() {
             objData.setAttribute('data', 'summ_chem_atom.pdf');
         }    
         closeNav();
-        closeChem();    
+        close(chem);    
 }
 function summ_chem_even() {
 		var objData = document.getElementById("pdf");
@@ -80,7 +69,7 @@ function summ_chem_even() {
             objData.setAttribute('data', 'summ_chem_even.pdf');
         }    
         closeNav();
-        closeChem();    
+        close(chem);    
 }
 function summ_eng_u3_4() {
 		var objData = document.getElementById("pdf");
@@ -91,7 +80,7 @@ function summ_eng_u3_4() {
             objData.setAttribute('data', 'summ_eng_u3_4.pdf');
         }    
         closeNav();
-        closeEng();    
+        close(eng);    
 }
 function summ_frans_pronom() {
 		var objData = document.getElementById("pdf");
@@ -102,7 +91,7 @@ function summ_frans_pronom() {
             objData.setAttribute('data', 'summ_frans_pronom.pdf');
         }    
         closeNav();
-        closeFrans();    
+        close(frans);    
 }
 function summ_fys() {
 		var objData = document.getElementById("pdf");
@@ -113,7 +102,7 @@ function summ_fys() {
             objData.setAttribute('data', 'summ_fys.pdf');
         }    
         closeNav();
-        closeFys();    
+        close(fys);    
 }
 function summ_gesch_strijd() {
 		var objData = document.getElementById("pdf");
@@ -124,7 +113,7 @@ function summ_gesch_strijd() {
             objData.setAttribute('data', 'summ_gesch_strijd.pdf');
         }    
         closeNav();
-        closeGesch();    
+        close(gesch);    
 }
 function summ_wisk_complex() {
 		var objData = document.getElementById("pdf");
@@ -135,7 +124,7 @@ function summ_wisk_complex() {
             objData.setAttribute('data', 'summ_wisk_complex.pdf');
         }    
         closeNav();
-        closeWisk();    
+        close(wisk);    
 }
 function summ_wisk_funct() {
 		var objData = document.getElementById("pdf");
@@ -146,7 +135,7 @@ function summ_wisk_funct() {
             objData.setAttribute('data', 'summ_wisk_funct.pdf');
         }    
         closeNav();
-        closeWisk();    
+        close(wisk);    
 }
 function summ_wisk_gon() {
 		var objData = document.getElementById("pdf");
@@ -157,7 +146,7 @@ function summ_wisk_gon() {
             objData.setAttribute('data', 'summ_wisk_gon.pdf');
         }    
         closeNav();
-        closeWisk();    
+        close(wisk);    
 }
 function home() {
 	if (isMobile.any()) {
@@ -170,57 +159,73 @@ function home() {
 		}
 	closeNav();
 }
-function aard() {
-	document.getElementById("aard").style.display = "block";
-}
-function bio() {
-	document.getElementById("bio").style.display = "block";
-}
-function eng() {
-	document.getElementById("eng").style.display = "block";
-}
-function chem() {
-	document.getElementById("chem").style.display = "block";
-}
-function frans() {
-	document.getElementById("frans").style.display = "block";
-}
-function fys() {
-	document.getElementById("fys").style.display = "block";
-}
-function gesch() {
-	document.getElementById("gesch").style.display = "block";
-}
-function wisk() {
-	document.getElementById("wisk").style.display = "block";
-}
+function show(vak) {
+	if (vak === aard) {
+		$("#aard").fadeIn(300);
+	}
+	if (vak === bio) {
+		$("#bio").fadeIn(300);
+	}
+	if (vak === chem) {
+		$("#chem").fadeIn(300);
+	}
+	if (vak === eng) {
+		$("#eng").fadeIn(300);
+	}
+	if (vak === frans) {
+		$("#frans").fadeIn(300);
+	}
+	if (vak === fys) {
+		$("#fys").fadeIn(300);
+	}
+	if (vak === gesch) {
+		$("#gesch").fadeIn(300);
+	}
+	if (vak === wisk) {
+		$("#wisk").fadeIn(300);
+	}
+};
 function closeAard() {
-	document.getElementById("aard").style.display = "none";
+	$("#aard").fadeOut(300);
 }
 function closeBio() {
-	document.getElementById("bio").style.display = "none";
+	$("#bio").fadeOut(300);
 }
 function closeChem() {
-	document.getElementById("chem").style.display = "none";
+	$("#chem").fadeOut(300);
 }
 function closeEng() {
-	document.getElementById("eng").style.display = "none";
+	$("#eng").fadeOut(300);
 }
 function closeFys() {
-	document.getElementById("fys").style.display = "none";
+	$("#fys").fadeOut(300);
 }
 function closeFrans() {
-	document.getElementById("frans").style.display = "none";
+	$("#frans").fadeOut(300);
 }
 function closeGesch() {
-	document.getElementById("gesch").style.display = "none";
+	$("#gesch").fadeOut(300);
 }
 function closeWisk() {
-	document.getElementById("wisk").style.display = "none";
+	$("#wisk").fadeOut(300);
 }
 function mobile() {
 	if (isMobile.any()) {
-		var popupContent = document.getElementsByClassName("popup_content");
+		$(document).ready(function(){
+			$(".popup_content").css({
+				"width": "80%",
+				"height": "80%",
+				"font-size": "20px",
+				"margin-top": "10%"
+			});
+			$(".navList").css({
+				"font-size": "20px"
+			});
+			$("pdf").attr("data", "homeMobile.html");
+			objData = document.getElementById("pdf");
+			objData.setAttribute("data", "homeMobile.html");
+		});
+		/*var popupContent = document.getElementsByClassName("popup_content");
 		var navList = document.getElementsByClassName("navList");
 		var home = document.getElementsByClassName("home");
 		var txt = document.getElementsByClassName("txt");
@@ -235,6 +240,6 @@ function mobile() {
 			navList[i].style.fontSize = "20px";
 		}
 		objData = document.getElementById("pdf")
-		objData.setAttribute("data", "homeMobile.html");
+		objData.setAttribute("data", "homeMobile.html");*/
 	}
-}
+};
