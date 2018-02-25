@@ -55,14 +55,15 @@ function closeInner(vak) {
 	$(vak).fadeOut(200);
 };
 function closeAll() {
-	closeInner('#aard');
-	closeInner('#wisk'); 
-	closeInner('#bio');
-    closeInner('#chem');
-    closeInner('#eng');
-    closeInner('#frans');
-    closeInner('#fys');
-    closeInner('#gesch');
+        closeInner('#aard');
+        closeInner('#wisk'); 
+        closeInner('#bio');
+        closeInner('#chem');
+        closeInner('#eng');
+        closeInner('#frans');
+        closeInner('#fys');
+        closeInner('#gesch');
+	closeInner('#ned');
 }
 function close() {
 	closeAll();
