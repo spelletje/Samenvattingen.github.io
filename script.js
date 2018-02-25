@@ -55,7 +55,7 @@ function closeInner(vak) {
 	$(vak).fadeOut(200);
 };
 function closeAll() {
-        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned"));
+        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk"));
 }
 function close() {
 	closeAll();
