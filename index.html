@@ -12,14 +12,14 @@
 <div class="navBar" id="navBar">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="javascript:void(0)" class="navList a1" onclick="home()">Home</a>
-		<a href="javascript:void(0)" class="navList a2" onclick="show(aard)">Aardrijkskunde</a>
-		<a href="javascript:void(0)" class="navList a3" onclick="show(bio)">Biologie</a>
-		<a href="javascript:void(0)" class="navList a4" onclick="show(chem)">Chemie</a>
-		<a href="javascript:void(0)" class="navList a5" onclick="show(eng)">Engels</a>
-		<a href="javascript:void(0)" class="navList a6" onclick="show(frans)">Frans</a>
-		<a href="javascript:void(0)" class="navList a7" onclick="show(fys)">Fysica</a>
-		<a href="javascript:void(0)" class="navList a8" onclick="show(gesch)">Gechiedenis</a>
-		<a href="javascript:void(0)" class="navList a9" onclick="show(wisk)">Wiskunde</a>
+		<a href="javascript:void(0)" class="navList a2" onclick="show('#aard')">Aardrijkskunde</a>
+		<a href="javascript:void(0)" class="navList a3" onclick="show('#bio')">Biologie</a>
+		<a href="javascript:void(0)" class="navList a4" onclick="show('#chem')">Chemie</a>
+		<a href="javascript:void(0)" class="navList a5" onclick="show('#eng')">Engels</a>
+		<a href="javascript:void(0)" class="navList a6" onclick="show('#frans')">Frans</a>
+		<a href="javascript:void(0)" class="navList a7" onclick="show('#fys')">Fysica</a>
+		<a href="javascript:void(0)" class="navList a8" onclick="show('#gesch')">Gechiedenis</a>
+		<a href="javascript:void(0)" class="navList a9" onclick="show('#wisk')">Wiskunde</a>
 </div>
 <button onclick="openNav()" class="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
 <div class="pdf">
@@ -29,7 +29,7 @@
 </div>
 <div id="wisk" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeWisk()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_wisk_complex.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_wisk_complex.pdf')">Complexe Getallen</a>
 		<a href="summ_wisk_complex.pdf" download="Samenvatting Complexe Getallen"><img src="dl.png" alt="download" height="15" width="15"></a>
 		<br><br>
@@ -42,21 +42,21 @@
 </div>
 <div id="aard" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeAard()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_aard_HO.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_aard_HO.pdf')">Samenvatting aardrijkskunde HO</a>
 		<a href="summ_aard_HO.pdf" download="Samenvatting Aardrijkskunde HO"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
 <div id="bio" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeBio()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_bio.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_bio.pdf')">Module 2</a>
 		<a href="summ_bio.pdf" download="Samenvatting Bio M2"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
 <div id="chem" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeChem()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_chem_atom.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_chem_atom.pdf')">Atomen en Moleculen</a>
 		<a href="summ_chem_atom.pdf" download="Samenvatting Atomen en Moleculen"><img src="dl.png" alt="download" width="15" height="15"></a>
 		<br><br>
@@ -66,28 +66,28 @@
 </div>
 <div id="eng" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeEng()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_eng_u3_4.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_chem_even.pdf')">Unit 3 + 4</a>
 		<a href="summ_eng_u3_4.pdf" download="Samenvatting Engels U3 + 4"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
 <div id="frans" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeFrans()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_frans_pronom.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_frans_pronom.pdf')">Pronom Relatif + Negation</a>
 		<a href="summ_frans_pronom.pdf" download="Samenvatting Frans Pronom + Negation"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
 <div id="fys" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeFys()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_fys.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_fys.pdf')">Module 2</a>
 		<a href="summ_fys.pdf" download="Samenvatting Fysica M2"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
 </div>
 <div id="gesch" class="popup">
 	<div class="popup_content">
-		<span class="closePopup" onclick="closeGesch()">&times;</span>
+		<span class="closePopup" onclick="closeAll()">&times;</span>
 		<a href="javascript:void(0)" onclick="openSumm('summ_gesch_strijd.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ_gesch_strijd.pdf')">Sociale Strijd</a>
 		<a href="summ_gesch_strijd.pdf" download="Samenvatting Sociale Strijd"><img src="dl.png" alt="download" width="15" height="15"></a>
 	</div>
