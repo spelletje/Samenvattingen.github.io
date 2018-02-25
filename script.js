@@ -55,66 +55,40 @@ function closeInner(vak) {
 	$(vak).fadeOut(200);
 };
 function closeAll() {
-        closeInner('#aard');
-        closeInner('#wisk'); 
-        closeInner('#bio');
-        closeInner('#chem');
-        closeInner('#eng');
-        closeInner('#frans');
-        closeInner('#fys');
-        closeInner('#gesch');
-		closeInner('#ned');
+        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned"));
 }
 function close() {
 	closeAll();
 };
-$(document).click(function(event) { 
-    if(!$(event.target).closest('#wisk').length == 0) {
-        if($('#wisk').is(":visible")) {
-            closeAll();
-        }
-    } 
-    if(!$(event.target).closest('#aard').length == 0) {
-        if($('#aard').is(":visible")) {
-            closeAll();
-        }
+window.onclick = function(event) {
+    if (event.target == document.getElementById("aard")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#gesch').length == 0) {
-        if($('#gesch').is(":visible")) {
-            closeAll();
-        }
+    if (event.target == document.getElementById("bio")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#bio').length == 0) {
-        if($('#bio').is(":visible")) {
-            closeAll();
-        }
+    if (event.target == document.getElementById("chem")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#ned').length == 0) {
-        if($('#ned').is(":visible")) {
-            closeAll();
-        }
+    if (event.target == document.getElementById("eng")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#fys').length == 0) {
-        if($('#fys').is(":visible")) {
-            closeAll();
-        }
+    if (event.target == document.getElementById("frans")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#chem').length == 0) {
-        if($('#chem').is(":visible")) {
-            closeAll();
-        }
+    if (event.target == document.getElementById("fys")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#frans').length == 0) {
-        if($('#frans').is(":visible")) {
-            closeAll();
-        }
+    if (event.target == document.getElementById("gesch")) {
+        closeAll();
     }
-    if(!$(event.target).closest('#eng').length == 0) {
-        if($('#eng').is(":visible")) {
-            closeAll();
-        }
-    }      
-});
+    if (event.target == document.getElementById("ned")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("wisk")) {
+        closeAll();
+    }
+}
 function mobile() {
 	if (isMobile.any()) {
 		$(document).ready(function(){
