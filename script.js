@@ -63,7 +63,7 @@ function closeAll() {
         closeInner('#frans');
         closeInner('#fys');
         closeInner('#gesch');
-	closeInner('#ned');
+		closeInner('#ned');
 }
 function close() {
 	closeAll();
