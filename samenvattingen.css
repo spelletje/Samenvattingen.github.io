@@ -165,4 +165,7 @@ h2 {
 	text-decoration: none;
 	cursor: pointer;
 }
-
+.navList a {
+	float: left;
+	}
+	
