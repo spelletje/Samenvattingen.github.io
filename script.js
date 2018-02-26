@@ -57,9 +57,6 @@ function closeInner(vak) {
 function closeAll() {
         closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk"));
 }
-function close() {
-	closeAll();
-};
 window.onclick = function(event) {
     if (event.target == document.getElementById("aard")) {
         closeAll();
@@ -100,6 +97,9 @@ function mobile() {
 			});
 			$(".navList").css({
 				"font-size": "20px"
+			});
+			$(".popupContentInner").css({
+				"width": "80%"
 			});
 			$("#pdf").attr("data", "homeMobile.html");
 		});
