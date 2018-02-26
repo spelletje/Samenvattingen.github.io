@@ -129,7 +129,10 @@ h2 {
 	cursor: pointer;
 }
 .navBarText .a2{
-  color: grey;
+  	color: grey;
+}
+.navBarText .a2:hover{
+	cursor: context-menu;
 }
 .closebtn {
 	position: absolute;
@@ -148,10 +151,8 @@ h2 {
 .popup {
 	text-decoration-color: black;
 	display: none;
-	position: fixed;
+	position: absolute;
 	z-index: 3;
-	left: 0;
-	top: 0;
 	width: 100%;
 	height: 100%;
 	/*overflow: auto;*/
@@ -172,9 +173,11 @@ h2 {
 }
 .closePopup {
 	color: black;
-	float: right;
 	font-size: 48px;
 	font-weight: bold;
+	position: absolute;
+	margin-left: 65%;
+	margin-top: 15%; 
 }
 .closePopup:hover,
 .closePopup:focus {

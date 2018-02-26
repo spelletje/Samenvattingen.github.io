@@ -55,7 +55,7 @@ function closeInner(vak) {
 	$(vak).fadeOut(200);
 };
 function closeAll() {
-        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk"));
+        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk, #exam"));
 }
 function close() {
 	closeAll();
@@ -86,6 +86,9 @@ window.onclick = function(event) {
         closeAll();
     }
     if (event.target == document.getElementById("wisk")) {
+        closeAll();
+    }
+      if (event.target == document.getElementById("exam")) {
         closeAll();
     }
 	}
