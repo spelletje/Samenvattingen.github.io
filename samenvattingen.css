@@ -121,6 +121,9 @@ h2 {
 .navBar a:hover {
 	color: grey;
 }
+.navBar .a2{
+  color: grey;
+}
 .navBar .closebtn {
 	position: absolute;
 	top: 0;
@@ -167,11 +170,8 @@ h2 {
 }
 .list {
 	position: absolute;
-	top: 1%;
+	top: 2%;
 	left: 0;
 	}
-.a2 {
-	color: grey;
-	}
-
+	
 	
