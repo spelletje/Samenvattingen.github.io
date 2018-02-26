@@ -88,7 +88,7 @@ window.onclick = function(event) {
     if (event.target == document.getElementById("wisk")) {
         closeAll();
     }
-	if (event.target == document.getElementById("navBar")) {
+	if (event.target === document.getElementById("navBar")) {
         closeNav();
     }
 }
