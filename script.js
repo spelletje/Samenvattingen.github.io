@@ -105,7 +105,7 @@ function mobile() {
 				"font-size": "20px"
 			});
             $(".closePopup").css({
-                "margin-left": "80%"
+                "margin-left": "81%"
             });
 			$("#pdf").attr("data", "homeMobile.html");
 		});
