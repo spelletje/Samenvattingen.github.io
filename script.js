@@ -104,6 +104,9 @@ function mobile() {
 			$(".navList").css({
 				"font-size": "20px"
 			});
+            $(".closePopup").css({
+                "margin-left": "80%"
+            });
 			$("#pdf").attr("data", "homeMobile.html");
 		});
 	};
