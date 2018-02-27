@@ -85,7 +85,7 @@ window.onclick = function(event) {
     if (event.target == document.getElementById("wisk")) {
         closeAll();
     }
-     if (event.target == document.getElementById("exam")) {
+    if (event.target == document.getElementById("exam")) {
         closeAll();
     }
     }
@@ -100,6 +100,9 @@ function mobile() {
             });
             $(".navList").css({
                 "font-size": "20px"
+            });
+            $(".popupContentInner").css({
+                "width": "80%"
             });
             $("#pdf").attr("data", "homeMobile.html");
         });
