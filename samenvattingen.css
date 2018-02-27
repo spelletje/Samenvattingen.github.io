@@ -131,6 +131,10 @@ h2 {
   color: grey;
 }
 .list {
+    overflow-y: auto;
+	overflow-x: hidden;
+    max-height:80%;
+    width:100%;
 	float: left;
 }
 .closebtn {
