@@ -1,5 +1,4 @@
 html {
-	font-family: arial;
 	height: 100%;
 }
 body {
@@ -35,6 +34,7 @@ h2 {
 	overflow-y: auto;
 }
 .home {
+	font-family: arial;
 	height: 45%;
 	border-radius: 5px;
 	margin-bottom: 1%;
@@ -58,6 +58,7 @@ h2 {
 	overflow-y: auto;
 }
 .homeMobile {
+	font-family: arial;
 	height: 45%;
 	border-radius: 5px;
 	margin-left: 3.35%;
