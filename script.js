@@ -27,7 +27,7 @@ function openNav() {
     $("#navBarFull").css({
         "display": "block"
     });
-    $(".openbtn").css({
+    $(".closebtn").css({
         "display": "block"
     });
 };
@@ -36,7 +36,7 @@ function closeNav() {
     $("#navBarFull").css({
         "display": "none"
     });
-    $(".openbtn").css({
+    $(".closebtn").css({
         "display": "none"
     });
 };
