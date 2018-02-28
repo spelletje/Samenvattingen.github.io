@@ -94,6 +94,7 @@ h2 {
 	font-weight: bold;
 	text-decoration: none;
 	background-color: white;
+	display: none;
 }
 .pdf {
 	background-color: white;
