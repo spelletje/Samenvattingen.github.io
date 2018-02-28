@@ -24,9 +24,21 @@ function openNav() {
         "width": "250px",
         "font-size": "2vmax"
     });
+    $("#navBarFull").css({
+        "display": "block"
+    });
+    $(".closebtn").css({
+        "display": "block"
+    });
 };
 function closeNav() {
     $("#navBar").css({"width": "0"});
+    $("#navBarFull").css({
+        "display": "none"
+    });
+    $(".closebtn").css({
+        "display": "none"
+    });
 };
 function openSumm(summ, mobileSumm) {
         if (isMobile.any()) {
