@@ -94,7 +94,6 @@ h2 {
 	font-weight: bold;
 	text-decoration: none;
 	background-color: white;
-	display: none;
 }
 .pdf {
 	background-color: white;
@@ -158,6 +157,7 @@ h2 {
 	right: 10px;
 	top: 10px;
 	z-index: 3;
+	display: none;
 }
 .closebtn:hover,
 .closebtn:focus
