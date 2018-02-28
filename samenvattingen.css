@@ -58,7 +58,7 @@ h2 {
 	overflow-y: auto;
 }
 .homeMobile {
-  z-index: 2;
+    z-index: 2;
 	font-family: arial;
 	height: 45%;
 	border-radius: 5px;
@@ -72,7 +72,7 @@ h2 {
 	box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
 }
 .objMobile {
-  z-index: 2;
+    z-index: 2;
 	height: 45%;
 	margin-top: 2.5%;
 }

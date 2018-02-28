@@ -87,7 +87,7 @@ window.onclick = function(event) {
     }
     if (event.target == document.getElementById("exam")) {
         closeAll();
-    }
+    }   
     }
 function mobile() {
     if (isMobile.any()) {
