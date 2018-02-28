@@ -232,4 +232,7 @@ h2 {
 img {
 	float: right;
 }
+#exam a {
+	color: grey;
+}
 
