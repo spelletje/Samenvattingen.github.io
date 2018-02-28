@@ -24,13 +24,19 @@ function openNav() {
         "width": "250px",
         "font-size": "2vmax"
     });
-	$("#navBarFull").css({
+    $("#navBarFull").css({
+        "display": "block"
+    });
+    $(".openbtn").css({
         "display": "block"
     });
 };
 function closeNav() {
     $("#navBar").css({"width": "0"});
-	$("#navBarFull").css({
+    $("#navBarFull").css({
+        "display": "none"
+    });
+    $(".openbtn").css({
         "display": "none"
     });
 };
