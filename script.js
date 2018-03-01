@@ -20,42 +20,54 @@ var isMobile = {
     }
 }
 function openNav() {
-	$("#navBar").css({
-		"width": "250px",
-		"font-size": "2vmax"
-	});
+    $("#navBar").css({
+        "width": "250px",
+        "font-size": "2vmax"
+    });
+    $("#navBarFull").css({
+        "display": "block"
+    });
+    $(".closebtn").css({
+        "display": "block"
+    });
 };
 function closeNav() {
-	$("#navBar").css({"width": "0"});
+    $("#navBar").css({"width": "0"});
+    $("#navBarFull").css({
+        "display": "none"
+    });
+    $(".closebtn").css({
+        "display": "none"
+    });
 };
 function openSumm(summ, mobileSumm) {
-		if (isMobile.any()) {
-        	$("#pdf").attr("data", mobileSumm);
+        if (isMobile.any()) {
+            $("#pdf").attr("data", mobileSumm);
         }
         else {
-        	$("#pdf").attr("data", summ);
+            $("#pdf").attr("data", summ);
         }    
         closeNav();
         closeAll();
 };
 function home() {
-	if (isMobile.any()) {
-		$("#pdf").attr("data", "homeMobile.html");
-	}
-	else {
-		$("#pdf").attr("data", "home.html");
-	}
-	closeNav();
-	closeAll();
+    if (isMobile.any()) {
+        $("#pdf").attr("data", "homeMobile.html");
+    }
+    else {
+        $("#pdf").attr("data", "home.html");
+    }
+    closeNav();
+    closeAll();
 };
 function show(vak) {
-	$(vak).fadeIn(200);
+    $(vak).fadeIn(200);
 };
 function closeInner(vak) {
-	$(vak).fadeOut(200);
+    $(vak).fadeOut(200);
 };
 function closeAll() {
-        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk"));
+        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk, #exam"));
 }
 window.onclick = function(event) {
     if (event.target == document.getElementById("aard")) {
@@ -85,23 +97,26 @@ window.onclick = function(event) {
     if (event.target == document.getElementById("wisk")) {
         closeAll();
     }
-	}
+    if (event.target == document.getElementById("exam")) {
+        closeAll();
+    }   
+    }
 function mobile() {
-	if (isMobile.any()) {
-		$(document).ready(function(){
-			$(".popup_content").css({
-				"width": "80%",
-				"height": "80%",
-				"font-size": "20px",
-				"margin-top": "10%"
-			});
-			$(".navList").css({
-				"font-size": "20px"
-			});
-			$(".popupContentInner").css({
-				"width": "80%"
-			});
-			$("#pdf").attr("data", "homeMobile.html");
-		});
-	};
+    if (isMobile.any()) {
+        $(document).ready(function(){
+            $(".popup_content").css({
+                "width": "80%",
+                "height": "80%",
+                "font-size": "20px",
+                "margin-top": "10%"
+            });
+            $(".navList").css({
+                "font-size": "20px"
+            });
+            $(".popupContentInner").css({
+                "width": "80%"
+            });
+            $("#pdf").attr("data", "homeMobile.html");
+        });
+    };
 };
