@@ -32,6 +32,7 @@ h2 {
 	font-size: 1.75vmax;
 	padding: 5px;
 	overflow-y: auto;
+	z-index: 2;
 }
 .home {
 	height: 45%;
@@ -49,6 +50,7 @@ h2 {
 	margin-top: 3%;
 	margin-right: 3.35%;
 	margin-left: 3.35%;
+	z-index: 2;
 }
 .txtMobile {
 	top: 1%;
