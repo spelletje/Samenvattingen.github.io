@@ -130,7 +130,7 @@ h2 {
 .navBar .a2{
   color: grey;
 }
-.navBarFull {
+#navBarFull {
 	z-index: 3;
 	heigth: 100%;
 	width: 93%;
