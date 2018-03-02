@@ -24,7 +24,7 @@ function openNav() {
         "width": "250px",
         "font-size": "2vmax"
     });
-    $(".navBarFull").css({
+    $("#navBarFull").css({
         "display": "block"
     });
     $(".closebtn").css({
@@ -33,7 +33,7 @@ function openNav() {
 };
 function closeNav() {
     $("#navBar").css({"width": "0"});
-    $(".navBarFull").css({
+    $("#navBarFull").css({
         "display": "none"
     });
     $(".closebtn").css({
