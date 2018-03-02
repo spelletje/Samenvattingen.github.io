@@ -32,7 +32,7 @@ h2 {
 	font-size: 1.75vmax;
 	padding: 5px;
 	overflow-y: auto;
-	z-index: 2;
+	z-index: 1;
 }
 .home {
 	height: 45%;
@@ -50,7 +50,7 @@ h2 {
 	margin-top: 3%;
 	margin-right: 3.35%;
 	margin-left: 3.35%;
-	z-index: 2;
+	z-index: 1;
 }
 .txtMobile {
 	top: 1%;
@@ -131,10 +131,11 @@ h2 {
   color: grey;
 }
 #navBarFull {
-	z-index: 3;
+	z-index: 2;
 	heigth: 100%;
 	width: 93%;
 	margin-left: 7%;
+	background-color: blue;
 }
 .list {
 	overflow-y: auto;
