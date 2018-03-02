@@ -130,6 +130,12 @@ h2 {
 .navBar .a2{
   color: grey;
 }
+.navBarFull {
+	z-index: 3;
+	heigth: 100%;
+	width: 93%;
+	margin-left: 7%;
+}
 .list {
 	overflow-y: auto;
 	overflow-x: hidden;
