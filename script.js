@@ -38,6 +38,12 @@ function openSumm(summ, mobileSumm) {
         closeNav();
         closeAll();
 };
+/*function module() {
+
+}
+function moduleOpen() {
+	$(".module").fadeIn(200);
+}*/
 function home() {
 	if (isMobile.any()) {
 		$("#pdf").attr("data", "homeMobile.html");
@@ -85,7 +91,7 @@ window.onclick = function(event) {
     if (event.target == document.getElementById("wisk")) {
         closeAll();
     }
-	}
+}
 function mobile() {
 	if (isMobile.any()) {
 		$(document).ready(function(){

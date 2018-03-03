@@ -27,6 +27,9 @@ h2 {
 img {
 	float: right;
 }
+img:hover {
+	cursor: pointer;
+}
 .txt {
 	width: 60%;
 	margin-top: 3%;
@@ -227,6 +230,22 @@ img {
 	height: 1px;
 	background: gray;
 }
-.chooseModule {
-	
+.hline_m {
+	width: 80%;
+	height: 1px;
+	background: gray;
+}
+.module {
+	background-color: white;
+	display: none;
+	width: 180px;
+	position: absolute;
+	z-index: 100;
+	border: 1px lightgrey solid;
+	border-radius: 5px;
+	top: 1%;
+	left: 5px;
+	-webkit-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
+	-moz-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
+	box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
 }
