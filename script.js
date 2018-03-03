@@ -48,34 +48,14 @@ function home() {
 	closeNav();
 	closeAll();
 };
-function landscapeOpen() {
-	if (isMobile.any()) {
-		if (screen.width > screen.height){
-   			$(".popup_content").css({
-   			"margin-top": "5%"
-   			});
-		}
-	}
-}
-function landscapeClose() {
-	if (isMobile.any()) {
-		if (screen.width > screen.height){
-   			$(".popup_content").css({
-   			"margin-top": "15%"
-   			});
-		}
-	}
-}
 function show(vak) {
 	$(vak).fadeIn(200);
-	landscapeOpen();
 };
 function closeInner(vak) {
 	$(vak).fadeOut(200);
 };
 function closeAll() {
         closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk, #exam"));
-        landscapeClose();
 }
 window.onclick = function(event) {
     if (event.target == document.getElementById("aard")) {
@@ -112,8 +92,7 @@ function mobile() {
 			$(".popup_content").css({
 				"width": "80%",
 				"height": "80%",
-				"font-size": "20px",
-				"margin-top": "10%"
+				"font-size": "18px",
 			});
 			$(".navList").css({
 				"font-size": "20px"
