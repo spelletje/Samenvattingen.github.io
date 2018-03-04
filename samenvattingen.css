@@ -100,7 +100,6 @@ img:hover {
 .pdf {
 	background-color: white;
 	float: right;
-	display: inline-block;
 	height: 100%;
 	width: 93%;
 }
@@ -130,8 +129,6 @@ img:hover {
 }
 .navBar a:hover {
 	color: grey;
-}
-.navBar .a2{
 }
 #navBarFull {
 	width: 100%;
