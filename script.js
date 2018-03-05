@@ -26,7 +26,7 @@ function openNav() {
 	});
 };
 function closeNav() {
-	$("#navBar").css({"width": "0"});
+    $("#navBar").css({"width": "0"});
 };
 function openSumm(summ, mobileSumm) {
 		if (isMobile.any()) {
