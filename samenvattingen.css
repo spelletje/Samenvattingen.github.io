@@ -200,6 +200,7 @@ img:hover {
 	height: 100%;
 }
 .popupContentInner {
+	font-family: arial;
 	width: 90%;
 	max-height: 95%;
 	overflow-x: hidden;
