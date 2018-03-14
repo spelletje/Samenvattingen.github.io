@@ -20,96 +20,267 @@ var isMobile = {
     }
 }
 function openNav() {
-	$("#navBar").css({
-		"width": "250px",
-		"font-size": "2vmax"
-	});
+    $("#navBar").css({
+        "width": "250px",
+        "font-size": "2vmax"
+    });
+    $("#navBarFull").css({
+        "display": "block"
+    });
+    $(".closebtn").css({
+        "display": "block"
+    });
 };
 function closeNav() {
     $("#navBar").css({"width": "0"});
+    $("#navBarFull").css({
+        "display": "none"
+    });
+    $(".closebtn").css({
+        "display": "none"
+    });
+    $(".module").fadeOut(200);
+    tabCheck = 0;
+    $(".list").css({
+        "margin-top": "0%"
+    });
 };
 function openSumm(summ, mobileSumm) {
-		if (isMobile.any()) {
-        	$("#pdf").attr("data", mobileSumm);
+        if (isMobile.any()) {
+            $("#pdf").attr("data", mobileSumm);
         }
         else {
-        	$("#pdf").attr("data", summ);
+            $("#pdf").attr("data", summ);
         }    
         closeNav();
         closeAll();
 };
-/*function module() {
-
-}
-function moduleOpen() {
-	$(".module").fadeIn(200);
-}*/
 function home() {
-	if (isMobile.any()) {
-		$("#pdf").attr("data", "homeMobile.html");
-	}
-	else {
-		$("#pdf").attr("data", "home.html");
-	}
-	closeNav();
-	closeAll();
+    if (isMobile.any()) {
+        $("#pdf").attr("data", "homeMobile.html");
+    }
+    else {
+        $("#pdf").attr("data", "home.html");
+    }
+    closeNav();
+    closeAll();
 };
 function show(vak) {
-	$(vak).fadeIn(200);
+    $(vak).fadeIn(200);
+    $(".module").fadeOut(200);
+    tabCheck = 0;
+    $(".list").css({
+        "margin-top": "0%"
+    });
 };
 function closeInner(vak) {
-	$(vak).fadeOut(200);
+    $(vak).fadeOut(200);
 };
 function closeAll() {
-        closeInner(document.querySelectorAll("#aard, #bio, #chem, #eng, #frans, #fys, #gesch, #ned, #wisk, #exam"));
+        closeInner(document.querySelectorAll("#aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
 }
 window.onclick = function(event) {
-    if (event.target == document.getElementById("aard")) {
+    if (event.target == document.getElementById("aardM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("bio")) {
+    if (event.target == document.getElementById("bioM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("chem")) {
+    if (event.target == document.getElementById("chemM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("eng")) {
+    if (event.target == document.getElementById("engM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("frans")) {
+    if (event.target == document.getElementById("fransM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("fys")) {
+    if (event.target == document.getElementById("fysM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("gesch")) {
+    if (event.target == document.getElementById("geschM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("ned")) {
+    if (event.target == document.getElementById("nedM1")) {
         closeAll();
     }
-    if (event.target == document.getElementById("wisk")) {
+    if (event.target == document.getElementById("wiskM1")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("aardM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("bioM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("chemM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("engM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("fransM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("fysM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("geschM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("nedM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("wiskM2")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("aardM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("bioM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("chemM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("engM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("fransM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("fysM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("geschM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("nedM3")) {
+        closeAll();
+    }
+    if (event.target == document.getElementById("wiskM3")) {
         closeAll();
     }
     if (event.target == document.getElementById("exam")) {
         closeAll();
+    }   
+}
+$(document).ready(function() {
+    $(window).on('orientationchange', function(event) {
+        if (screen.height < screen.width){
+        $(".module").css({
+            "top": "13%"
+        });
+        }
+        else {
+            $(".module").css({
+                "top": "9%"
+            });
+        }
+    });
+});
+tabCheck = 0;
+function moduleTab() {
+    if (tabCheck == 0) {
+        $(".module").fadeIn(200);
+        $(".closeTab").css({
+            "display": "block"
+        });
+        tabCheck++;
+        if (isMobile.any()) {
+        $(".list").css({
+            "margin-top": "57%"
+        });
+        }
+        else {
+        $(".list").css({
+            "margin-top": "70%"
+        });
+        }
+    }
+    else {
+        $(".module").fadeOut(200);
+        $(".closeTab").css({
+            "display": "none"
+        });
+        tabCheck--;
+        $(".list").css({
+            "margin-top": "0%"
+        });
     }
 }
+function m1() {
+    $(".list1").css({
+        "display": "block"
+    });
+    $(".list2").css({
+        "display": "none"
+    });
+    $(".list3").css({
+        "display": "none"
+    });
+    $(".module").fadeOut(200);
+    tabCheck--;
+    $(".list").css({
+        "margin-top": "0%"
+    });
+}
+function m2() {
+    $(".list1").css({
+        "display": "none"
+    });
+    $(".list2").css({
+        "display": "block"
+    });
+    $(".list3").css({
+        "display": "none"
+    });
+    $(".module").fadeOut(200);
+    tabCheck--;
+    $(".list").css({
+        "margin-top": "0%"
+    });
+}
+function m3() {
+    $(".list1").css({
+        "display": "none"
+    });
+    $(".list2").css({
+        "display": "none"
+    });
+    $(".list3").css({
+        "display": "block"
+    });
+    $(".module").fadeOut(200);
+    tabCheck--;
+    $(".list").css({
+        "margin-top": "0%"
+    });
+}
 function mobile() {
-	if (isMobile.any()) {
-		$(document).ready(function(){
-			$(".popup_content").css({
-				"width": "80%",
-				"height": "80%",
-				"font-size": "18px",
-			});
-			$(".navList").css({
-				"font-size": "20px"
-			});
-			$(".popupContentInner").css({
-				"width": "80%"
-			});
-			$("#pdf").attr("data", "homeMobile.html");
-		});
-	};
+    if (isMobile.any()) {
+        $(document).ready(function(){
+            $(".popup_content").css({
+                "width": "80%",
+                "height": "80%",
+                "font-size": "20px",
+            });
+            $(".navList").css({
+                "font-size": "20px"
+            });
+            $(".m1").css({
+                "font-size": "20px"
+            });
+            $(".m2").css({
+                "font-size": "20px"
+            });
+            $(".m3").css({
+                "font-size": "20px"
+            });
+            $(".popupContentInner").css({
+                "width": "80%"
+            });
+            $("#pdf").attr("data", "homeMobile.html");
+        });
+    };
 };
