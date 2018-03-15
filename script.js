@@ -169,7 +169,7 @@ $(document).ready(function() {
     $(window).on('orientationchange', function(event) {
         if (screen.height < screen.width){
         $(".module").css({
-            "top": "13%"
+            "top": "14%"
         });
         }
         else {
