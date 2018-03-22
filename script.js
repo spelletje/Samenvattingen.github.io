@@ -284,3 +284,15 @@ function mobile() {
         });
     };
 };
+
+function abdellahshow (){
+     $(".abdellah").css({
+        "display": "block"
+     });
+}
+
+function abdellahnoshow (){
+    $(".abdellah").css({
+        "display": "none"
+     });
+}
