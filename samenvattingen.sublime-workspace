@@ -1,0 +1,350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"navbat",
+				"navbar-toggler-icon \tBootstrap 4 Class"
+			],
+			[
+				"b4navt",
+				"b4:navbar:toggler\ttoggler"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n\t<script src=\"script.js\"></script>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui\">\n\t<title>Samenvattingen</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"samenvattingen.css\">\n\t\n</head>\n<body>\n<img src=\"abdellah.jpg\" alt=\"abdellah\" class=\"abdellah\" onclick=\"abdellahnoshow()\" />\n<div id=\"navBarFull\" onclick=\"closeNav()\">\n</div>\t\n<div class=\"navBar\" id=\"navBar\">\n\t<div id=\"closeTab\" class=\"closeTab\" onclick=\"moduleTab()\">\n\t</div>\n\t<a><img class=\"closebtn\" src=\"cross.svg\" onclick=\"closeNav()\"></a>\n\t<div class=\"list1\">\n\t\t\t\t<a href=\"javascript:void(0)\" class=\"navList a0\" onclick=\"moduleTab()\">Module 1 &#709;</a>\n\t\t\t\t<div class=\"hline\"></div>\n\t\t\t\t<div class=\"list\">\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a1\" onclick=\"home()\">Home</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a3\" onclick=\"show('#aardM1')\">Aardrijkskunde</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a4\" onclick=\"show('#bioM1')\">Biologie</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a5\" onclick=\"show('#chemM1')\">Chemie</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a6\" onclick=\"show('#engM1')\">Engels</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a7\" onclick=\"show('#fransM1')\">Frans</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a8\" onclick=\"show('#fysM1')\">Fysica</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a9\" onclick=\"show('#geschM1')\">Gechiedenis</a>\n       \t\t<a href=\"javascript:void(0)\" class=\"navList a10\" onclick=\"show('#nedM1')\">Nederlands</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a11\" onclick=\"show('#wiskM1')\">Wiskunde</a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"module\">\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m1\" class=\"m1\" onclick=\"m1()\">Module 1</a>\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m2\" class=\"m2\" onclick=\"m2()\">Module 2</a>\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m3\" class=\"m3\" onclick=\"m3()\">Module 3</a>\n\t    \t\t</div>\n\t</div>\n\t<div class=\"list2\">\n\t\t\t\t<a href=\"javascript:void(0)\" class=\"navList a0\" onclick=\"moduleTab()\">Module 2 &#709;</a>\n\t\t\t\t<div class=\"hline\"></div>\n\t\t\t\t<div class=\"list\">\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a1\" onclick=\"home()\">Home</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a3\" onclick=\"show('#aardM2')\">Aardrijkskunde</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a4\" onclick=\"show('#bioM2')\">Biologie</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a5\" onclick=\"show('#chemM2')\">Chemie</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a6\" onclick=\"show('#engM2')\">Engels</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a7\" onclick=\"show('#fransM2')\">Frans</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a8\" onclick=\"show('#fysM2')\">Fysica</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a9\" onclick=\"show('#geschM2')\">Gechiedenis</a>\n       \t\t<a href=\"javascript:void(0)\" class=\"navList a10\" onclick=\"show('#nedM2')\">Nederlands</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a11\" onclick=\"show('#wiskM2')\">Wiskunde</a>\n\t\t\t\t</div>\n\t\t\t<br>\n\t\t\t\t<div class=\"module\">\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m1\" class=\"m1\" onclick=\"m1()\">Module 1</a>\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m2\" class=\"m2\" onclick=\"m2()\">Module 2</a>\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m3\" class=\"m3\" onclick=\"m3()\">Module 3</a>\n\t    \t\t</div>\n\t</div>\n\t<div class=\"list3\">\n\t\t\t\t<a href=\"javascript:void(0)\" class=\"navList a0\" onclick=\"moduleTab()\">Module 3 &#709;</a>\n\t\t\t\t<div class=\"hline\"></div>\n\t\t\t\t<div class=\"list\">\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a1\" onclick=\"home()\">Home</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a3\" onclick=\"show('#aardM3')\">Aardrijkskunde</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a4\" onclick=\"show('#bioM3')\">Biologie</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a5\" onclick=\"show('#chemM3')\">Chemie</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a6\" onclick=\"show('#engM3')\">Engels</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a7\" onclick=\"show('#fransM3')\">Frans</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a8\" onclick=\"show('#fysM3')\">Fysica</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a9\" onclick=\"show('#geschM3')\">Gechiedenis</a>\n       \t\t<a href=\"javascript:void(0)\" class=\"navList a10\" onclick=\"show('#nedM3')\">Nederlands</a>\n\t\t\t<a href=\"javascript:void(0)\" class=\"navList a11\" onclick=\"show('#wiskM3')\">Wiskunde</a>\n\t\t\t\t</div>\n\t\t\t<br>\n\t\t\t\t<div class=\"module\">\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m1\" class=\"m1\" onclick=\"m1()\">Module 1</a>\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m2\" class=\"m2\" onclick=\"m2()\">Module 2</a>\n\t\t\t\t\t<a href=\"javascript:void()\" id=\"m3\" class=\"m3\" onclick=\"m3()\">Module 3</a>\n\t    \t\t</div>\n\t</div>\n</div>\n<button onclick=\"openNav()\" class=\"openBtn\" >V<br>A<br>K<br>K<br>E<br>N</button>\n<div class=\"pdf\">\n\t<object id=\"pdf\" class=\"pdf\" data=\"home.html\">\n\t\t\n\t</object>\n</div>\n<div id=\"aardM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_aard_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1.pdf')\">Aardrijkskunde Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_aard_M1.pdf\" download=\"Samenvatting Aardrijkskunde M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_aard_M1_schema.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1_schema.pdf')\">Schema H3 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_aard_M1_schema.pdf\" download=\"Samenvatting Aardrijkskunde M1 Schema\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"bioM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_bio_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M1.pdf')\">Biologie Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_bio_M1.pdf\" download=\"Samenvatting Biologie M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"chemM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_chem_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M1.pdf')\">Chemie Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_chem_M1.pdf\" download=\"Samenvatting Chemie M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"engM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_eng_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M1.pdf')\">Engels Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_eng_M1.pdf\" download=\"Samenvatting Engels M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"fransM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_frans_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M1.pdf')\">Frans Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_frans_M1.pdf\" download=\"Samenvatting Frans M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"fysM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_fys_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1.pdf')\">Fysica Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_fys_M1.pdf\" download=\"Samenvatting Fysica M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_fys_M1_kort.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1_kort.pdf')\">Verkorte Samenvatting &nbsp;</a>\n\t\t\t<a href=\"summ/summ_fys_M1_kort.pdf\" download=\"Samenvatting Fysica M1 Kort\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"geschM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_gesch_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M1.pdf')\">Geschiedenis Module 1 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_gesh_M1.pdf\" download=\"Samenvatting Geschiedenis M1\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"nedM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"wiskM1\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_wisk_M1_alg.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M1_alg.pdf')\">Algebra &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M1_alg.pdf\" download=\"Samenvatting Wiskunde M1 Algebra\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_wisk_M1_struct.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M1_struct.pdf')\">Structuren &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M1_struct.pdf\" download=\"Samenvatting Wiskunde M1 Structuren\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n\n<div id=\"aardM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_aard_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M2.pdf')\">Aardrijkskunde Module 2 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_aard_M2.pdf\" download=\"Samenvatting Aardrijkskunde M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"bioM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_bio_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M2.pdf')\">Biologie Module 2 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_bio_M2.pdf\" download=\"Samenvatting Biologie M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"chemM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_chem_M2_atom.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_atom.pdf')\">Atomen en Moleculen &nbsp;</a>\n\t\t\t<a href=\"summ/summ_chem_M2_atom.pdf\" download=\"Samenvatting Chemie M2 Atomen en Moleculen\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_chem_M2_even.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_even.pdf')\">Chemisch Evenwicht &nbsp;</a>\n\t\t\t<a href=\"summ/summ_chem_M2_even.pdf\" download=\"Samenvatting Chemie M2 Chemisch Evenwicht\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"engM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_eng_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M2.pdf')\">Engels Module 2 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_eng_M2.pdf\" download=\"Samenvatting Engels M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"fransM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_frans_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M2.pdf')\">Frans Module 2 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_frans_M2.pdf\" download=\"Samenvatting Frans M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"fysM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_fys_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M2.pdf')\">Fysica Module 2 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_fys_M2.pdf\" download=\"Samenvatting Fysica M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"geschM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_gesch_M2_alt.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M2_alt.pdf')\">Imperialisme &nbsp;</a>\n\t\t\t<a href=\"summ/summ_gesch_M2_alt.pdf\" download=\"Samenvatting Geschiedenis M2 Imperialisme\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_gesch_M2_strijd.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M2_strijd.pdf')\">Sociale strijd &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M2.pdf\" download=\"Samenvatting Wiskunde M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"nedM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_ned_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M2.pdf')\">Nederlands Module 2 &nbsp;</a>\n\t\t\t<a href=\"summ/summ_ned_M2.pdf\" download=\"Samenvatting Nederlands M2\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"wiskM2\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_wisk_M2_geo.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_geo.pdf')\">geogebra &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M2_geo.pdf\" download=\"Samenvatting Wiskunde M2 Geogebra\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_wisk_M2_gon.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_gon.pdf')\">Goniometrie &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M2_gon.pdf\" download=\"Samenvatting Wiskunde M2 Goniometrie\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_wisk_M2_funct.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_funct.pdf')\">Functies &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M2_funct.pdf\" download=\"Samenvatting Wiskunde M2 Functies\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t\t<br>\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_wisk_M2_complex.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_complex.pdf')\">Complexe getallen &nbsp;</a>\n\t\t\t<a href=\"summ/summ_wisk_M2_complex.pdf\" download=\"Samenvatting Wiskunde M2 Complexe Getallen\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n\n<div id=\"aardM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"bioM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"chemM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"openSumm('summ/summ_chem_M3_moleculen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_moleculen.pdf')\">Moleculen &nbsp;</a>\n\t\t\t<a href=\"summ/summ_chem_M3_moleculen.pdf\" download=\"Samenvatting Chemie Moleculen\"><img src=\"dl.png\" alt=\"download\" width=\"20\" height=\"20\"></a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"engM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"fransM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"fysM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"geschM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"nedM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n<div id=\"wiskM3\" class=\"popup\">\n\t<div class=\"popup_content\">\n\t\t<img class=\"cross\" src=\"cross.svg\" onclick=\"closeAll()\">\n\t\t<div class=\"popupContentInner\">\n\t\t\t<a href=\"#\" onclick=\"abdellahshow()\">Geen samenvattingen beschikbaar</a>\n\t\t\t<div class=\"hline\"></div>\n\t\t</div>\n\t</div>\n</div>\n\n</body>\n</html> \n",
+			"file": "index.html",
+			"file_size": 21485,
+			"file_write_time": 131677855090993487,
+			"settings":
+			{
+				"buffer_size": 20790,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "changelog.txt",
+			"settings":
+			{
+				"buffer_size": 1137,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "script.js",
+			"settings":
+			{
+				"buffer_size": 7297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "samenvattingen.css",
+			"settings":
+			{
+				"buffer_size": 4724,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: l",
+		"selected_items":
+		[
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: en",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: isn",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/stepa/Desktop/index.html",
+		"/C/Users/stepa/Desktop/style.css",
+		"/C/Users/stepa/OneDrive/Documents/StepanTaz-1510907917.ovpn"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			", Abdellah is hier om te troosten."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20667,
+								20681
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5610.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "changelog.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "samenvattingen.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4045,
+								4045
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3435.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "samenvattingen.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
