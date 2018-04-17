@@ -19,6 +19,17 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
+function time () {
+    var time = new Date();
+    var h1 = Math.floor(time.getHours() / 10);
+    var m1 = Math.floor(time.getMinutes() / 10);
+    var s1 = Math.floor(time.getSeconds() / 10);
+    var h2 = time.getHours() - (h1 * 10);
+    var m2 = time.getMinutes() - (m1 * 10);
+    var s2 = time.getSeconds() - (s1 * 10);
+    document.getElementById("time").innerHTML = m2+""+h1+":"+s2+""+h2+":"+s1+""+m1;
+}
+setInterval(time, 500);
 function openNav() {
     $("#navBar").css({
         "width": "250px",
