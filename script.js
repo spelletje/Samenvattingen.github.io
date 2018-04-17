@@ -27,7 +27,7 @@ function time () {
     var h2 = time.getHours() - (h1 * 10);
     var m2 = time.getMinutes() - (m1 * 10);
     var s2 = time.getSeconds() - (s1 * 10);
-    document.getElementById("time").innerHTML = m2+""+h1+":"+s2+""+h2+":"+s1+""+m1;
+    document.getElementById("time").innerHTML = m2+""+h1+":"+s2+""+h2+":"+m1+""+s1;
 }
 setInterval(time, 500);
 function openNav() {
