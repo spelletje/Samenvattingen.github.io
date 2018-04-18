@@ -297,4 +297,5 @@ img:hover {
 	font-size: 20px;
 	color: black;
 	position: absolute;
+	display: none;
 	}
