@@ -298,7 +298,7 @@ function mobile() {
 
 function abdellahshow (){
      $(".abdellah").css({
-        "display": "block"
+        "display": "none"
      });
 }
 
