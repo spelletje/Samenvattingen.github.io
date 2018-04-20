@@ -27,6 +27,9 @@ h2 {
 img {
 	float: right;
 }
+.imgPush {
+	position: absolute;
+	}
 img:hover {
 	cursor: pointer;
 }
