@@ -201,7 +201,10 @@ $(document).ready(function() {
             "width": "3vw",
             "left": "1vw",
             "margin-top": "0.3vw",
-        });   
+        });
+        $(".nav").css({
+            "height": "12%"
+        });
         }
         else {
         $(".logo").css({
@@ -213,7 +216,6 @@ $(document).ready(function() {
         }
     });
 });
-
 function m1() {
     $(".list1").css({
         "display": "block"
