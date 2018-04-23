@@ -4,96 +4,83 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui">
+	<meta name="mobile-web-app-capable" content="yes">
 	<title>Samenvattingen</title>
 	<link rel="stylesheet" type="text/css" href="samenvattingen.css">
-	
+	<link rel="manifest" href="manifest.json" />
+	<meta name="theme-color" content="#C70450">
+	<script src="site.js"></script>
 </head>
 <body>
-<img src="abdellah.jpg" alt="abdellah" class="abdellah" onclick="abdellahnoshow()" />
 <div id="navBarFull" onclick="closeNav()">
 </div>	
 <div class="navBar" id="navBar">
-	<div id="closeTab" class="closeTab" onclick="moduleTab()">
+	<div id="closeTab" class="closeTab" onclick="MODULETab()">
 	</div>
 	<a><img class="closebtn" src="cross.svg" onclick="closeNav()"></a>
 	<div class="list1">
-				<a href="javascript:void(0)" class="navList a0" onclick="moduleTab()">Module 1 &#8595;</a>
-				<div class="hline"></div>
-				<div class="list">
-			<a href="javascript:void(0)" class="navList a1" onclick="home()">Home</a>
-			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM1')">Aardrijkskunde</a>
-			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM1')">Biologie</a>
-			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM1')">Chemie</a>
-			<a href="javascript:void(0)" class="navList a6" onclick="show('#engM1')">Engels</a>
-			<a href="javascript:void(0)" class="navList a7" onclick="show('#fransM1')">Frans</a>
-			<a href="javascript:void(0)" class="navList a8" onclick="show('#fysM1')">Fysica</a>
-			<a href="javascript:void(0)" class="navList a9" onclick="show('#geschM1')">Gechiedenis</a>
-       		<a href="javascript:void(0)" class="navList a10" onclick="show('#nedM1')">Nederlands</a>
-			<a href="javascript:void(0)" class="navList a11" onclick="show('#wiskM1')">Wiskunde</a>
-				</div>
-				<div class="module">
-					<a href="javascript:void()" id="m1" class="m1" onclick="m1()">Module 1</a>
-					<a href="javascript:void()" id="m2" class="m2" onclick="m2()">Module 2</a>
-					<a href="javascript:void()" id="m3" class="m3" onclick="m3()">Module 3</a>
-	    		</div>
+		<div class="list">
+			<p>Module 1</p>	
+			<div class="hline"></div>
+			<a href="javascript:void(0)" class="navList a1" onclick="home()"><img src="logo/home.png" class="logo">Home</a>
+			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM1')"><img src="logo/aard.jpg" class="logo">Aardrijkskunde</a>
+			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM1')"><img src="logo/bio.jpg" class="logo">Biologie</a>
+			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM1')"><img src="logo/chem.jpg" class="logo">Chemie</a>
+			<a href="javascript:void(0)" class="navList a6" onclick="show('#engM1')"><img src="logo/eng.png" class="logo">Engels</a>
+			<a href="javascript:void(0)" class="navList a7" onclick="show('#fransM1')"><img src="logo/frans.png" class="logo">Frans</a>
+			<a href="javascript:void(0)" class="navList a8" onclick="show('#fysM1')"><img src="logo/fys.png" class="logo">Fysica</a>
+			<a href="javascript:void(0)" class="navList a9" onclick="show('#geschM1')"><img src="logo/gesch.jpg" class="logo">Gechiedenis</a>
+       		<a href="javascript:void(0)" class="navList a10" onclick="show('#nedM1')"><img src="logo/ned.png" class="logo">Nederlands</a>
+			<a href="javascript:void(0)" class="navList a11" onclick="show('#wiskM1')"><img src="logo/wisk.jpg" class="logo">Wiskunde</a>
+		</div>
 	</div>
 	<div class="list2">
-				<a href="javascript:void(0)" class="navList a0" onclick="moduleTab()">Module 2 &#8595;</a>
-				<div class="hline"></div>
-				<div class="list">
-			<a href="javascript:void(0)" class="navList a1" onclick="home()">Home</a>
-			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM2')">Aardrijkskunde</a>
-			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM2')">Biologie</a>
-			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM2')">Chemie</a>
-			<a href="javascript:void(0)" class="navList a6" onclick="show('#engM2')">Engels</a>
-			<a href="javascript:void(0)" class="navList a7" onclick="show('#fransM2')">Frans</a>
-			<a href="javascript:void(0)" class="navList a8" onclick="show('#fysM2')">Fysica</a>
-			<a href="javascript:void(0)" class="navList a9" onclick="show('#geschM2')">Gechiedenis</a>
-       		<a href="javascript:void(0)" class="navList a10" onclick="show('#nedM2')">Nederlands</a>
-			<a href="javascript:void(0)" class="navList a11" onclick="show('#wiskM2')">Wiskunde</a>
-				</div>
-			<br>
-				<div class="module">
-					<a href="javascript:void()" id="m1" class="m1" onclick="m1()">Module 1</a>
-					<a href="javascript:void()" id="m2" class="m2" onclick="m2()">Module 2</a>
-					<a href="javascript:void()" id="m3" class="m3" onclick="m3()">Module 3</a>
-	    		</div>
+		<div class="list">
+			<p>Module 2</p>	
+			<div class="hline"></div>
+			<a href="javascript:void(0)" class="navList a1" onclick="home()"><img src="logo/home.png" class="logo">Home</a>
+			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM2')"><img src="logo/aard.jpg" class="logo">Aardrijkskunde</a>
+			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM2')"><img src="logo/bio.jpg" class="logo">Biologie</a>
+			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM2')"><img src="logo/chem.jpg" class="logo">Chemie</a>
+			<a href="javascript:void(0)" class="navList a6" onclick="show('#engM2')"><img src="logo/eng.png" class="logo">Engels</a>
+			<a href="javascript:void(0)" class="navList a7" onclick="show('#fransM2')"><img src="logo/frans.png" class="logo">Frans</a>
+			<a href="javascript:void(0)" class="navList a8" onclick="show('#fysM2')"><img src="logo/fys.png" class="logo">Fysica</a>
+			<a href="javascript:void(0)" class="navList a9" onclick="show('#geschM2')"><img src="logo/gesch.jpg" class="logo">Gechiedenis</a>
+       		<a href="javascript:void(0)" class="navList a10" onclick="show('#nedM2')"><img src="logo/ned.png" class="logo">Nederlands</a>
+			<a href="javascript:void(0)" class="navList a11" onclick="show('#wiskM2')"><img src="logo/wisk.jpg" class="logo">Wiskunde</a>
+		</div>
 	</div>
 	<div class="list3">
-				<a href="javascript:void(0)" class="navList a0" onclick="moduleTab()">Module 3 &#8595;</a>
-				<div class="hline"></div>
-				<div class="list">
-			<a href="javascript:void(0)" class="navList a1" onclick="home()">Home</a>
-			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM3')">Aardrijkskunde</a>
-			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM3')">Biologie</a>
-			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM3')">Chemie</a>
-			<a href="javascript:void(0)" class="navList a6" onclick="show('#engM3')">Engels</a>
-			<a href="javascript:void(0)" class="navList a7" onclick="show('#fransM3')">Frans</a>
-			<a href="javascript:void(0)" class="navList a8" onclick="show('#fysM3')">Fysica</a>
-			<a href="javascript:void(0)" class="navList a9" onclick="show('#geschM3')">Gechiedenis</a>
-       		<a href="javascript:void(0)" class="navList a10" onclick="show('#nedM3')">Nederlands</a>
-			<a href="javascript:void(0)" class="navList a11" onclick="show('#wiskM3')">Wiskunde</a>
-				</div>
-			<br>
-				<div class="module">
-					<a href="javascript:void()" id="m1" class="m1" onclick="m1()">Module 1</a>
-					<a href="javascript:void()" id="m2" class="m2" onclick="m2()">Module 2</a>
-					<a href="javascript:void()" id="m3" class="m3" onclick="m3()">Module 3</a>
-	    		</div>
+		<div class="list">
+			<p>Module 3</p>	
+			<div class="hline"></div>
+			<a href="javascript:void(0)" class="navList a1" onclick="home()"><img src="logo/home.png" class="logo">Home</a>
+			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM3')"><img src="logo/aard.jpg" class="logo">Aardrijkskunde</a>
+			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM3')"><img src="logo/bio.jpg" class="logo">Biologie</a>
+			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM3')"><img src="logo/chem.jpg" class="logo">Chemie</a>
+			<a href="javascript:void(0)" class="navList a6" onclick="show('#engM3')"><img src="logo/eng.png" class="logo">Engels</a>
+			<a href="javascript:void(0)" class="navList a7" onclick="show('#fransM3')"><img src="logo/frans.png" class="logo">Frans</a>
+			<a href="javascript:void(0)" class="navList a8" onclick="show('#fysM3')"><img src="logo/fys.png" class="logo">Fysica</a>
+			<a href="javascript:void(0)" class="navList a9" onclick="show('#geschM3')"><img src="logo/gesch.jpg" class="logo">Gechiedenis</a>
+       		<a href="javascript:void(0)" class="navList a10" onclick="show('#nedM3')"><img src="logo/ned.png" class="logo">Nederlands</a>
+			<a href="javascript:void(0)" class="navList a11" onclick="show('#wiskM3')"><img src="logo/wisk.jpg" class="logo">Wiskunde</a>	
+		</div>
 	</div>
-	<font id="time"></font>
 </div>
-<button onclick="openNav()" class="openBtn" >V<br>A<br>K<br>K<br>E<br>N</button>
-<div class="pdf">
-	<object id="pdf" class="pdf" data="home.html">
-		
-	</object>
+<div class="homeAll">
+	<div onclick="openNav()" class="nav">
+		<a class="a_nav a_nav_menu" onclick="openNav()"><p>&#9776;</p></a> 
+		<a class="a_nav" onclick="m1()"><p>Module 1</p></a> 
+		<a class="a_nav" onclick="m2()"><p>Module 2</p></a> 
+		<a class="a_nav" onclick="m3()"><p>Module 3</p></a>
+	</div>
+	<object id="pdf" class="pdf" data="home.html"></object>
 </div>
 <div id="aardM1" class="popup">
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_aard_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1.pdf')">Aard Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_aard_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1.pdf')">Aard MODULE 1 &nbsp;</a>
 			<a href="summ/summ_aard_M1.pdf" download="Samenvatting Aardrijkskunde M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 			<br>
@@ -107,7 +94,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_bio_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M1.pdf')">Biologie Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_bio_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M1.pdf')">Biologie MODULE 1 &nbsp;</a>
 			<a href="summ/summ_bio_M1.pdf" download="Samenvatting Biologie M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -117,7 +104,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_chem_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M1.pdf')">Chemie Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_chem_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M1.pdf')">Chemie MODULE 1 &nbsp;</a>
 			<a href="summ/summ_chem_M1.pdf" download="Samenvatting Chemie M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -127,7 +114,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_eng_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M1.pdf')">Engels Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_eng_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M1.pdf')">Engels MODULE 1 &nbsp;</a>
 			<a href="summ/summ_eng_M1.pdf" download="Samenvatting Engels M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -137,7 +124,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_frans_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M1.pdf')">Frans Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_frans_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M1.pdf')">Frans MODULE 1 &nbsp;</a>
 			<a href="summ/summ_frans_M1.pdf" download="Samenvatting Frans M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -147,7 +134,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_fys_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1.pdf')">Fysica Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_fys_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1.pdf')">Fysica MODULE 1 &nbsp;</a>
 			<a href="summ/summ_fys_M1.pdf" download="Samenvatting Fysica M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 			<br>
@@ -161,7 +148,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_gesch_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M1.pdf')">Gesch Module 1 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_gesch_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M1.pdf')">Gesch MODULE 1 &nbsp;</a>
 			<a href="summ/summ_gesh_M1.pdf" download="Samenvatting Geschiedenis M1"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 			<br>
@@ -196,7 +183,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_aard_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M2.pdf')">Aard Module 2 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_aard_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M2.pdf')">Aard MODULE 2 &nbsp;</a>
 			<a href="summ/summ_aard_M2.pdf" download="Samenvatting Aardrijkskunde M2"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -206,7 +193,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_bio_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M2.pdf')">Biologie Module 2 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_bio_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M2.pdf')">Biologie MODULE 2 &nbsp;</a>
 			<a href="summ/summ_bio_M2.pdf" download="Samenvatting Biologie M2"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -230,7 +217,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_eng_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M2.pdf')">Engels Module 2 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_eng_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M2.pdf')">Engels MODULE 2 &nbsp;</a>
 			<a href="summ/summ_eng_M2.pdf" download="Samenvatting Engels M2"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -240,7 +227,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_frans_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M2.pdf')">Frans Module 2 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_frans_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M2.pdf')">Frans MODULE 2 &nbsp;</a>
 			<a href="summ/summ_frans_M2.pdf" download="Samenvatting Frans M2"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -250,7 +237,7 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_fys_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M2.pdf')">Fysica Module 2 &nbsp;</a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_fys_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M2.pdf')">Fysica MODULE 2 &nbsp;</a>
 			<a href="summ/summ_fys_M2.pdf" download="Samenvatting Fysica M2"><img src="dl.png" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
@@ -274,8 +261,8 @@
 	<div class="popup_content">
 		<img class="cross" src="cross.svg" onclick="closeAll()">
 		<div class="popupContentInner">
-			<a href="javascript:void(0)" onclick="openSumm('summ/summ_ned_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M2.pdf')">Nederlands Module 2 &nbsp;</a>
-			<a href="summ/summ_ned_M2.pdf" download="Samenvatting Nederlands M2"><img src="dl.png" alt="download" width="20" height="20"></a>
+			<a href="javascript:void(0)" onclick="openSumm('summ/summ_ned_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M2.pdf')">Nederlands MODULE 2 &nbsp;</a>
+			<a href="summ/summ_ned_M2.pdf" download="Samenvatting Nederlands M2"><img src="dl.png" class="imgPush" alt="download" width="20" height="20"></a>
 			<div class="hline"></div>
 		</div>
 	</div>
