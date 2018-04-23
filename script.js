@@ -181,7 +181,7 @@ window.onclick = function(event) {
     }   
 }
 
-(document).ready(function() {
+$(document).ready(function() {
     $(window).on('orientationchange', function(event) {
         if (screen.height < screen.width){
         $(".logo").css({
