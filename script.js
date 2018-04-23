@@ -19,7 +19,19 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
-
+ $(function() {      
+      //Enable swiping...
+      $(".homeMobile").swipe( {
+        swipeRight:function(event, phase, direction, distance)
+        {
+          if (phase=="end") {
+            openNav();
+          };
+        },
+        triggerOnTouchEnd:false,
+        threshold:200
+      });
+    });
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {

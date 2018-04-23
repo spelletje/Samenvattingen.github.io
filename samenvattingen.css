@@ -19,7 +19,6 @@ object {
 	float: right;
 	width: 93%;
 	height: 100%;
-	position: absolute;
 	box-shadow: inset 1px -1px 28px -8px rgba(0,0,0,0.3);
 }
 a {
@@ -33,9 +32,6 @@ h2 {
 img {
 	float: right;
 }
-.imgPush {
-	
-	}
 img:hover {
 	cursor: pointer;
 }
@@ -59,7 +55,6 @@ img:hover {
 .home {
 	height: 100%;
 	width: 100%;
-	position: absolute;
 }
 .obj {
 	margin-left: 10%;
@@ -170,8 +165,9 @@ img:hover {
 }
 .pdf {
 	width: 100%;
-	height: 91%;
-	margin-top: 8vh;
+	height: 90%;
+	position: absolute;
+	top: 10%;
 }
 .navBar {
 	font-family: arial;
