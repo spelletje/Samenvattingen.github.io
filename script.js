@@ -19,6 +19,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -30,6 +31,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
 function openNav() {
     $("#navBar").css({
         "width": "275px",
@@ -52,6 +54,7 @@ function closeNav() {
         "margin-top": "0%"
     });
 };
+
 function openSumm(summ, mobileSumm) {
         if (isMobile.any()) {
             $("#pdf").attr("data", mobileSumm);
@@ -62,6 +65,7 @@ function openSumm(summ, mobileSumm) {
         closeNav();
         closeAll();
 };
+
 function home() {
     if (isMobile.any()) {
         $("#pdf").attr("data", "homeMobile.html");
@@ -72,6 +76,7 @@ function home() {
     closeNav();
     closeAll();
 };
+
 function show(vak) {
     $(vak).fadeIn(200);
     $(".module").fadeOut(200);
@@ -80,12 +85,15 @@ function show(vak) {
         "margin-top": "0%"
     });
 };
+
 function closeInner(vak) {
     $(vak).fadeOut(200);
 };
+
 function closeAll() {
         closeInner(document.querySelectorAll("#aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
 }
+
 window.onclick = function(event) {
     if (event.target == document.getElementById("aardM1")) {
         closeAll();
@@ -173,6 +181,27 @@ window.onclick = function(event) {
     }   
 }
 
+(document).ready(function() {
+    $(window).on('orientationchange', function(event) {
+        if (screen.height < screen.width){
+        $(".logo").css({
+            "height": "3vw",
+            "width": "3vw",
+            "left": "1vw",
+            "margin-top": "0.3vw",
+        });   
+        }
+        else {
+        $(".logo").css({
+            "height": "3vh",
+            "width": "3vh",
+            "left": "1vh",
+            "margin-top": "0.25vh",
+        });  
+        }
+    });
+});
+
 function m1() {
     $(".list1").css({
         "display": "block"
@@ -221,6 +250,7 @@ function m3() {
         "margin-top": "0%"
     });
 }
+
 function mobile() {
     if (isMobile.any()) {
         $(document).ready(function(){
@@ -257,4 +287,3 @@ function mobile() {
         });
     };
 };
-
