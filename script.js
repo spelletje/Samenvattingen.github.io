@@ -196,7 +196,7 @@ window.onclick = function(event) {
             "height": "3vh",
             "width": "3vh",
             "left": "1vh",
-            "margin-top": "0.25vh",
+            "margin-top": "0.2vh",
         });  
         }
     });
