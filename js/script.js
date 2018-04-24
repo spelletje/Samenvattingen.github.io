@@ -208,7 +208,6 @@ $(document).ready(function() {
     });
 });
 
-var current_module = 0; 
 function m1() {
     $(".list1").css({
         "display": "block"
@@ -222,12 +221,20 @@ function m1() {
 	/*
     $(".module").fadeOut(200);
     tabCheck--;
-    */
+	*/
     $(".list").css({
         "margin-top": "0%"
     });
-	current_module = 1;
-	module_show();
+	$(".m1").css({
+		"background-color": "rgba(0,0,0,0.2)"
+	});
+	$(".m2").css({
+		"background-color": "#C70450"
+	});
+	$(".m3").css({
+		"background-color": "#C70450"
+	});
+	
 }
 function m2() {
     $(".list1").css({
@@ -242,12 +249,20 @@ function m2() {
 	/*
     $(".module").fadeOut(200);
     tabCheck--;
-    */
+	*/
     $(".list").css({
         "margin-top": "0%"
     });
-	current_module = 2;
-	module_show();
+	$(".m1").css({
+		"background-color": "#C70450"
+	});
+	$(".m2").css({
+		"background-color": "rgba(0,0,0,0.2)"
+	});
+	$(".m3").css({
+		"background-color": "#C70450"
+	});
+	
 }
 function m3() {
     $(".list1").css({
@@ -262,47 +277,19 @@ function m3() {
 	/*
     $(".module").fadeOut(200);
     tabCheck--;
-    */
+	*/
     $(".list").css({
         "margin-top": "0%"
     });
-	current_module = 3;
-	module_show();
-}
-function module_show (){
-	if (current_module == 1){
-		$(".m1").css({
-			"background-color": "rgba(0,0,0,0.2)"
-		});
-		$(".m2").css({
-			"background-color": "#C70450"
-		});
-		$(".m3").css({
-			"background-color": "#C70450"
-		});
-	}
-	 if (current_module == 2) {
-		$(".m1").css({
-			"background-color": "#C70450"
-		});
-		$(".m2").css({
-			"background-color": "rgba(0,0,0,0.2)"
-		});
-		$(".m3").css({
-			"background-color": "#C70450"
-		});
-	}
-	 if (current_module == 3) {
-		$(".m1").css({
-			"background-color": "#C70450"
-		});
-		$(".m2").css({
-			"background-color": "#C70450"
-		});
-		$(".m3").css({
-			"background-color": "rgba(0,0,0,0.2)"
-		});
-	}
+	$(".m1").css({
+		"background-color": "#C70450"
+	});
+	$(".m2").css({
+		"background-color": "#C70450"
+	});
+	$(".m3").css({
+		"background-color": "rgba(0,0,0,0.2)"
+	});
 }
 
 function mobile() {
