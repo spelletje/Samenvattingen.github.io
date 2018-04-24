@@ -235,13 +235,12 @@ function m1() {
 		"background-color": "rgba(0,0,0,0.2)"
 	});
 	$(".m2").css({
-		"background-color": "#C70450"
-	});
-	$(".m3").css({
-		"background-color": "#C70450"
-	});
+        "background-color": ""
+    });
+    $(".m3").css({
+        "background-color": ""
+    });
 	module_check = true;
-	
 }
 function m2() {
     $(".list1").css({
@@ -260,15 +259,15 @@ function m2() {
     $(".list").css({
         "margin-top": "0%"
     });
-	$(".m1").css({
-		"background-color": "#C70450"
-	});
+    $(".m1").css({
+        "background-color": ""
+    });
 	$(".m2").css({
 		"background-color": "rgba(0,0,0,0.2)"
 	});
-	$(".m3").css({
-		"background-color": "#C70450"
-	});
+    $(".m3").css({
+        "background-color": ""
+    });
 	module_check = true;
 }
 function m3() {
@@ -289,10 +288,10 @@ function m3() {
         "margin-top": "0%"
     });
 	$(".m1").css({
-		"background-color": "#C70450"
+		"background-color": ""
 	});
 	$(".m2").css({
-		"background-color": "#C70450"
+		"background-color": ""
 	});
 	$(".m3").css({
 		"background-color": "rgba(0,0,0,0.2)"
