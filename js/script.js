@@ -219,8 +219,10 @@ function m1() {
     $(".list3").css({
         "display": "none"
     });
+	/*
     $(".module").fadeOut(200);
     tabCheck--;
+    */
     $(".list").css({
         "margin-top": "0%"
     });
@@ -237,8 +239,10 @@ function m2() {
     $(".list3").css({
         "display": "none"
     });
+	/*
     $(".module").fadeOut(200);
     tabCheck--;
+    */
     $(".list").css({
         "margin-top": "0%"
     });
@@ -255,8 +259,10 @@ function m3() {
     $(".list3").css({
         "display": "block"
     });
+	/*
     $(".module").fadeOut(200);
     tabCheck--;
+    */
     $(".list").css({
         "margin-top": "0%"
     });
