@@ -4,22 +4,22 @@ Dit is de officiële website van Abdellah. Op deze website zijn alle samenvattin
 
 Hoe kan ik samenvattingen bekijken?
 
-	- Om samenvattingen te bekijken moet je eerst je vak kiezen. Dit doe je door op de "☰" knop te duwen, linksboven. dit opent een menu met alle vakken. Dan duw op het vak waarvan je een samenvatting wilt. Je kan nu tussen de beschikbare samenvattingen kiezen. Duw op de naam van de samenvatting om hem op onze website te bekijken, als je de samenvatting wilt downloaden kan je op de downloadknop links van de naam duwen.
+- Om samenvattingen te bekijken moet je eerst je vak kiezen. Dit doe je door op de "☰" knop te duwen, linksboven. dit opent een menu met alle vakken. Dan duw op het vak waarvan je een samenvatting wilt. Je kan nu tussen de beschikbare samenvattingen kiezen. Duw op de naam van de samenvatting om hem op onze website te bekijken, als je de samenvatting wilt downloaden kan je op de downloadknop links van de naam duwen.
 
 
 
 Hoe wissel ik tussen verschillende modules?
 
-	- Je kan tussen de verschillende modules kiezen met de bar bovenaan. Daar kan je kiezen tussen modules 1, 2 en 3. Door dit te doen vindt je alle beschikbare samenvattingen voor die module. Er zullen geen samenvattingen meer toegevoegd worden aan module 1 en 2, maar wel nog bij module 3.
+- Je kan tussen de verschillende modules kiezen met de bar bovenaan. Daar kan je kiezen tussen modules 1, 2 en 3. Door dit te doen vindt je alle beschikbare samenvattingen voor die module. Er zullen geen samenvattingen meer toegevoegd worden aan module 1 en 2, maar wel nog bij module 3.
 
 
 
 Ik zoek een samenvatting maar hij is niet te vinden op jullie website?
 
-	Hier kunnen meerdere redenen voor zijn:
-		1. Abdellah is nog niet klaar met de samenvatting, het kan dat je nog een paar dagen moet wachten.
-		2. Abdellah is klaar met de samenvatting, maar hij staat nog niet op de website. In dit geval zal de samenvatting snel op de website te zien zijn.
-		3. Abdellah zal deze samenvatting nooit maken. Als je een andere richting volgt dan Abdellah kan het dat Abdellah deze samenvatting nooit zal maken, je het zonder de samenvatting moeten doen.
+Hier kunnen meerdere redenen voor zijn:
+1. Abdellah is nog niet klaar met de samenvatting, het kan dat je nog een paar dagen moet wachten.
+2. Abdellah is klaar met de samenvatting, maar hij staat nog niet op de website. In dit geval zal de samenvatting snel op de website te zien zijn.
+3. Abdellah zal deze samenvatting nooit maken. Als je een andere richting volgt dan Abdellah kan het dat Abdellah deze samenvatting nooit zal maken, je het zonder de samenvatting moeten doen.
 
 Als je wilt weten wanneer de samenvatting online komt kan je dat aan Abdellah vragen.
 
@@ -27,8 +27,8 @@ Als je wilt weten wanneer de samenvatting online komt kan je dat aan Abdellah vr
 
 Kan ik deze website ook als app hebben?
 
-	- Ja, normaal gezien is dit een optie wanneer je de website voor het eerst opent, maar het kan ook anders. Als je op google chrome bent kan je rechtsboven op de "⁝" knop duwen. Scroll dan maar beneden tot je de optie "Add to homescreen" of "Toevoegen aan startscherm" ziet. Duw daar dan op en bevestig het dan, nu staat onze website als een app op jouw apparaat. Zoek gewoon naar het rood-roze icoontje met een "s" erin.
+- Ja, normaal gezien is dit een optie wanneer je de website voor het eerst opent, maar het kan ook anders. Als je op google chrome bent kan je rechtsboven op de "⁝" knop duwen. Als je op je gsm bent scroll ja naar beneden tot je de optie "Toevoegen aan startscherm" ziet. Duw daar dan op en bevestig het dan, nu staat onze website als een app op jouw apparaat. Zoek gewoon naar het rood-roze icoontje met een "s" erin. Als je op de computer bent kies je eerst de optie "Meer hulpprogramma's" en dan "Toevoegen aan bureablad".
 
 
 
-Als je nog vragen hebt of een probleem hebt gevonden stuur het dan naar Lander Moors op smartschool.
+Als je nog vragen hebt of een probleem hebt gevonden stuur het dan naar Lander Moors op smartschool. Suggesties voor verbeteringen aan deze website zijn ook welkom.
