@@ -280,7 +280,7 @@ function module_show (){
 			"background-color": "#C70450"
 		});
 		$(".m2").css({
-			"background-color": "rgba(0.0.0.0.2)"
+			"background-color": "rgba(0,0,0,0.2)"
 		});
 		$(".m3").css({
 			"background-color": "#C70450"
