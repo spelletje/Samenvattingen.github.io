@@ -30,6 +30,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+var module_check = false;
 function openNav() {
     $("#navBar").css({
         "width": "275px",
@@ -39,6 +40,11 @@ function openNav() {
     $(".closebtn").css({
         "display": "block"
     });
+	if (module_check == false) {
+		$(".m3").css ({
+			"background-color": "rgba(0,0,0,0.2)"
+		});
+	}
 };
 function closeNav() {
     $("#navBar").css({"width": "0"});
@@ -234,6 +240,7 @@ function m1() {
 	$(".m3").css({
 		"background-color": "#C70450"
 	});
+	module_check = true;
 	
 }
 function m2() {
@@ -262,7 +269,7 @@ function m2() {
 	$(".m3").css({
 		"background-color": "#C70450"
 	});
-	
+	module_check = true;
 }
 function m3() {
     $(".list1").css({
@@ -290,6 +297,7 @@ function m3() {
 	$(".m3").css({
 		"background-color": "rgba(0,0,0,0.2)"
 	});
+	module_check = true;
 }
 
 function mobile() {
