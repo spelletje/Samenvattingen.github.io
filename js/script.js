@@ -275,7 +275,7 @@ function module_show (){
 			"background-color": "#C70450"
 		});
 	}
-	else if (current_module==2) {
+	else if (current_module == 2) {
 		$(".m1").css({
 			"background-color": "#C70450"
 		});
