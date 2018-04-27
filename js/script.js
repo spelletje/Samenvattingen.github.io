@@ -313,12 +313,15 @@ function mobile() {
             $(".m1").css({
                 "font-size": "20px"
             });
+            $(".m1").text("M1");
             $(".m2").css({
                 "font-size": "20px"
             });
+            $(".m2").text("M2");
             $(".m3").css({
                 "font-size": "20px"
             });
+            $(".m3").text("M3");
             $(".popupContentInner").css({
                 "width": "80%"
             });
