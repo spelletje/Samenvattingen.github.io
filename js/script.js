@@ -30,11 +30,13 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
 var module_check = false;
 function openNav() {
     $("#navBar").css({
         "width": "275px",
-        "font-size": "2vmax"
+        "left": "0",
+        "font-size": "2vmax",
     });
     $("#navBarFull").fadeIn(200);
     $(".closebtn").css({
@@ -47,18 +49,13 @@ function openNav() {
 	}
 };
 function closeNav() {
-    $("#navBar").css({"width": "0"});
+    $("#navBar").css({"left": "-275px"});
     $("#navBarFull").fadeOut(200);
-    $(".closebtn").css({
-        "display": "none"
-    });
-    $(".module").fadeOut(200);
-    tabCheck = 0;
     $(".list").css({
         "margin-top": "0%"
     });
 };
-
+var closeTopNav_check = false;
 function openSumm(summ, mobileSumm) {
         if (isMobile.any()) {
             $("#pdf").attr("data", mobileSumm);
@@ -66,11 +63,68 @@ function openSumm(summ, mobileSumm) {
         else {
             $("#pdf").attr("data", summ);
         }    
+        closeTopNav_check = true;
         closeNav();
         closeAll();
+        closeTopNav();
 };
 
+function closeTopNav() {
+    if (isMobile.any()) {
+    }
+    else{
+    $(".nav").css({
+        "top": "-10%"
+    });
+    $(".pdf").css({
+        "height": "100%",
+        "top": "0"
+    });
+    }
+}
+
+function openTopNav() {
+    if (isMobile.any()) {
+    }
+    else{
+    $(".nav").css({
+        "top": "0"
+    });
+    $(".pdf").css({
+        "height": "90%",
+        "top": "10%"
+    });
+    }
+}
+
+$(function() {
+  $('.openTopNav').hover(function() {
+    if (isMobile.any()) {
+    }
+    else{
+    if (closeTopNav_check == true){
+    $('.nav').css('top', '0');
+    }
+    }
+  }, function() {
+  });
+});
+
+$(function() {
+  $('.pdf').hover(function() {
+    if (isMobile.any()) {
+    }
+    else{
+    if (closeTopNav_check == true){
+    $('.nav').css('top', '-10%');
+    }
+    }
+  }, function() {
+  });
+});
+
 function home() {
+    closeTopNav_check = false;
     if (isMobile.any()) {
         $("#pdf").attr("data", "homeMobile.html");
     }
@@ -79,14 +133,13 @@ function home() {
     }
     closeNav();
     closeAll();
+    openTopNav();
 };
 function help() {
-    $("#pdf").attr("data", "changelog.txt");
+    $("#pdf").attr("data", "summ/help.pdf");
 };
 function show(vak) {
     $(vak).fadeIn(200);
-    $(".module").fadeOut(200);
-    tabCheck = 0;
     $(".list").css({
         "margin-top": "0%"
     });
@@ -224,10 +277,6 @@ function m1() {
     $(".list3").css({
         "display": "none"
     });
-	/*
-    $(".module").fadeOut(200);
-    tabCheck--;
-	*/
     $(".list").css({
         "margin-top": "0%"
     });
@@ -252,10 +301,6 @@ function m2() {
     $(".list3").css({
         "display": "none"
     });
-	/*
-    $(".module").fadeOut(200);
-    tabCheck--;
-	*/
     $(".list").css({
         "margin-top": "0%"
     });
@@ -280,10 +325,6 @@ function m3() {
     $(".list3").css({
         "display": "block"
     });
-	/*
-    $(".module").fadeOut(200);
-    tabCheck--;
-	*/
     $(".list").css({
         "margin-top": "0%"
     });
