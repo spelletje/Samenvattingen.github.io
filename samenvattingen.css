@@ -182,7 +182,7 @@ img:hover {
 	top: 0;
 	position: absolute;
 	z-index: 1;
-	background-color: rgba(0,0,0,0.01);
+	background-color: rgba(0,0,0,0.002);
 }
 .navBar {
 	font-family: arial;
