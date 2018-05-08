@@ -123,7 +123,7 @@ img:hover {
 .nav {
 	position: absolute;
 	top: 0;
-	z-index: 2;
+	z-index: 3;
 	height: 10%;
     width: 100%;	
 	font-size: 1.75vmax;
@@ -173,7 +173,7 @@ img:hover {
 	height: 90%;
 	position: absolute;
 	top: 10%;
-	z-index: 0;
+	z-index: 1;
 }
 .openTopNav {
 	width: 85%;
@@ -181,15 +181,28 @@ img:hover {
 	height: 10%;
 	top: 0;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	background-color: rgba(0,0,0,0.002);
+}
+.load {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	position: absolute;
+}
+.loadTxt {
+    position: absolute;
+	font-size: 2rem;
+	width: 100%;
+	margin-top: 45vh;
+	text-align: center;
 }
 .navBar {
 	font-family: arial;
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 4;
+	z-index: 5;
 	top: 1;
 	left: 0;
 	background-color: white;
@@ -199,7 +212,7 @@ img:hover {
 	box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);
 }
 .navBar a {
-	z-index: 4;
+	z-index: 5;
 	font-weight: bold;
 	padding: 3px 8px 8px 32px;
 	text-decoration: none;
@@ -225,7 +238,7 @@ img:hover {
 	height: 100%;
 	position: absolute;
 	display: none;
-	z-index: 3;	
+	z-index: 4;	
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.65);	
 }
@@ -269,7 +282,7 @@ img:hover {
 	position: absolute;
 	right: 10px;
 	top: 10px;
-	z-index: 5;
+	z-index: 6;
 }
 .closebtn:hover,
 .closebtn:focus
@@ -280,7 +293,7 @@ img:hover {
 	text-decoration-color: black;
 	display: none;
 	position: absolute;
-	z-index: 6;
+	z-index: 7;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -318,7 +331,7 @@ img:hover {
 	overflow-y: auto;
 }
 .closePopup {
-	z-index: 7;
+	z-index: 8;
 	top: -5;
 	color: black;
 	font-size: 36px;
@@ -326,7 +339,7 @@ img:hover {
 }
 .cross {
 	float: right;
-	z-index: 7;
+	z-index: 8;
 	height: 25px;
 	width: 25px;
 }
