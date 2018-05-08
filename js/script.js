@@ -67,6 +67,12 @@ function openSumm(summ, mobileSumm) {
         closeNav();
         closeAll();
         closeTopNav();
+        $("#pdf").css({
+            "z-index": "1"
+        });
+        $(".home").css({
+            "display": "none"
+        });
 };
 
 function closeTopNav() {
@@ -125,15 +131,16 @@ $(function() {
 
 function home() {
     closeTopNav_check = false;
-    if (isMobile.any()) {
-        $("#pdf").attr("data", "homeMobile.html");
-    }
-    else {
-        $("#pdf").attr("data", "home.html");
-    }
     closeNav();
     closeAll();
     openTopNav();
+    $("#pdf").css({
+        "z-index": "0"
+    });
+    $(".home").css({
+        "display": "block"
+    });
+    $("#pdf").attr("data", "");
 };
 function help() {
     $("#pdf").attr("data", "summ/help.pdf");
@@ -351,6 +358,9 @@ function mobile() {
             $(".navList").css({
                 "font-size": "20px"
             });
+            $(".txt").css({
+                "font-size": "2.5vmax"
+            });
             $(".m1").css({
                 "font-size": "20px"
             });
@@ -375,7 +385,6 @@ function mobile() {
             $(".imgPush").css({
                 "position": "absolute"
             });
-            $("#pdf").attr("data", "homeMobile.html");
         });
     };
 };
