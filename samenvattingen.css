@@ -30,6 +30,9 @@ h2 {
 img:hover {
 	cursor: pointer;
 }
+img {
+	float: right;
+}
 .txt {
 	height: 45%;
 	width: 91%;
