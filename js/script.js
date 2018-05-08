@@ -57,22 +57,25 @@ function closeNav() {
 };
 var closeTopNav_check = false;
 function openSumm(summ, mobileSumm) {
-        if (isMobile.any()) {
-            $("#pdf").attr("data", mobileSumm);
-        }
-        else {
-            $("#pdf").attr("data", summ);
-        }    
-        closeTopNav_check = true;
-        closeNav();
-        closeAll();
-        closeTopNav();
-        $("#pdf").css({
-            "z-index": "1"
-        });
-        $(".home").css({
-            "display": "none"
-        });
+    if (isMobile.any()) {
+        $("#pdf").attr("data", mobileSumm);
+    }
+    else {
+        $("#pdf").attr("data", summ);
+    }    
+    closeTopNav_check = true;
+    closeNav();
+    closeAll();
+    closeTopNav();
+    $("#pdf").css({
+        "z-index": "1"
+    });
+    $(".home").css({
+        "display": "none"
+    });
+    $("#loading").css({
+        "display": "block"
+    });
 };
 
 function closeTopNav() {
@@ -141,6 +144,9 @@ function home() {
         "display": "block"
     });
     $("#pdf").attr("data", "");
+    $("#loading").css({
+        "display": "none"
+    });
 };
 function help() {
     $("#pdf").attr("data", "summ/help.pdf");
@@ -157,7 +163,7 @@ function closeInner(vak) {
 };
 
 function closeAll() {
-        closeInner(document.querySelectorAll("#aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
+    closeInner(document.querySelectorAll("#aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
 }
 
 window.onclick = function(event) {
