@@ -298,8 +298,8 @@ function mobile() {
                 "width": "80%"
             });
             $("#loading").css({
-                "height": "120px",
-                "width": "120px",
+                "height": "100px",
+                "width": "100px",
                 "top": "53%"
             });
         });

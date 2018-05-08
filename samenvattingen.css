@@ -78,8 +78,8 @@ img:hover {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 150px;
-	height: 150px;
+	width: 120px;
+	height: 120px;
 	z-index: 0;
 }
 .mobile {
