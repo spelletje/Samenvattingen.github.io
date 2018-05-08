@@ -391,6 +391,11 @@ function mobile() {
             $(".imgPush").css({
                 "position": "absolute"
             });
+            $("#loading").css({
+                "height": "120px",
+                "width": "120px",
+                "top": "53%"
+            });
         });
     };
 };
