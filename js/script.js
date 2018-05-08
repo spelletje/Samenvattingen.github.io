@@ -382,15 +382,6 @@ function mobile() {
             $(".popupContentInner").css({
                 "width": "80%"
             });
-            $(".logo").css({
-                "height": "3vh",
-                "width": "3vh",
-                "left": "1vh",
-                "margin-top": "0.2vh",
-            });
-            $(".imgPush").css({
-                "position": "absolute"
-            });
             $("#loading").css({
                 "height": "120px",
                 "width": "120px",
