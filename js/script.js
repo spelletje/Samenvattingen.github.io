@@ -359,7 +359,7 @@ function mobile() {
                 "font-size": "20px"
             });
             $(".txt").css({
-                "font-size": "2.5vmax"
+                "font-size": "2.4vmax"
             });
             $(".m1").css({
                 "font-size": "20px"
