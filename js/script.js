@@ -165,11 +165,11 @@ function closeInner(vak) {
 
 function closeAll() {
     closeInner(document.querySelectorAll("#aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
+    $("#closePopup").fadeOut(200);
 }
 
 window.onclick = function(event) {
     if (event.target == document.getElementById("closePopup")) {
-        $("#closePopup").fadeOut(200);
         closeAll();
     }
 }
