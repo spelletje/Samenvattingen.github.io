@@ -82,13 +82,13 @@ function closeTopNav() {
     if (isMobile.any()) {
     }
     else{
-    $(".nav").css({
-        "top": "-10%"
-    });
-    $(".pdf").css({
-        "height": "100%",
-        "top": "0"
-    });
+        $(".nav").css({
+            "top": "-10%"
+        });
+        $(".pdf").css({
+            "height": "100%",
+            "top": "0"
+        });
     }
 }
 
@@ -96,13 +96,13 @@ function openTopNav() {
     if (isMobile.any()) {
     }
     else{
-    $(".nav").css({
-        "top": "0"
-    });
-    $(".pdf").css({
-        "height": "90%",
-        "top": "10%"
-    });
+        $(".nav").css({
+            "top": "0"
+        });
+        $(".pdf").css({
+            "height": "90%",
+            "top": "10%"
+        });
     }
 }
 
@@ -111,9 +111,9 @@ $(function() {
     if (isMobile.any()) {
     }
     else{
-    if (closeTopNav_check == true){
-    $('.nav').css('top', '0');
-    }
+        if (closeTopNav_check == true){
+            $('.nav').css('top', '0');
+        }
     }
   }, function() {
   });
@@ -124,9 +124,9 @@ $(function() {
     if (isMobile.any()) {
     }
     else{
-    if (closeTopNav_check == true){
-    $('.nav').css('top', '-10%');
-    }
+        if (closeTopNav_check == true){
+            $('.nav').css('top', '-10%');
+        }
     }
   }, function() {
   });
@@ -153,6 +153,7 @@ function help() {
 };
 function show(vak) {
     $(vak).fadeIn(200);
+    $("#closePopup").fadeIn(200);
     $(".list").css({
         "margin-top": "0%"
     });
@@ -167,115 +168,29 @@ function closeAll() {
 }
 
 window.onclick = function(event) {
-    if (event.target == document.getElementById("aardM1")) {
+    if (event.target == document.getElementById("closePopup")) {
+        $("#closePopup").fadeOut(200);
         closeAll();
     }
-    if (event.target == document.getElementById("bioM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("chemM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("engM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("fransM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("fysM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("geschM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("nedM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("wiskM1")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("aardM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("bioM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("chemM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("engM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("fransM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("fysM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("geschM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("nedM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("wiskM2")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("aardM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("bioM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("chemM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("engM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("fransM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("fysM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("geschM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("nedM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("wiskM3")) {
-        closeAll();
-    }
-    if (event.target == document.getElementById("exam")) {
-        closeAll();
-    }   
 }
 
 $(document).ready(function() {
     $(window).on('orientationchange', function(event) {
         if (screen.height < screen.width){
-        $(".logo").css({
-            "height": "3vw",
-            "width": "3vw",
-            "left": "1vw",
-            "margin-top": "0.3vw",
-        });
-        $(".nav").css({
-            "height": "12%"
-        });
+            $(".nav").css({
+                "height": "12%"
+            });
         }
         else {
-        $(".logo").css({
-            "height": "3vh",
-            "width": "3vh",
-            "left": "1vh",
-            "margin-top": "0.2vh",
-        });
-        $(".nav").css({
-            "height": "10%"
-        });
+            $(".logo").css({
+                "height": "3vh",
+                "width": "3vh",
+                "left": "1vh",
+                "margin-top": "0.2vh",
+            });
+            $(".nav").css({
+                "height": "10%"
+            });
         }
     });
 });
