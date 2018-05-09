@@ -283,6 +283,9 @@ function mobile() {
                 "width": "100px",
                 "top": "53%"
             });
+		$(".imgPush").css({
+			"position": "absolute"
+		});
         });
     };
 };
