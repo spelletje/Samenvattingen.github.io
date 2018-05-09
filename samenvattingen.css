@@ -86,9 +86,15 @@ img:hover {
 	width: 100%;
 	height: 100%;
 }
-.titel {
+.titel,
+.titel_popup {
  	color: #C70450;
 	font-weight: bold;
+}
+.titel_popup {
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
 }
 .changeText {
   margin-left: 3%;
