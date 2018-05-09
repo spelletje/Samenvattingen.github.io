@@ -172,6 +172,9 @@ img:hover {
 	/*box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);*/
 }
 .dl {
+	position: absolute;
+	right: 10%;
+	margin-right: 8px;
 	float: right;
 	width: 20px;
 	height: 20px;
@@ -335,5 +338,6 @@ img:hover {
 	height: 100%;
 	z-index: 6;
 }
-.imgPush{
+.summ {
+	width: 90%;
 }

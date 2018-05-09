@@ -257,6 +257,12 @@ function mobile() {
                 "height": "80%",
                 "font-size": "20px",
             });
+            $(".popupContentInner").css({
+                "width": "85%"
+            });
+            $(".dl").css({
+                "right": "15%"
+            });
             $(".navList").css({
                 "font-size": "20px"
             });
@@ -275,17 +281,11 @@ function mobile() {
                 "font-size": "20px"
             });
             $(".m3").text("M3");
-            $(".popupContentInner").css({
-                "width": "80%"
-            });
             $("#loading").css({
                 "height": "100px",
                 "width": "100px",
                 "top": "53%"
             });
-		$(".imgPush").css({
-			"position": "absolute"
-		});
         });
     };
 };
