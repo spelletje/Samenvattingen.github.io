@@ -172,9 +172,6 @@ img:hover {
 	/*box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);*/
 }
 .dl {
-	position: absolute;
-	right: 10%;
-	margin-right: 8px;
 	float: right;
 	width: 20px;
 	height: 20px;
@@ -283,7 +280,8 @@ img:hover {
 	height: 100%;
 }
 .popupContentInner {
-	width: 90%;
+	margin-top: 40px;
+	width: 99.3%;
 	max-height: 95%;
 	overflow-x: hidden;
 	overflow-y: auto;

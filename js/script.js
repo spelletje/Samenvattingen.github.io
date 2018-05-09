@@ -255,13 +255,7 @@ function mobile() {
             $(".popup_content").css({
                 "width": "80%",
                 "height": "80%",
-                "font-size": "20px",
-            });
-            $(".popupContentInner").css({
-                "width": "85%"
-            });
-            $(".dl").css({
-                "right": "15%"
+                "font-size": "18px",
             });
             $(".navList").css({
                 "font-size": "20px"
