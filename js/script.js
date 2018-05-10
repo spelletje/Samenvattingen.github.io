@@ -283,3 +283,23 @@ function mobile() {
         });
     };
 };
+
+// swiped-left
+document.addEventListener('swiped-left', function(e) {
+    closeNav();
+});
+
+// swiped-right
+document.addEventListener('swiped-right', function(e) {
+    openNav();
+});
+
+// swiped-up
+document.addEventListener('swiped-up', function(e) {
+  // ...
+});
+
+// swiped-down
+document.addEventListener('swiped-down', function(e) {
+  // ...
+});
