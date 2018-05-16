@@ -288,7 +288,7 @@ img:hover {
 .popupContentInner {
 	margin-top: 40px;
 	width: 99.3%;
-	max-height: 95%;
+	max-height: 75%;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
