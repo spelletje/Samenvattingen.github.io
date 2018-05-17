@@ -18,13 +18,11 @@
 	<link rel="stylesheet" type="text/css" href="samenvattingen.css">
 	<link rel="manifest" href="manifest.json" />
 	<meta name="theme-color" content="#C70450">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="site.js"></script>
-	<meta charset="UTF-8">
 </head>
 <body>
-<!--
-<audio id="audio" src="music.mp3" loop></audio>
--->
 <div id="navBarFull" onclick="closeNav()">
 </div>
 <div class="navBar" id="navBar">
@@ -33,7 +31,7 @@
 		<div class="list">
 			<p>Module 1</p>	
 			<div class="hline"></div>
-			<a href="javascript:void(0)" class="navList a1" onclick="musicPlay()"><img src="icons/home.png" class="icon">Home</a>
+			<a href="javascript:void(0)" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
 			<a href="javascript:void(0)" class="navList a3" onclick="show('#aardM1')"><img src="icons/aard.jpg" class="icon">Aardrijkskunde</a>
 			<a href="javascript:void(0)" class="navList a4" onclick="show('#bioM1')"><img src="icons/bio.jpg" class="icon">Biologie</a>
 			<a href="javascript:void(0)" class="navList a5" onclick="show('#chemM1')"><img src="icons/chem.jpg" class="icon">Chemie</a>
@@ -93,7 +91,7 @@
 	<div id="txt" class="txt" align="middle">
 		<h2 align="middle" class="titel">SAMENVATTINGEN</h2>
 		<p align="middle">
-			Dit is de officiële website van Abdellah. Voor de samenvattingen klik je op de knop linksboven en voor een lijst van de laatst toegevoegde samenvattingen kan je beneden kijken. Voor de samenvattingen te bekijken duw je op de naam van de samenvatting en als je hem wilt downloaden duw je op de downloadknop. Je kan kiezen tussen samenvattingen van module 1, 2 en 3. Als je enige vragen hebt kan je <a class="titel" href="#" class="summ" onclick="openSumm('summ/help.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/help.pdf')">hier</a> klikken. <!--Als je verrast wilt worden kan je <a class="titel" href="#" onClick="audio.paused?audio.play():audio.pause()">hier</a> klikken.-->
+			Dit is de officiële website van Abdellah. Voor de samenvattingen klik je op de knop linksboven en voor een lijst van de laatst toegevoegde samenvattingen kan je beneden kijken. Voor de samenvattingen te bekijken duw je op de naam van de samenvatting en als je hem wilt downloaden duw je op de downloadknop. Je kan kiezen tussen samenvattingen van module 1, 2 en 3. Als je enige vragen hebt kan je <a class="titel" href="#" class="summ" onclick="openSumm('summ/help.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/help.pdf')">hier</a> klikken.
 		</p>
 	</div>
 	<div>
@@ -101,7 +99,7 @@
 	  		<div class="changeText">
 	  			<p class="changeLogTxt">
 					<font class="titel">Laatst toegevoegde samenvattingen:</font><br><br>
-
+					⭐ 16/05/18: Nieuwe samenvatting wiskunde: <a class="titel" href="javascript:void(0)" onclick="openSumm('summ/summ_wisk_M3_afg_benaderen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_benaderen.pdf')">Afgeleiden: Korte methode benadering</a><br><br>
 					⭐ 10/05/18: Nieuwe samenvatting geschiedenis: <a class="titel" href="javascript:void(0)" onclick="openSumm('summ/summ_gesch_M3_WO1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M3_WO1.pdf')">Wereld Oorlog 1</a><br><br>
 					⭐ 10/05/18: Nieuwe samenvatting wiskunde: <a class="titel" href="javascript:void(0)" onclick="openSumm('summ/summ_wisk_M3_afg_3.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_3.pdf')">Afgeleiden 3</a><br><br>
 					⭐ 10/05/18: Nieuwe samenvatting wiskunde: <a class="titel" href="javascript:void(0)" onclick="openSumm('summ/summ_wisk_M3_afg_2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_2.pdf')">Afgeleiden 2</a><bR><br>
@@ -452,6 +450,10 @@
 		<br>
 		<a href="javascript:void(0)" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_afg_3.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_3.pdf')">Afgeleiden 3 &nbsp;</a>
 		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_afg_3.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 3"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
+		<div class="hline" data-swipe-ignore="true"></div>
+		<br>
+		<a href="javascript:void(0)" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_benaderen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_benaderen.pdf')">Afgeleiden: Korte methode benadering &nbsp;</a>
+		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_benaderen.pdf" download="Samenvatting Wiskunde M3 Afgeleiden Benadering"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
 		<div class="hline" data-swipe-ignore="true"></div>
 	</div>
 </div>
