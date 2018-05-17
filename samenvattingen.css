@@ -48,6 +48,12 @@ img:hover {
 	-moz-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
 	box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
 }
+.txt p {
+	text-align: center;
+}
+.txt h2 {
+	text-align: center;
+}
 .home {
 	z-index: 1;
 	top: 10%;
