@@ -19,11 +19,13 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
+/*
 window.onload=function(){
     if (/Edge\/\d./i.test(navigator.userAgent)){
         window.alert('Als je Microsoft Edge gebruikt zijn er problemen met het openen van samenvattingen. Om dit op te lossen kan je Google Chrome of Firefox downloaden.');
     }
 }
+*/
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
