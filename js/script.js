@@ -41,7 +41,6 @@ if ('serviceWorker' in navigator) {
 var module_check = false;
 function openNav() {
     $("#navBar").css({
-        "width": "275px",
         "left": "0",
         "font-size": "2vmax",
     });
