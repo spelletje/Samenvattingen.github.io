@@ -38,7 +38,10 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+var nav_check = false;
 var module_check = false;
+var popup_check = false;
+
 function openNav() {
     $("#navBar").css({
         "left": "0",
@@ -49,10 +52,11 @@ function openNav() {
         "display": "block"
     });
 	if (module_check == false) {
-		$(".m3").css ({
-			"background-color": "rgba(0,0,0,0.2)"
+	    $(".m3").css ({
+		    "background-color": "rgba(0,0,0,0.2)"
 		});
 	}
+    nav_check = true;
 };
 function closeNav() {
     $("#navBar").css({"left": "-275px"});
@@ -60,6 +64,7 @@ function closeNav() {
     $(".list").css({
         "margin-top": "0%"
     });
+    nav_check = false;
 };
 var closeTopNav_check = false;
 function openSumm(summ, mobileSumm) {
@@ -157,6 +162,7 @@ function home() {
 function show(vak) {
     $(vak).fadeIn(200);
     $("#closePopup").fadeIn(200);
+    popup_check = true;
 };
 
 function closeInner(vak) {
@@ -166,6 +172,7 @@ function closeInner(vak) {
 function closeAll() {
     closeInner(document.querySelectorAll("#EHBO, #aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
     $("#closePopup").fadeOut(200);
+    popup_check = false;
 }
 $(document).ready(function() {
     $(window).on('orientationchange', function(event) {
@@ -293,22 +300,56 @@ function mobile() {
     };
 };
 
-// swiped-left
-document.addEventListener('swiped-left', function(e) {
-    closeNav();
+var xDown = 0;
+var xMove = 0;
+var xDiff = 0;
+var navTopHeight = Number($(".openTopNav").height());
+
+window.addEventListener('touchstart', function(e) {
+	$("#navBar").css({"transition": "0s"});
+    xDown = e.touches[0].clientX;
+    yDown = e.touches[0].clientY;
 });
 
-// swiped-right
-document.addEventListener('swiped-right', function(e) {
-    openNav();
+window.addEventListener('touchmove', function(e) {
+    xMove = e.touches[0].clientX;
+    xDiff = xMove - xDown;
+    if(nav_check == false && popup_check == false) {
+        if(xDown < 50 && yDown > navTopHeight) {
+            if(xDiff > 0 && xDiff < 275) {
+		        $("#navBarFull").fadeIn(200);
+                $("#navBar").css({"left": -275 + xDiff});
+            }
+            else if(xDiff > 275){
+                $("#navBar").css({"left": 0});
+            }
+        }
+    }
+    else if(popup_check == false){
+        if(xDown > 275 && yDown > navTopHeight) {		
+            if(xDiff < 0 && xDiff > -275) {
+                $("#navBar").css({"left": xDiff});
+            }
+        }
+    }
 });
 
-// swiped-up
-document.addEventListener('swiped-up', function(e) {
-  // ...
-});
-
-// swiped-down
-document.addEventListener('swiped-down', function(e) {
-  // ...
+window.addEventListener('touchend', function(e) {
+	$("#navBar").css({"transition": "0.5s"});
+    if(nav_check == false  && popup_check == false) {
+        if(xDiff > 100 && xDown < 50 && yDown > navTopHeight) {
+            openNav();
+        }
+        else{
+            closeNav();
+        }
+    }
+    else if(popup_check == false){
+        if(xDiff < -100 && xDown > 275 && yDown > navTopHeight){
+            closeNav();
+        }
+        else{
+            openNav();
+        }
+    }
 });

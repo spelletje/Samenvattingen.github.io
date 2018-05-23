@@ -110,7 +110,7 @@ img:hover {
 	top: 0;
 	z-index: 3;
 	height: 10%;
-    width: 100%;	
+        width: 100%;	
 	font-size: 1.75vmax;
 	box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);
 	font-weight: bold;
@@ -350,4 +350,11 @@ img:hover {
 }
 .summ {
 	width: 90%;
+}
+#summSwipe {
+	z-index: 2;
+	height: 100%;
+	width: 2%;
+	float: left;
+	position: absolute;
 }

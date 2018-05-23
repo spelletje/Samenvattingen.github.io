@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 </head>
 <body>
+<div id="summSwipe">
+</div>
 <div id="navBarFull" onclick="closeNav()">
 </div>
 <div class="navBar" id="navBar">
@@ -66,7 +68,7 @@
 	</div>
 </div>
 <div class="homeAll">
-	<div class="openTopNav"></div>
+	<div class="openTopNav" id="openTopNav"></div>
 	<div onclick="openNav()" class="nav">
 		<a class="a_nav a_nav_menu" onclick="openNav()"><p>&#9776;</p></a> 
 		<a class="a_nav m1" onclick="m1()"><p>Module 1</p></a> 
@@ -74,7 +76,7 @@
 		<a class="a_nav m3" onclick="m3()"><p>Module 3</p></a>
 	</div>
 </div>
-<div id="closePopup" onclick="closeAll()" data-swipe-ignore="true"></div>
+<div id="closePopup" onclick="closeAll()"></div>
 <div><img id="loading" src="icons/loading2.gif"></div>
 <div class="home">
 	<div id="txt" class="txt">
@@ -137,375 +139,375 @@
 	</div>
 </div>
 <object id="pdf" class="pdf" data=""></object>
-<div id="aardM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Aardrijkskunde (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_aard_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1.pdf')">Aard MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_aard_M1.pdf" download="Samenvatting Aardrijkskunde M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="aardM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Aardrijkskunde (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_aard_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1.pdf')">Aard MODULE 1 &nbsp;</a>
+		<a href="summ/summ_aard_M1.pdf" download="Samenvatting Aardrijkskunde M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_aard_M1_schema.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1_schema.pdf')">Schema H3 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_aard_M1_schema.pdf" download="Samenvatting Aardrijkskunde M1 Schema"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_aard_M1_schema.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M1_schema.pdf')">Schema H3 &nbsp;</a>
+		<a href="summ/summ_aard_M1_schema.pdf" download="Samenvatting Aardrijkskunde M1 Schema"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="bioM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Biologie (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_bio_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M1.pdf')">Biologie MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_bio_M1.pdf" download="Samenvatting Biologie M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="bioM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Biologie (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_bio_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M1.pdf')">Biologie MODULE 1 &nbsp;</a>
+		<a href="summ/summ_bio_M1.pdf" download="Samenvatting Biologie M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="chemM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Chemie (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M1.pdf')">Chemie MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M1.pdf" download="Samenvatting Chemie M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="chemM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Chemie (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M1.pdf')">Chemie MODULE 1 &nbsp;</a>
+		<a href="summ/summ_chem_M1.pdf" download="Samenvatting Chemie M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="engM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Engels (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M1.pdf')">Engels MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M1.pdf" download="Samenvatting Engels M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="engM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Engels (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M1.pdf')">Engels MODULE 1 &nbsp;</a>
+		<a href="summ/summ_eng_M1.pdf" download="Samenvatting Engels M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="fransM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Frans (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_frans_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M1.pdf')">Frans MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_frans_M1.pdf" download="Samenvatting Frans M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="fransM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Frans (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_frans_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M1.pdf')">Frans MODULE 1 &nbsp;</a>
+		<a href="summ/summ_frans_M1.pdf" download="Samenvatting Frans M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="fysM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Fysica (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_fys_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1.pdf')">Fysica MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_fys_M1.pdf" download="Samenvatting Fysica M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="fysM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Fysica (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_fys_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1.pdf')">Fysica MODULE 1 &nbsp;</a>
+		<a href="summ/summ_fys_M1.pdf" download="Samenvatting Fysica M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_fys_M1_kort.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1_kort.pdf')">Verkorte Samenvatting &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_fys_M1_kort.pdf" download="Samenvatting Fysica M1 Kort"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_fys_M1_kort.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M1_kort.pdf')">Verkorte Samenvatting &nbsp;</a>
+		<a href="summ/summ_fys_M1_kort.pdf" download="Samenvatting Fysica M1 Kort"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="geschM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Geschiedenis (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_gesch_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M1.pdf')">Gesch MODULE 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_gesh_M1.pdf" download="Samenvatting Geschiedenis M1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="geschM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Geschiedenis (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_gesch_M1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M1.pdf')">Gesch MODULE 1 &nbsp;</a>
+		<a href="summ/summ_gesh_M1.pdf" download="Samenvatting Geschiedenis M1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
 	</div>
 </div>
-<div id="nedM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Nederlands (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" onclick="abdellahshow ()" data-swipe-ignore="true">Geen samenvattingen beschikbaar</a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="nedM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Nederlands (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" onclick="abdellahshow ()">Geen samenvattingen beschikbaar</a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="wiskM1" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Wiskunde (M1)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M1_alg.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M1_alg.pdf')">Algebra &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M1_alg.pdf" download="Samenvatting Wiskunde M1 Algebra"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="wiskM1" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Wiskunde (M1)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M1_alg.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M1_alg.pdf')">Algebra &nbsp;</a>
+		<a href="summ/summ_wisk_M1_alg.pdf" download="Samenvatting Wiskunde M1 Algebra"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M1_struct.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M1_struct.pdf')">Structuren &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M1_struct.pdf" download="Samenvatting Wiskunde M1 Structuren"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M1_struct.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M1_struct.pdf')">Structuren &nbsp;</a>
+		<a href="summ/summ_wisk_M1_struct.pdf" download="Samenvatting Wiskunde M1 Structuren"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="aardM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Aardrijkskunde (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_aard_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M2.pdf')">Aard MODULE 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_aard_M2.pdf" download="Samenvatting Aardrijkskunde M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="aardM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Aardrijkskunde (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_aard_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_aard_M2.pdf')">Aard MODULE 2 &nbsp;</a>
+		<a href="summ/summ_aard_M2.pdf" download="Samenvatting Aardrijkskunde M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="bioM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Biologie (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_bio_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M2.pdf')">Biologie MODULE 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_bio_M2.pdf" download="Samenvatting Biologie M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="bioM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Biologie (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_bio_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M2.pdf')">Biologie MODULE 2 &nbsp;</a>
+		<a href="summ/summ_bio_M2.pdf" download="Samenvatting Biologie M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="chemM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Chemie (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M2_atom.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_atom.pdf')">Atomen en Moleculen &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M2_atom.pdf" download="Samenvatting Chemie M2 Atomen en Moleculen"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="chemM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Chemie (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M2_atom.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_atom.pdf')">Atomen en Moleculen &nbsp;</a>
+		<a href="summ/summ_chem_M2_atom.pdf" download="Samenvatting Chemie M2 Atomen en Moleculen"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M2_even.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_even.pdf')">Chemisch Evenwicht &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M2_even.pdf" download="Samenvatting Chemie M2 Chemisch Evenwicht"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M2_even.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_even.pdf')">Chemisch Evenwicht &nbsp;</a>
+		<a href="summ/summ_chem_M2_even.pdf" download="Samenvatting Chemie M2 Chemisch Evenwicht"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M2_even_schema.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_even_schema.pdf')">Schema Chemisch Evenwicht &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M2_even_schema.pdf" download="Samenvatting Chemie M2 Schema Chemisch Evenwicht"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M2_even_schema.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M2_even_schema.pdf')">Schema Chemisch Evenwicht &nbsp;</a>
+		<a href="summ/summ_chem_M2_even_schema.pdf" download="Samenvatting Chemie M2 Schema Chemisch Evenwicht"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="engM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Engels (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M2.pdf')">Engels MODULE 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M2.pdf" download="Samenvatting Engels M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="engM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Engels (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M2.pdf')">Engels MODULE 2 &nbsp;</a>
+		<a href="summ/summ_eng_M2.pdf" download="Samenvatting Engels M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="fransM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Frans (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_frans_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M2.pdf')">Frans MODULE 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_frans_M2.pdf" download="Samenvatting Frans M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="fransM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Frans (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_frans_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M2.pdf')">Frans MODULE 2 &nbsp;</a>
+		<a href="summ/summ_frans_M2.pdf" download="Samenvatting Frans M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="fysM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Fysica (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_fys_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M2.pdf')">Fysica MODULE 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_fys_M2.pdf" download="Samenvatting Fysica M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="fysM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Fysica (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_fys_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M2.pdf')">Fysica MODULE 2 &nbsp;</a>
+		<a href="summ/summ_fys_M2.pdf" download="Samenvatting Fysica M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="geschM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Geschiedenis (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_gesch_M2_alt.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M2_alt.pdf')">Imperialisme &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_gesch_M2_alt.pdf" download="Samenvatting Geschiedenis M2 Imperialisme"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="geschM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Geschiedenis (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_gesch_M2_alt.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M2_alt.pdf')">Imperialisme &nbsp;</a>
+		<a href="summ/summ_gesch_M2_alt.pdf" download="Samenvatting Geschiedenis M2 Imperialisme"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_gesch_M2_strijd.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M2_strijd.pdf')">Sociale strijd &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M2.pdf" download="Samenvatting Wiskunde M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_gesch_M2_strijd.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M2_strijd.pdf')">Sociale strijd &nbsp;</a>
+		<a href="summ/summ_wisk_M2.pdf" download="Samenvatting Wiskunde M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="nedM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Nederlands (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_ned_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M2.pdf')">Nederlands MODULE 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_ned_M2.pdf" download="Samenvatting Nederlands M2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="nedM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Nederlands (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_ned_M2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M2.pdf')">Nederlands MODULE 2 &nbsp;</a>
+		<a href="summ/summ_ned_M2.pdf" download="Samenvatting Nederlands M2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="wiskM2" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Wiskunde (M2)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M2_geo.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_geo.pdf')">Geogebra &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M2_geo.pdf" download="Samenvatting Wiskunde M2 Geogebra"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="wiskM2" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Wiskunde (M2)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M2_geo.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_geo.pdf')">Geogebra &nbsp;</a>
+		<a href="summ/summ_wisk_M2_geo.pdf" download="Samenvatting Wiskunde M2 Geogebra"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M2_gon.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_gon.pdf')">Goniometrie &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M2_gon.pdf" download="Samenvatting Wiskunde M2 Goniometrie"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M2_gon.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_gon.pdf')">Goniometrie &nbsp;</a>
+		<a href="summ/summ_wisk_M2_gon.pdf" download="Samenvatting Wiskunde M2 Goniometrie"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M2_funct.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_funct.pdf')">Functies &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M2_funct.pdf" download="Samenvatting Wiskunde M2 Functies"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M2_funct.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_funct.pdf')">Functies &nbsp;</a>
+		<a href="summ/summ_wisk_M2_funct.pdf" download="Samenvatting Wiskunde M2 Functies"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M2_complex.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_complex.pdf')">Complexe getallen &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M2_complex.pdf" download="Samenvatting Wiskunde M2 Complexe Getallen"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M2_complex.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M2_complex.pdf')">Complexe getallen &nbsp;</a>
+		<a href="summ/summ_wisk_M2_complex.pdf" download="Samenvatting Wiskunde M2 Complexe Getallen"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="aardM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Aardrijkskunde (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" onclick="abdellahshow ()" data-swipe-ignore="true">Geen samenvattingen beschikbaar</a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="aardM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Aardrijkskunde (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" onclick="abdellahshow ()">Geen samenvattingen beschikbaar</a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="bioM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Biologie (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_bio_M3_meta.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M3_meta.pdf')">Metabolisme &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_bio_M3_meta.pdf" download="Samenvatting Biologie M3 Metabolisme"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="bioM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Biologie (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_bio_M3_meta.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_bio_M3_meta.pdf')">Metabolisme &nbsp;</a>
+		<a href="summ/summ_bio_M3_meta.pdf" download="Samenvatting Biologie M3 Metabolisme"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="chemM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Chemie (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M3_moleculen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_moleculen.pdf')">Moleculen &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M3_moleculen.pdf" download="Samenvatting Chemie M3 Moleculen"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="chemM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Chemie (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M3_moleculen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_moleculen.pdf')">Moleculen &nbsp;</a>
+		<a href="summ/summ_chem_M3_moleculen.pdf" download="Samenvatting Chemie M3 Moleculen"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M3_lewis.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_lewis.pdf')">Het geheim voor de perfecte Lewisstructuur &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M3_lewis.pdf" download="Het geheim voor de perfecte Lewisstructuur"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M3_lewis.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_lewis.pdf')">Het geheim voor de perfecte Lewisstructuur &nbsp;</a>
+		<a href="summ/summ_chem_M3_lewis.pdf" download="Het geheim voor de perfecte Lewisstructuur"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_chem_M3_zuren_basen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_zuren_basen.pdf')">Zuren en Basen &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_chem_M3_zuren_basen.pdf" download="Samenvatting Chemie Zuren en Basen"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_chem_M3_zuren_basen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_chem_M3_zuren_basen.pdf')">Zuren en Basen &nbsp;</a>
+		<a href="summ/summ_chem_M3_zuren_basen.pdf" download="Samenvatting Chemie Zuren en Basen"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="engM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Engels (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_voc.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_voc.pdf')">Vocabulary &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_voc.pdf" download="Samenavtting Engels M3 Vocabulary"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="engM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Engels (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_voc.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_voc.pdf')">Vocabulary &nbsp;</a>
+		<a href="summ/summ_eng_M3_voc.pdf" download="Samenavtting Engels M3 Vocabulary"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_simp_fut.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_simp_fut.pdf')">Simple Future &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_simp_fut.pdf" download="Samenvatting Engels M3 Simple Future"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_simp_fut.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_simp_fut.pdf')">Simple Future &nbsp;</a>
+		<a href="summ/summ_eng_M3_simp_fut.pdf" download="Samenvatting Engels M3 Simple Future"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_lang_evo.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_lang_evo.pdf')">Language Evolution &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_lang_evo.pdf" download="Samenvatting Engels M3 Language Evolution"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_lang_evo.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_lang_evo.pdf')">Language Evolution &nbsp;</a>
+		<a href="summ/summ_eng_M3_lang_evo.pdf" download="Samenvatting Engels M3 Language Evolution"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_new_words.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_new_words.pdf')">Creating New Words &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_new_words.pdf" download="Samenvatting Engels M3 Creating New Words"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_new_words.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_new_words.pdf')">Creating New Words &nbsp;</a>
+		<a href="summ/summ_eng_M3_new_words.pdf" download="Samenvatting Engels M3 Creating New Words"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_suffix_en_em.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_suffix_en_em.pdf')">Suffix En/Em &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_suffix_en_em.pdf" download="Samenvatting Engels Suffix En/Em"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_suffix_en_em.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_suffix_en_em.pdf')">Suffix En/Em &nbsp;</a>
+		<a href="summ/summ_eng_M3_suffix_en_em.pdf" download="Samenvatting Engels Suffix En/Em"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_frank_anal.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_frank_anal.pdf')">Frankenstein Analysis &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_frank_anal.pdf" download="Samenvatting Engels M3 Frankenstein Analysis"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_frank_anal.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_frank_anal.pdf')">Frankenstein Analysis &nbsp;</a>
+		<a href="summ/summ_eng_M3_frank_anal.pdf" download="Samenvatting Engels M3 Frankenstein Analysis"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_eng_M3_frank_summ.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_frank_summ.pdf')">Frankenstein Summary &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_eng_M3_frank_summ.pdf" download="Samenvatting Engels M3 Frankenstein Summary"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_eng_M3_frank_summ.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_eng_M3_frank_summ.pdf')">Frankenstein Summary &nbsp;</a>
+		<a href="summ/summ_eng_M3_frank_summ.pdf" download="Samenvatting Engels M3 Frankenstein Summary"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="fransM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Frans (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_frans_M3_VP_1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M3_VP_1.pdf')">Verbe Pronominaux 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_frans_M3_VP_1.pdf" download="Samenvatting Frans M3 Verbe Pronominaux 1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="fransM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Frans (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_frans_M3_VP_1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M3_VP_1.pdf')">Verbe Pronominaux 1 &nbsp;</a>
+		<a href="summ/summ_frans_M3_VP_1.pdf" download="Samenvatting Frans M3 Verbe Pronominaux 1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_frans_M3_VP_2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M3_VP_2.pdf')">Verbe Pronominaux 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_frans_M3_VP_2.pdf" download="Samenvatting Frans M3 Verbe Pronominaux 2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_frans_M3_VP_2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M3_VP_2.pdf')">Verbe Pronominaux 2 &nbsp;</a>
+		<a href="summ/summ_frans_M3_VP_2.pdf" download="Samenvatting Frans M3 Verbe Pronominaux 2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_frans_M3_aard_VZ.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M3_aard_VZ.pdf')">Frans: Aardrijkskundige Voorzetsels &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_frans_M3_aard_VZ.pdf" download="Samenvatting Frans M3 Aardrkijkskundige Voorzetsels"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_frans_M3_aard_VZ.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_frans_M3_aard_VZ.pdf')">Frans: Aardrijkskundige Voorzetsels &nbsp;</a>
+		<a href="summ/summ_frans_M3_aard_VZ.pdf" download="Samenvatting Frans M3 Aardrkijkskundige Voorzetsels"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="fysM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Fysica (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_fys_M3_H6_7.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M3_H6_7.pdf')">Hoofdstuk 6/7 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_fys_M3_H6_7.pdf" download="Samenvatting Fysica M3 H6/7"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="fysM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Fysica (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_fys_M3_H6_7.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_fys_M3_H6_7.pdf')">Hoofdstuk 6/7 &nbsp;</a>
+		<a href="summ/summ_fys_M3_H6_7.pdf" download="Samenvatting Fysica M3 H6/7"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="geschM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Geschiedenis (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_gesch_M3_WO1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M3_WO1.pdf')">Wereld Oorlog 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_gesch_M3_WO1.pdf" download="Samenvatting Geschiedenis M3 Wereld Oorlog 1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="geschM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Geschiedenis (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_gesch_M3_WO1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_gesch_M3_WO1.pdf')">Wereld Oorlog 1 &nbsp;</a>
+		<a href="summ/summ_gesch_M3_WO1.pdf" download="Samenvatting Geschiedenis M3 Wereld Oorlog 1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="nedM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Nederlands (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_ned_M3_rev.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M3_rev.pdf')">Tekstrevisie &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_ned_M3_rev.pdf" download="Samenvatting Nederlands M3 Tekstrevisie"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="nedM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Nederlands (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_ned_M3_rev.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M3_rev.pdf')">Tekstrevisie &nbsp;</a>
+		<a href="summ/summ_ned_M3_rev.pdf" download="Samenvatting Nederlands M3 Tekstrevisie"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_ned_M3_lyriek.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M3_lyriek.pdf')">Lyriek &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_ned_M3_lyriek.pdf" download="Samenvatting Nederlands M3 Lyriek"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_ned_M3_lyriek.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M3_lyriek.pdf')">Lyriek &nbsp;</a>
+		<a href="summ/summ_ned_M3_lyriek.pdf" download="Samenvatting Nederlands M3 Lyriek"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_ned_M3_lyriek_test.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M3_lyriek_test.pdf')">Zelftest Lyriek &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_ned_M3_lyriek_test.pdf" download="Zelftest Nederlands M3 Lyriek"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_ned_M3_lyriek_test.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_ned_M3_lyriek_test.pdf')">Zelftest Lyriek &nbsp;</a>
+		<a href="summ/summ_ned_M3_lyriek_test.pdf" download="Zelftest Nederlands M3 Lyriek"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="wiskM3" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">Wiskunde (M3)</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_limit.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_limit.pdf')">Limieten &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_limit.pdf" download="Samenvatting Wiskunde M3 Limieten"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="wiskM3" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">Wiskunde (M3)</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M3_limit.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_limit.pdf')">Limieten &nbsp;</a>
+		<a href="summ/summ_wisk_M3_limit.pdf" download="Samenvatting Wiskunde M3 Limieten"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_ruimte_H1-3.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_ruimte_H1-3.pdf')">Ruimtemeetkunde &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_ruimte_H1-3.pdf" download="Samenvatting Wiskunde M3 Ruimtemeetkunde H1-3"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M3_ruimte_H1-3.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_ruimte_H1-3.pdf')">Ruimtemeetkunde &nbsp;</a>
+		<a href="summ/summ_wisk_M3_ruimte_H1-3.pdf" download="Samenvatting Wiskunde M3 Ruimtemeetkunde H1-3"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_afg_1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_1.pdf')">Afgeleiden 1 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_afg_1.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 1"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M3_afg_1.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_1.pdf')">Afgeleiden 1 &nbsp;</a>
+		<a href="summ/summ_wisk_M3_afg_1.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 1"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_afg_2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_2.pdf')">Afgeleiden 2 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_afg_2.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 2"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M3_afg_2.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_2.pdf')">Afgeleiden 2 &nbsp;</a>
+		<a href="summ/summ_wisk_M3_afg_2.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 2"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_afg_3.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_3.pdf')">Afgeleiden 3 &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_afg_3.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 3"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M3_afg_3.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_3.pdf')">Afgeleiden 3 &nbsp;</a>
+		<a href="summ/summ_wisk_M3_afg_3.pdf" download="Samenvatting Wiskunde M3 Afgeleiden 3"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_wisk_M3_afg_benaderen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_benaderen.pdf')">Afgeleiden: Korte Benaderings Methode &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_wisk_M3_afg_benaderen.pdf" download="Samenvatting Wiskunde M3 Afgeleiden Benadering"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_wisk_M3_afg_benaderen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_wisk_M3_afg_benaderen.pdf')">Afgeleiden: Korte Benaderings Methode &nbsp;</a>
+		<a href="summ/summ_wisk_M3_afg_benaderen.pdf" download="Samenvatting Wiskunde M3 Afgeleiden Benadering"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 	</div>
 </div>
-<div id="EHBO" class="popup_content" data-swipe-ignore="true">
-	<img class="cross" src="icons/cross.png" onclick="closeAll()" data-swipe-ignore="true">
-	<p class="titel_popup" data-swipe-ignore="true">LO</p>
-	<div class="popupContentInner" data-swipe-ignore="true">
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_EHBO.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO.pdf')">Samenvatting EHBO &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_EHBO.pdf" download="Samenvatting EHBO"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+<div id="EHBO" class="popup_content">
+	<img class="cross" src="icons/cross.png" onclick="closeAll()">
+	<p class="titel_popup">LO</p>
+	<div class="popupContentInner">
+		<a href="#" class="summ" onclick="openSumm('summ/summ_EHBO.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO.pdf')">Samenvatting EHBO &nbsp;</a>
+		<a href="summ/summ_EHBO.pdf" download="Samenvatting EHBO"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="#" class="summ" data-swipe-ignore="true" onclick="openSumm('summ/summ_EHBO_reani.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO_reani.pdf')">Reanimatie &nbsp;</a>
-		<a data-swipe-ignore="true" href="summ/summ_EHBO_reani.pdf" download="Samenvatting EHBO Reanimatie"><img class="dl" src="icons/dl.png" alt="download" data-swipe-ignore="true"></a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="#" class="summ" onclick="openSumm('summ/summ_EHBO_reani.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO_reani.pdf')">Reanimatie &nbsp;</a>
+		<a href="summ/summ_EHBO_reani.pdf" download="Samenvatting EHBO Reanimatie"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<div class="hline"></div>
 		<br>
-		<a href="https://www.youtube.com/watch?v=pS-QZ0EA5tM" class="summ" data-swipe-ignore="true" target="blank">Video Stabiele Zijlig &nbsp;</a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="https://www.youtube.com/watch?v=pS-QZ0EA5tM" class="summ" target="blank">Video Stabiele Zijlig &nbsp;</a>
+		<div class="hline"></div>
 		<br>
-		<a href="https://www.youtube.com/watch?v=Zt9yqRmVPG8" class="summ" data-swipe-ignore="true" target="blank">Video Rautekgreep &nbsp;</a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="https://www.youtube.com/watch?v=Zt9yqRmVPG8" class="summ" target="blank">Video Rautekgreep &nbsp;</a>
+		<div class="hline"></div>
 		<br>
-		<a href="https://www.youtube.com/watch?v=7OeNunGjpk0" class="summ" data-swipe-ignore="true" target="blank">Video Kruisverband &nbsp;</a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="https://www.youtube.com/watch?v=7OeNunGjpk0" class="summ" target="blank">Video Kruisverband &nbsp;</a>
+		<div class="hline"></div>
 		<br>
-		<a href="https://www.youtube.com/watch?v=g8nWJxYcB-Y" class="summ" data-swipe-ignore="true" target="blank">Video Spiraalverband &nbsp;</a>
-		<div class="hline" data-swipe-ignore="true"></div>
+		<a href="https://www.youtube.com/watch?v=g8nWJxYcB-Y" class="summ" target="blank">Video Spiraalverband &nbsp;</a>
+		<div class="hline"></div>
 	</div>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -518,7 +520,6 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
-<script src="js/pure-swipe.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="site.js"></script>
 </body>
