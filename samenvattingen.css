@@ -110,9 +110,9 @@ img:hover {
 	top: 0;
 	z-index: 3;
 	height: 10%;
-  width: 100%;	
+    width: 100%;	
 	font-size: 1.75vmax;
-	filter: drop-shadow(0px 0px 5px rgba(0,0,0,.5));
+	box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);
 	font-weight: bold;
 	text-decoration: none;
 	background-color: #C70450;
