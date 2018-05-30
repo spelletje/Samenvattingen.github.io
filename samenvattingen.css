@@ -180,7 +180,6 @@ img:hover {
 	background-color: white;
 	overflow-x: hidden;
 	padding-top: 60px;
-	transition: 0s;
 	font-size: 2vmax;
 	/*box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);*/
 }
