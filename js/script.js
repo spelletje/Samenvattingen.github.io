@@ -19,6 +19,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
+
 /*
 window.onload=function(){
     if (/Edge\/\d./i.test(navigator.userAgent)){
@@ -26,6 +27,7 @@ window.onload=function(){
     }
 }
 */
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
@@ -44,13 +46,9 @@ var popup_check = false;
 
 function openNav() {
     $("#navBar").css({
-        "left": "0",
-        "font-size": "2vmax",
+        "left": "0"
     });
     $("#navBarFull").fadeIn(200);
-    $(".closebtn").css({
-        "display": "block"
-    });
 	if (module_check == false) {
 	    $(".m3").css ({
 		    "background-color": "rgba(0,0,0,0.2)"
@@ -85,6 +83,9 @@ function openSumm(summ, mobileSumm) {
         "display": "none"
     });
     $("#loading").css({
+        "display": "block"
+    });
+    $("#summSwipe").css({
         "display": "block"
     });
 };
@@ -158,6 +159,28 @@ function home() {
     $("#loading").css({
         "display": "none"
     });
+    $("#summSwipe").css({
+        "display": "none"
+    });
+};
+function Leerkrachten() {
+    closeTopNav_check = false;
+    closeNav();
+    closeAll();
+    openTopNav();
+    $("#pdf").css({
+        "z-index": "0"
+    });
+    $(".home").css({
+        "display": "none"
+    });
+    $("#pdf").attr("data", "Corda/index.html");
+    $("#loading").css({
+        "display": "none"
+    });
+    $("#summSwipe").css({
+        "display": "none"
+    });
 };
 function show(vak) {
     $(vak).fadeIn(200);
@@ -175,6 +198,22 @@ function closeAll() {
     popup_check = false;
 }
 $(document).ready(function() {
+    if(Math.random() >= 0.5){
+        document.getElementById("TeacherM1").style.display = "block";
+        document.getElementById("TeacherM2").style.display = "block";
+        document.getElementById("TeacherM3").style.display = "block";
+        document.getElementById("TeacherF1").style.display = "none";
+        document.getElementById("TeacherF2").style.display = "none";
+        document.getElementById("TeacherF3").style.display = "none";
+    }
+    else {
+        document.getElementById("TeacherF1").style.display = "block";
+        document.getElementById("TeacherF2").style.display = "block";
+        document.getElementById("TeacherF3").style.display = "block";
+        document.getElementById("TeacherM1").style.display = "none";
+        document.getElementById("TeacherM2").style.display = "none";
+        document.getElementById("TeacherM3").style.display = "none";
+    }
     $(window).on('orientationchange', function(event) {
         if (screen.height < screen.width){
             $(".nav").css({
@@ -295,6 +334,13 @@ function mobile() {
             });
             $(".icon").css({
                 "margin-top": "0.1rem"
+            });
+        });
+    }
+    else {
+        $(document).ready(function(){
+            $("#navBar").css({
+                "transition": "0.5s"
             });
         });
     };
