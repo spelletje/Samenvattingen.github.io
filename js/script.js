@@ -19,6 +19,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
+
 /*
 window.onload=function(){
     if (/Edge\/\d./i.test(navigator.userAgent)){
@@ -26,6 +27,7 @@ window.onload=function(){
     }
 }
 */
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
@@ -43,14 +45,10 @@ var module_check = false;
 var popup_check = false;
 
 function openNav() {
-    $("#navBar").css({
-        "left": "0",
-        "font-size": "2vmax",
-    });
+    $("#navBar").animate({
+        "left": "0"
+    }, {queue: false});
     $("#navBarFull").fadeIn(200);
-    $(".closebtn").css({
-        "display": "block"
-    });
 	if (module_check == false) {
 	    $(".m3").css ({
 		    "background-color": "rgba(0,0,0,0.2)"
@@ -59,11 +57,11 @@ function openNav() {
     nav_check = true;
 };
 function closeNav() {
-    $("#navBar").css({"left": "-275px"});
+    $("#navBar").animate({"left": "-275px"});
     $("#navBarFull").fadeOut(200);
     $(".list").css({
         "margin-top": "0%"
-    });
+    }, {queue: false});
     nav_check = false;
 };
 var closeTopNav_check = false;
@@ -85,6 +83,9 @@ function openSumm(summ, mobileSumm) {
         "display": "none"
     });
     $("#loading").css({
+        "display": "block"
+    });
+    $("#summSwipe").css({
         "display": "block"
     });
 };
@@ -158,6 +159,28 @@ function home() {
     $("#loading").css({
         "display": "none"
     });
+    $("#summSwipe").css({
+        "display": "none"
+    });
+};
+function Leerkrachten() {
+    closeTopNav_check = false;
+    closeNav();
+    closeAll();
+    openTopNav();
+    $("#pdf").css({
+        "z-index": "0"
+    });
+    $(".home").css({
+        "display": "none"
+    });
+    $("#pdf").attr("data", "Corda/index.html");
+    $("#loading").css({
+        "display": "none"
+    });
+    $("#summSwipe").css({
+        "display": "none"
+    });
 };
 function show(vak) {
     $(vak).fadeIn(200);
@@ -175,6 +198,22 @@ function closeAll() {
     popup_check = false;
 }
 $(document).ready(function() {
+    if(Math.random() >= 0.5){
+        document.getElementById("TeacherM1").style.display = "block";
+        document.getElementById("TeacherM2").style.display = "block";
+        document.getElementById("TeacherM3").style.display = "block";
+        document.getElementById("TeacherF1").style.display = "none";
+        document.getElementById("TeacherF2").style.display = "none";
+        document.getElementById("TeacherF3").style.display = "none";
+    }
+    else {
+        document.getElementById("TeacherF1").style.display = "block";
+        document.getElementById("TeacherF2").style.display = "block";
+        document.getElementById("TeacherF3").style.display = "block";
+        document.getElementById("TeacherM1").style.display = "none";
+        document.getElementById("TeacherM2").style.display = "none";
+        document.getElementById("TeacherM3").style.display = "none";
+    }
     $(window).on('orientationchange', function(event) {
         if (screen.height < screen.width){
             $(".nav").css({
@@ -297,7 +336,7 @@ function mobile() {
                 "margin-top": "0.1rem"
             });
         });
-    };
+    }
 };
 
 var xDown = 0;
@@ -306,7 +345,6 @@ var xDiff = 0;
 var navTopHeight = Number($(".openTopNav").height());
 
 window.addEventListener('touchstart', function(e) {
-	$("#navBar").css({"transition": "0s"});
     xDown = e.touches[0].clientX;
     yDown = e.touches[0].clientY;
 });
@@ -317,7 +355,7 @@ window.addEventListener('touchmove', function(e) {
     if(nav_check == false && popup_check == false) {
         if(xDown < 50 && yDown > navTopHeight) {
             if(xDiff > 0 && xDiff < 275) {
-		        $("#navBarFull").fadeIn(200);
+		$("#navBarFull").fadeIn(200);
                 $("#navBar").css({"left": -275 + xDiff});
             }
             else if(xDiff > 275){
@@ -335,7 +373,6 @@ window.addEventListener('touchmove', function(e) {
 });
 
 window.addEventListener('touchend', function(e) {
-	$("#navBar").css({"transition": "0.5s"});
     if(nav_check == false  && popup_check == false) {
         if(xDiff > 100 && xDown < 50 && yDown > navTopHeight) {
             openNav();
