@@ -221,7 +221,7 @@ function Calculate (){
 				output5_result = 1;
 				break;
 			case 5:
-				output5 = "vat vol met kennis";
+				output5 = "een vat vol met kennis";
 				output5_result = 1;
 				break;
 		}
