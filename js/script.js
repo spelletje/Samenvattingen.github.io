@@ -19,7 +19,6 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 }
-
 /*
 window.onload=function(){
     if (/Edge\/\d./i.test(navigator.userAgent)){
@@ -27,7 +26,6 @@ window.onload=function(){
     }
 }
 */
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
@@ -57,11 +55,11 @@ function openNav() {
     nav_check = true;
 };
 function closeNav() {
-    $("#navBar").animate({"left": "-275px"});
+    $("#navBar").animate({"left": "-275px"}, {queue: false});
     $("#navBarFull").fadeOut(200);
     $(".list").css({
         "margin-top": "0%"
-    }, {queue: false});
+    });
     nav_check = false;
 };
 var closeTopNav_check = false;
@@ -355,7 +353,7 @@ window.addEventListener('touchmove', function(e) {
     if(nav_check == false && popup_check == false) {
         if(xDown < 50 && yDown > navTopHeight) {
             if(xDiff > 0 && xDiff < 275) {
-		$("#navBarFull").fadeIn(200);
+		        $("#navBarFull").fadeIn(200);
                 $("#navBar").css({"left": -275 + xDiff});
             }
             else if(xDiff > 275){
