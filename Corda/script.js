@@ -484,25 +484,25 @@ function Teachers() {
 	var naam = document.forms["nameForm"]["naam"].value;
 	if (MV == "Meneer"){
 		document.getElementById("Teacher").style.display = "none";
-		document.getElementById("TeacherM").style.display = "block";
+		document.getElementById("TeacherM").style.display = "inline";
 		document.getElementById("TeacherF").style.display = "none";
 		document.getElementById("Teacher2").style.display = "none";
-		document.getElementById("TeacherM2").style.display = "block";
+		document.getElementById("TeacherM2").style.display = "inline";
 		document.getElementById("TeacherF2").style.display = "none";
 	}
 	if (MV == "Mevrouw"){
 		document.getElementById("Teacher").style.display = "none";
 		document.getElementById("TeacherM").style.display = "none";
-		document.getElementById("TeacherF").style.display = "block";
+		document.getElementById("TeacherF").style.display = "inline";
 		document.getElementById("Teacher2").style.display = "none";
 		document.getElementById("TeacherM2").style.display = "none";
-		document.getElementById("TeacherF2").style.display = "block";
+		document.getElementById("TeacherF2").style.display = "inline";
 	}
 	if (MV == 0){
-		document.getElementById("Teacher").style.display = "block";
+		document.getElementById("Teacher").style.display = "inline";
 		document.getElementById("TeacherM").style.display = "none";
 		document.getElementById("TeacherF").style.display = "none";
-		document.getElementById("Teacher2").style.display = "block";
+		document.getElementById("Teacher2").style.display = "inline";
 		document.getElementById("TeacherM2").style.display = "none";
 		document.getElementById("TeacherF2").style.display = "none";
 	}
@@ -516,24 +516,6 @@ function mobile() {
     	document.getElementById("top2").style.width = "46%";
     	document.getElementById("top2").style.marginRight = "4%";
     	document.getElementById("topColor").style.marginLeft = "5%";
-    	document.getElementById("Teacher").style.width = "50%";
-    	document.getElementById("TeacherM").style.width = "50%";
-    	document.getElementById("TeacherF").style.width = "50%";
-    	document.getElementById("Teacher").style.marginLeft = "25%";
-    	document.getElementById("TeacherM").style.marginLeft = "25%";
-    	document.getElementById("TeacherF").style.marginLeft = "25%";
-    	document.getElementById("Teacher").style.marginTop = "20%";
-    	document.getElementById("TeacherM").style.marginTop = "20%";
-    	document.getElementById("TeacherF").style.marginTop = "20%";
-    	document.getElementById("Teacher2").style.width = "50%";
-    	document.getElementById("TeacherM2").style.width = "50%";
-    	document.getElementById("TeacherF2").style.width = "50%";
-    	document.getElementById("Teacher2").style.marginLeft = "25%";
-    	document.getElementById("TeacherM2").style.marginLeft = "25%";
-    	document.getElementById("TeacherF2").style.marginLeft = "25%";
-    	document.getElementById("Teacher2").style.marginTop = "15%";
-    	document.getElementById("TeacherM2").style.marginTop = "15%";
-    	document.getElementById("TeacherF2").style.marginTop = "15%";
     	document.getElementById("btnNext1").style.width = "12.5%";
     	document.getElementById("btnNext2").style.width = "12.5%";
     	document.getElementById("btnNext3").style.width = "12.5%";
@@ -543,3 +525,27 @@ function mobile() {
     	document.getElementById("text2").style.fontSize = "100%";
     };
 };
+/*
+function typing() {
+	if (isMobile.any()) {
+		$("#screen1Bot").css({"display": "none"});
+	}
+}
+function notTyping() {
+	if (isMobile.any()) {
+		$("#screen1Bot").css({"display": "block"});
+	}
+}
+*/
+var keyboard_check = 0;
+window.addEventListener('resize', function(event){
+	if (isMobile.any()) {
+		if(keyboard_check % 2 == 0){
+			$("#screen1Bot").css({"display": "none"});
+		}
+		else {
+			$("#screen1Bot").css({"display": "block"});
+		}
+	}
+	keyboard_check++;
+});
