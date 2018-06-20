@@ -335,9 +335,6 @@ function mobile() {
             });
         });
     }
-    else {
-        $("#ent").text("Elektrisch Potentiaal & Magnetisch Veld");
-    }
 };
 
 var xDown = 0;
