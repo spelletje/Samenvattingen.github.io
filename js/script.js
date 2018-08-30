@@ -310,6 +310,9 @@ function mobile() {
             $(".navList").css({
                 "font-size": "20px"
             });
+            $(".jaar").css({
+                "font-size": "20px"
+            });
             $(".txt").css({
                 "font-size": "2.4vmax"
             });

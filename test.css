@@ -379,3 +379,19 @@ img:hover {
 	transition: 0.3s;
 	width: 25%;
 }
+@media screen and (min-width: 800px){
+	.txt {
+		height: 95%;
+		width: 45%;
+		top: 2.5%;
+		left: 2.5%;
+		margin: 0;
+	}
+	.obj {
+		height: 95%;
+		width: 45%;
+		bottom: 2.5%;
+		right: 2.5%;
+		margin: 0;
+	}
+}
