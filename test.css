@@ -366,7 +366,7 @@ img:hover {
 }
 .jaar {
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 .jaar span {
 	z-index: 5;
@@ -375,7 +375,7 @@ img:hover {
 	margin-top: 2px;
 	text-decoration: none;
 	font-size: 25px;
-	color: black;
+	color: #C70450;
 	transition: 0.3s;
 	width: 25%;
 }
@@ -407,7 +407,6 @@ img:hover {
 		margin: 0;
 	}
 	.obj {
-		font-size: 1.3vw;
 		height: 95%;
 		width: 45%;
 		bottom: 2.15%;

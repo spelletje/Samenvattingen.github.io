@@ -191,7 +191,7 @@ function closeInner(vak) {
 };
 
 function closeAll() {
-    closeInner(document.querySelectorAll("#LO, #aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam"));
+    closeInner(document.querySelectorAll("#LO, #aardM1, #bioM1, #chemM1, #engM1, #fransM1, #fysM1, #geschM1, #nedM1, #wiskM1, #aardM2, #bioM2, #chemM2, #engM2, #fransM2, #fysM2, #geschM2, #nedM2, #wiskM2, #aardM3, #bioM3, #chemM3, #engM3, #fransM3, #fysM3, #geschM3, #nedM3, #wiskM3, #exam, #aardM4, #bioM4, #chemM4, #engM4, #fransM4, #fysM4, #geschM4, #nedM4, #wiskM4, #aardM5, #bioM5, #chemM5, #engM5, #fransM5, #fysM5, #geschM5, #nedM5, #wiskM5, #aardM6, #bioM6, #chemM6, #engM6, #fransM6, #fysM6, #geschM6, #nedM6, #wiskM6"));
     $("#closePopup").fadeOut(200);
     popup_check = false;
 }
