@@ -14,83 +14,116 @@
 </div>
 <div class="navBar" id="navBar">
 	<a><img class="closebtn" src="icons/cross.png" onclick="closeNav()"></a>
-	<div class="list1">
-		<div class="list">
-			<p>Module 1</p>	
-			<div class="hline"></div>
-			<span href="#" class="jaar" onclick="">Kies jaar:</span>
-			<select class="kiesJaar">
-				<option>5de</option>
-				<option selected>6de</option>
-			</select>
-			<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
-			<a href="#" class="navList a3" onclick="show('#aardM1')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
-			<a href="#" class="navList a4" onclick="show('#bioM1')"><img src="icons/bio.png" class="icon">Biologie</a>
-			<a href="#" class="navList a5" onclick="show('#chemM1')"><img src="icons/chem.png" class="icon">Chemie</a>
-			<a href="#" class="navList a6" onclick="show('#engM1')"><img src="icons/eng.png" class="icon">Engels</a>
-			<a href="#" class="navList a7" onclick="show('#fransM1')"><img src="icons/frans.png" class="icon">Frans</a>
-			<a href="#" class="navList a8" onclick="show('#fysM1')"><img src="icons/fys.png" class="icon">Fysica</a>
-			<a href="#" class="navList a9" onclick="show('#geschM1')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
-       		<a href="#" class="navList a10" onclick="show('#nedM1')"><img src="icons/ned.png" class="icon">Nederlands</a>
-			<a href="#" class="navList a11" onclick="show('#wiskM1')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
-			<a href="#" class="navList a12" onclick="show('#EHBO')"><img src="icons/lo.png" class="icon">LO</a>
-			<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM1" src="icons/TeacherM.png" class="icon"><img id="TeacherF1" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
+	<div class="info">
+			<p id="module">Module 4</p>
+			<div class="jaar">
+				<span href="#">Kies jaar:</span>
+				<select id="kiesJaar" onchange="changeJaar()">
+					<option value="5">5de</option>
+					<option value="6" selected>6de</option>
+				</select>
+			</div>	
+			<div class="hline"></div>	
 		</div>
+	<div class="list1 list">
+		<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
+		<a href="#" class="navList a3" onclick="show('#aardM1')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
+		<a href="#" class="navList a4" onclick="show('#bioM1')"><img src="icons/bio.png" class="icon">Biologie</a>
+		<a href="#" class="navList a5" onclick="show('#chemM1')"><img src="icons/chem.png" class="icon">Chemie</a>
+		<a href="#" class="navList a6" onclick="show('#engM1')"><img src="icons/eng.png" class="icon">Engels</a>
+		<a href="#" class="navList a7" onclick="show('#fransM1')"><img src="icons/frans.png" class="icon">Frans</a>
+		<a href="#" class="navList a8" onclick="show('#fysM1')"><img src="icons/fys.png" class="icon">Fysica</a>
+		<a href="#" class="navList a9" onclick="show('#geschM1')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
+   		<a href="#" class="navList a10" onclick="show('#nedM1')"><img src="icons/ned.png" class="icon">Nederlands</a>
+		<a href="#" class="navList a11" onclick="show('#wiskM1')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
+		<a href="#" class="navList a12" onclick="show('#LO')"><img src="icons/lo.png" class="icon">LO</a>
+		<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM1" src="icons/TeacherM.png" class="icon"><img id="TeacherF1" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
 	</div>
-	<div class="list2">
-		<div class="list">
-			<p>Module 2</p>	
-			<div class="hline"></div>
-			<span href="#" class="jaar" onclick="">Kies jaar:</span>
-			<select class="kiesJaar">
-				<option>5de</option>
-				<option selected>6de</option>
-			</select>
-			<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
-			<a href="#" class="navList a3" onclick="show('#aardM2')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
-			<a href="#" class="navList a4" onclick="show('#bioM2')"><img src="icons/bio.png" class="icon">Biologie</a>
-			<a href="#" class="navList a5" onclick="show('#chemM2')"><img src="icons/chem.png" class="icon">Chemie</a>
-			<a href="#" class="navList a6" onclick="show('#engM2')"><img src="icons/eng.png" class="icon">Engels</a>
-			<a href="#" class="navList a7" onclick="show('#fransM2')"><img src="icons/frans.png" class="icon">Frans</a>
-			<a href="#" class="navList a8" onclick="show('#fysM2')"><img src="icons/fys.png" class="icon">Fysica</a>
-			<a href="#" class="navList a9" onclick="show('#geschM2')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
-       		<a href="#" class="navList a10" onclick="show('#nedM2')"><img src="icons/ned.png" class="icon">Nederlands</a>
-			<a href="#" class="navList a11" onclick="show('#wiskM2')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
-			<a href="#" class="navList a12" onclick="show('#EHBO')"><img src="icons/lo.png" class="icon">LO</a>
-			<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM2" src="icons/TeacherM.png" class="icon"><img id="TeacherF2" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
-		</div>
+	<div class="list2 list">
+		<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
+		<a href="#" class="navList a3" onclick="show('#aardM2')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
+		<a href="#" class="navList a4" onclick="show('#bioM2')"><img src="icons/bio.png" class="icon">Biologie</a>
+		<a href="#" class="navList a5" onclick="show('#chemM2')"><img src="icons/chem.png" class="icon">Chemie</a>
+		<a href="#" class="navList a6" onclick="show('#engM2')"><img src="icons/eng.png" class="icon">Engels</a>
+		<a href="#" class="navList a7" onclick="show('#fransM2')"><img src="icons/frans.png" class="icon">Frans</a>
+		<a href="#" class="navList a8" onclick="show('#fysM2')"><img src="icons/fys.png" class="icon">Fysica</a>
+		<a href="#" class="navList a9" onclick="show('#geschM2')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
+   		<a href="#" class="navList a10" onclick="show('#nedM2')"><img src="icons/ned.png" class="icon">Nederlands</a>
+		<a href="#" class="navList a11" onclick="show('#wiskM2')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
+		<a href="#" class="navList a12" onclick="show('#LO')"><img src="icons/lo.png" class="icon">LO</a>
+		<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM2" src="icons/TeacherM.png" class="icon"><img id="TeacherF2" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
 	</div>
-	<div class="list3">
-		<div class="list">
-			<p>Module 3</p>	
-			<div class="hline"></div>
-			<span href="#" class="jaar" onclick="">Kies jaar:</span>
-			<select enabled class="kiesJaar">
-				<option>5de</option>
-				<option selected>6de</option>
-			</select>
-			<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
-			<a href="#" class="navList a3" onclick="show('#aardM3')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
-			<a href="#" class="navList a4" onclick="show('#bioM3')"><img src="icons/bio.png" class="icon">Biologie</a>
-			<a href="#" class="navList a5" onclick="show('#chemM3')"><img src="icons/chem.png" class="icon">Chemie</a>
-			<a href="#" class="navList a6" onclick="show('#engM3')"><img src="icons/eng.png" class="icon">Engels</a>
-			<a href="#" class="navList a7" onclick="show('#fransM3')"><img src="icons/frans.png" class="icon">Frans</a>
-			<a href="#" class="navList a8" onclick="show('#fysM3')"><img src="icons/fys.png" class="icon">Fysica</a>
-			<a href="#" class="navList a9" onclick="show('#geschM3')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
-       		<a href="#" class="navList a10" onclick="show('#nedM3')"><img src="icons/ned.png" class="icon">Nederlands</a>
-			<a href="#" class="navList a11" onclick="show('#wiskM3')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
-			<a href="#" class="navList a12" onclick="show('#EHBO')"><img src="icons/lo.png" class="icon">LO</a>
-			<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM3" src="icons/TeacherM.png" class="icon"><img id="TeacherF3" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
-		</div>
+	<div class="list3 list">
+		<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
+		<a href="#" class="navList a3" onclick="show('#aardM3')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
+		<a href="#" class="navList a4" onclick="show('#bioM3')"><img src="icons/bio.png" class="icon">Biologie</a>
+		<a href="#" class="navList a5" onclick="show('#chemM3')"><img src="icons/chem.png" class="icon">Chemie</a>
+		<a href="#" class="navList a6" onclick="show('#engM3')"><img src="icons/eng.png" class="icon">Engels</a>
+		<a href="#" class="navList a7" onclick="show('#fransM3')"><img src="icons/frans.png" class="icon">Frans</a>
+		<a href="#" class="navList a8" onclick="show('#fysM3')"><img src="icons/fys.png" class="icon">Fysica</a>
+		<a href="#" class="navList a9" onclick="show('#geschM3')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
+   		<a href="#" class="navList a10" onclick="show('#nedM3')"><img src="icons/ned.png" class="icon">Nederlands</a>
+		<a href="#" class="navList a11" onclick="show('#wiskM3')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
+		<a href="#" class="navList a12" onclick="show('#LO')"><img src="icons/lo.png" class="icon">LO</a>
+		<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM3" src="icons/TeacherM.png" class="icon"><img id="TeacherF3" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
+	</div>
+	<div class="list4 list">
+		<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
+		<a href="#" class="navList a3" onclick="show('#aardM4')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
+		<a href="#" class="navList a4" onclick="show('#bioM4')"><img src="icons/bio.png" class="icon">Biologie</a>
+		<a href="#" class="navList a5" onclick="show('#chemM4')"><img src="icons/chem.png" class="icon">Chemie</a>
+		<a href="#" class="navList a6" onclick="show('#engM4')"><img src="icons/eng.png" class="icon">Engels</a>
+		<a href="#" class="navList a7" onclick="show('#fransM4')"><img src="icons/frans.png" class="icon">Frans</a>
+		<a href="#" class="navList a8" onclick="show('#fysM4')"><img src="icons/fys.png" class="icon">Fysica</a>
+		<a href="#" class="navList a9" onclick="show('#geschM4')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
+   		<a href="#" class="navList a10" onclick="show('#nedM4')"><img src="icons/ned.png" class="icon">Nederlands</a>
+		<a href="#" class="navList a11" onclick="show('#wiskM4')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
+		<a href="#" class="navList a12" onclick="show('#LO')"><img src="icons/lo.png" class="icon">LO</a>
+		<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM1" src="icons/TeacherM.png" class="icon"><img id="TeacherF1" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
+	</div>
+	<div class="list5 list">
+		<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
+		<a href="#" class="navList a3" onclick="show('#aardM5')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
+		<a href="#" class="navList a4" onclick="show('#bioM5')"><img src="icons/bio.png" class="icon">Biologie</a>
+		<a href="#" class="navList a5" onclick="show('#chemM5')"><img src="icons/chem.png" class="icon">Chemie</a>
+		<a href="#" class="navList a6" onclick="show('#engM5')"><img src="icons/eng.png" class="icon">Engels</a>
+		<a href="#" class="navList a7" onclick="show('#fransM5')"><img src="icons/frans.png" class="icon">Frans</a>
+		<a href="#" class="navList a8" onclick="show('#fysM5')"><img src="icons/fys.png" class="icon">Fysica</a>
+		<a href="#" class="navList a9" onclick="show('#geschM5')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
+   		<a href="#" class="navList a10" onclick="show('#nedM5')"><img src="icons/ned.png" class="icon">Nederlands</a>
+		<a href="#" class="navList a11" onclick="show('#wiskM5')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
+		<a href="#" class="navList a12" onclick="show('#LO')"><img src="icons/lo.png" class="icon">LO</a>
+		<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM1" src="icons/TeacherM.png" class="icon"><img id="TeacherF1" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
+	</div>
+	<div class="list6 list">
+		<a href="#" class="navList a1" onclick="home()"><img src="icons/home.png" class="icon">Home</a>
+		<a href="#" class="navList a3" onclick="show('#aardM6')"><img src="icons/aard.png" class="icon">Aardrijkskunde</a>
+		<a href="#" class="navList a4" onclick="show('#bioM6')"><img src="icons/bio.png" class="icon">Biologie</a>
+		<a href="#" class="navList a5" onclick="show('#chemM6')"><img src="icons/chem.png" class="icon">Chemie</a>
+		<a href="#" class="navList a6" onclick="show('#engM6')"><img src="icons/eng.png" class="icon">Engels</a>
+		<a href="#" class="navList a7" onclick="show('#fransM6')"><img src="icons/frans.png" class="icon">Frans</a>
+		<a href="#" class="navList a8" onclick="show('#fysM6')"><img src="icons/fys.png" class="icon">Fysica</a>
+		<a href="#" class="navList a9" onclick="show('#geschM6')"><img src="icons/gesch.png" class="icon">Geschiedenis</a>
+   		<a href="#" class="navList a10" onclick="show('#nedM6')"><img src="icons/ned.png" class="icon">Nederlands</a>
+		<a href="#" class="navList a11" onclick="show('#wiskM6')"><img src="icons/wisk.png" class="icon">Wiskunde</a>
+		<a href="#" class="navList a12" onclick="show('#LO')"><img src="icons/lo.png" class="icon">LO</a>
+		<a href="#" class="navList a13" onclick="Leerkrachten()"><img id="TeacherM1" src="icons/TeacherM.png" class="icon"><img id="TeacherF1" src="icons/TeacherF.png" class="icon">Leerkrachten</a>
 	</div>
 </div>
 <div class="homeAll">
 	<div class="openTopNav" id="openTopNav"></div>
 	<div onclick="openNav()" class="nav">
-		<a class="a_nav a_nav_menu" onclick="openNav()"><p>&#9776;</p></a> 
-		<a class="a_nav m1" onclick="m1()"><p>Module 1</p></a> 
-		<a class="a_nav m2" onclick="m2()"><p>Module 2</p></a> 
-		<a class="a_nav m3" onclick="m3()"><p>Module 3</p></a>
+		<a class="a_nav a_nav_menu" onclick="openNav()"><p>&#9776;</p></a>
+		<div id="nav5de">
+			<a class="a_nav m1" onclick="m1()"><p>Module 1</p></a> 
+			<a class="a_nav m2" onclick="m2()"><p>Module 2</p></a> 
+			<a class="a_nav m3" onclick="m3()"><p>Module 3</p></a>
+		</div>
+		<div id="nav6de">
+			<a class="a_nav m4" onclick="m4()"><p>Module 4</p></a> 
+			<a class="a_nav m5" onclick="m5()"><p>Module 5</p></a>
+			<a class="a_nav m6" onclick="m6()"><p>Module 6</p></a>
+		</div> 
 	</div>
 </div>
 <div id="closePopup" onclick="closeAll()"></div>
@@ -132,9 +165,9 @@
 					⭐ 27/05/18: Nieuwe samenvatting nederlands: <a class="titel" href="#" onclick="openSumm('summ/nedM3_exam.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/nedM3_exam.pdf')">Examen</a><br><br>
 					⭐ 26/05/18: Nieuwe samenvatting biologie: <a class="titel" href="#" onclick="openSumm('summ/bioM3_fotosynthese.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/bioM3_fotosynthese.pdf')">Fotosynthese & Celademhaling</a><br><br>
 					⭐ 26/05/18: Nieuwe samenvatting wiskunde: <a class="titel" href="#" onclick="openSumm('summ/wiskM3_ruimte_H4-5.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/wiskM3_ruimte_H4-5.pdf')">Ruimtemeetkunde H4-5</a><br><br>
-					⭐ 24/05/18: Nieuwe zelftest LO: <a class="titel" href="#" onclick="openSumm('summ/summ_EHBO_test.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO_test.pdf')">EHBO Zelftest</a><br><br>
+					⭐ 24/05/18: Nieuwe zelftest LO: <a class="titel" href="#" onclick="openSumm('summ/summ_LO_test.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_LO_test.pdf')">LO Zelftest</a><br><br>
 					⭐ 21/05/18: Nieuwe samenvatting chemie: <a class="titel" href="#" onclick="openSumm('summ/chemM3_zuren_basen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/chemM3_zuren_basen.pdf')">Zuren en Basen</a><br><br>
-					⭐ 21/05/18: Nieuwe samenvattingen LO (6): <a class="titel" href="#" onclick="show('#EHBO')">EHBO</a><br><br>
+					⭐ 21/05/18: Nieuwe samenvattingen LO (6): <a class="titel" href="#" onclick="show('#LO')">LO</a><br><br>
 					⭐ 21/05/18: Nieuwe samenvattingen engels (7): <a class="titel" href="#" onclick="show('#engM3')">Voorbereiding Openboek Toets</a><br><br>
 					⭐ 18/05/18: Nieuwe samenvatting frans: <a class="titel" href="#" onclick="openSumm('summ/fransM3_aard_VZ.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/fransM3_aard_VZ.pdf')">Frans: Aardrijkskundige Voorzetsels</a><br><br>
 					⭐ 16/05/18: Nieuwe samenvatting wiskunde: <a class="titel" href="#" onclick="openSumm('summ/wiskM3_afg_benaderen.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/wiskM3_afg_benaderen.pdf')">Afgeleiden: Korte Benaderings Methode</a><br><br>
@@ -806,25 +839,25 @@
 		<div class="hline"></div>
 	</div>
 </div>
-<div id="EHBO" class="popup_content">
+<div id="LO" class="popup_content">
 	<img class="cross" src="icons/cross.png" onclick="closeAll()">
 	<p class="titel_popup">LO</p>
 	<div class="popupContentInner">
-		<a href="summ/summ_EHBO.pdf" download="Samenvatting EHBO"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<a href="summ/summ_LO.pdf" download="Samenvatting LO"><img class="dl" src="icons/dl.png" alt="download"></a>
 		<div class="summ">
-		<a href="#" onclick="openSumm('summ/summ_EHBO.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO.pdf')">Samenvatting EHBO</a>
+		<a href="#" onclick="openSumm('summ/summ_LO.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_LO.pdf')">Samenvatting LO</a>
 		</div>
 		<div class="hline"></div>
 		<br>
-		<a href="summ/summ_EHBO_reani.pdf" download="Samenvatting EHBO Reanimatie"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<a href="summ/summ_LO_reani.pdf" download="Samenvatting LO Reanimatie"><img class="dl" src="icons/dl.png" alt="download"></a>
 		<div class="summ">
-		<a href="#" onclick="openSumm('summ/summ_EHBO_reani.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO_reani.pdf')">Reanimatie</a>
+		<a href="#" onclick="openSumm('summ/summ_LO_reani.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_LO_reani.pdf')">Reanimatie</a>
 		</div>
 		<div class="hline"></div>
 		<br>
-		<a href="summ/summ_EHBO_test.pdf" download="EHBO Zelftest"><img class="dl" src="icons/dl.png" alt="download"></a>
+		<a href="summ/summ_LO_test.pdf" download="LO Zelftest"><img class="dl" src="icons/dl.png" alt="download"></a>
 		<div class="summ">
-		<a href="#" onclick="openSumm('summ/summ_EHBO_test.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_EHBO_test.pdf')">EHBO Zelftest</a>
+		<a href="#" onclick="openSumm('summ/summ_LO_test.pdf', 'https://docs.google.com/gview?embedded=true&url=https://samenvattingen.github.io/summ/summ_LO_test.pdf')">LO Zelftest</a>
 		</div>
 		<div class="hline"></div>
 		<br>
