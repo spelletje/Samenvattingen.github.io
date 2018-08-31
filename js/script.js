@@ -496,8 +496,8 @@ function mobile() {
             $(".navList").css({
                 "font-size": "20px"
             });
-            $(".jaar").css({
-                "font-size": "20px"
+            $(".jaar span").css({
+                "font-size": "15px"
             });
             $(".txt").css({
                 "font-size": "2.4vmax"

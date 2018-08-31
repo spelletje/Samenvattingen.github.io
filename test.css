@@ -126,7 +126,7 @@ img:hover {
 .a_nav {
 	display: flex;
 	float: left;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -206,7 +206,7 @@ img:hover {
 	margin-top: 10px;
 	font-weight: bold;
 	margin-left: 10px;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	color: #C70450;
 }
 .navBar a:hover {	
@@ -223,10 +223,10 @@ img:hover {
 }
 .list {
 	position: absolute;
-	top: 81px;
+	top: 55px;
 	overflow-y: auto;
 	overflow-x: hidden;
-	max-height: calc(100% - 81px);
+	max-height: calc(100% - 55px);
 	width: 100%;
 	float: left;
 }
@@ -357,6 +357,9 @@ img:hover {
 	display: none;
 }
 #kiesJaar {
+	position: absolute;
+    top: 15px;
+    right: 20px;
 	font-weight: bold;
 	padding: 2px;
 	width: 30%;
@@ -367,17 +370,6 @@ img:hover {
 .jaar {
 	width: 100%;
 	margin-bottom: 7px;
-}
-.jaar span {
-	z-index: 5;
-	font-weight: bold;
-	padding: 3px 8px 8px 10px;
-	margin-top: 2px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #C70450;
-	transition: 0.3s;
-	width: 25%;
 }
 /*
 @media screen and (min-width: 500px){
