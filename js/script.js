@@ -598,6 +598,7 @@ function changeJaar() {
         $("#nav6de").css({
             "display": "none"
         });
+        closeNav();
     }
     if ($("#kiesJaar").val() == 6) {
         $("#nav5de").css({
@@ -606,5 +607,6 @@ function changeJaar() {
         $("#nav6de").css({
             "display": "block"
         });
+        closeNav();
     }
 };
