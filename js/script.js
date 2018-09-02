@@ -48,9 +48,17 @@ function openNav() {
     }, {queue: false});
     $("#navBarFull").fadeIn(200);
 	if (module_check == false) {
-	    $(".m4").css ({
-		    "background-color": "rgba(0,0,0,0.2)"
-		});
+        if ($("#kiesJaar").val() == 5) {
+            $(".m3").css ({
+                "background-color": "rgba(0,0,0,0.2)"
+            });
+
+        }
+        else if ($("#kiesJaar").val() == 6) {
+    	    $(".m4").css ({
+    		    "background-color": "rgba(0,0,0,0.2)"
+    		});
+        }
 	}
     nav_check = true;
 };
@@ -554,6 +562,8 @@ function changeJaar() {
         $("#nav6de").css({
             "display": "none"
         });
+        m3();
+        module_check = false;
         closeNav();
     }
     if ($("#kiesJaar").val() == 6) {
@@ -563,6 +573,8 @@ function changeJaar() {
         $("#nav6de").css({
             "display": "block"
         });
+        m4();
+        module_check = false;
         closeNav();
     }
 
