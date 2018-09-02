@@ -48,7 +48,7 @@ function openNav() {
     }, {queue: false});
     $("#navBarFull").fadeIn(200);
 	if (module_check == false) {
-	    $(".m3").css ({
+	    $(".m4").css ({
 		    "background-color": "rgba(0,0,0,0.2)"
 		});
 	}
