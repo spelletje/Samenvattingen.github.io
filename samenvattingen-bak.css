@@ -126,11 +126,11 @@ img:hover {
 .a_nav {
 	display: flex;
 	float: left;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	width: 33.33333%;
+	width: 30%;
  	color: white;
 }
 .a_nav_menu {
@@ -143,10 +143,7 @@ img:hover {
 }
 .m1:hover,
 .m2:hover,
-.m3:hover,
-.m4:hover,
-.m5:hover,
-.m6:hover {
+.m3:hover {
  	cursor: pointer;
  	background-color: rgba(0,0,0,0.2);
  	transition: 0.3s;
@@ -182,7 +179,8 @@ img:hover {
 	top: 1;
 	left: -275px;
 	background-color: white;
-	overflow: hidden;
+	overflow-x: hidden;
+	padding-top: 60px;
 	font-size: 2vmax;
 	/*box-shadow: 9px 1px 56px -20px rgba(0,0,0,0.4);*/
 }
@@ -204,9 +202,10 @@ img:hover {
 .navBar p {
 	margin: 0;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	font-weight: bold;
 	margin-left: 10px;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: #C70450;
 }
 .navBar a:hover {	
@@ -221,32 +220,37 @@ img:hover {
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.65);	
 }
-.list {
-	position: absolute;
-	top: 55px;
-	overflow-y: auto;
-	overflow-x: hidden;
-	max-height: calc(100% - 55px);
-	width: 100%;
-	float: left;
-}
 .list1 {
 	display: none;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 82%;
+	width: 85%;
+	float: left;
 }
 .list2 {
 	display: none;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 82%;
+	width: 85%;
+	float: left;
 }
 .list3 {
-	display: none;
-}
-.list4 {
-	display: none;
-}
-.list5 { 
-	display: none;
-}
-.list6 {
-	display: block;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 82%;
+	width: 85%;
+	float: left;
 }
 .closebtn {
 	float: right;
@@ -356,105 +360,22 @@ img:hover {
 	position: absolute;
 	display: none;
 }
-#kiesJaar {
-	position: absolute;
-    top: 15px;
-    right: 20px;
+.kiesJaar {
 	font-weight: bold;
 	padding: 2px;
 	width: 30%;
-	border-radius: 3px;
-	border: 1px solid #C70450;
 }
-#kiesJaar option {
+.kiesJaar option {
 	padding: 2px;
 }
 .jaar {
-	width: 100%;
-	margin-bottom: 7px;
+	z-index: 5;
+	font-weight: bold;
+	padding: 3px 8px 8px 32px;
+	margin-top: 2px;
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+	transition: 0.3s;
+	width: 25%;
 }
-/*
-@media screen and (min-width: 500px){
-	.txt {
-		height: 95%;
-		width: 45%;
-		top: 2.5%;
-		left: 2.5%;
-		margin: 0;
-	}
-	.obj {
-		height: 95%;
-		width: 45%;
-		bottom: 2.5%;
-		right: 2.5%;
-		margin: 0;
-	}
-}*/
-.ad {
-	display: none;
-	height: 45%;
-	width: 45%;
-	bottom: 2.5%;
-	left: 2.5%;
-	font-size: 1.5rem;
-	padding-left: 1%;
-	padding-right: 1%;
-	overflow-y: auto;
-	position: absolute;
-	border-radius: 1px;
-	background-color: white;
-	border: 1px solid lightgrey;
-	-webkit-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
-	-moz-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
-	box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.06);
-}
-#nav5de {
-	display: none;
-	position: absolute;
-	right: 0;
-	width: 90%;
-	height: 100%;
-}
-#nav6de {
-	position: absolute;
-	right: 0;
-	width: 90%;
-	height: 100%;
-}
-.info {
-	position: absolute;
-	top: 0;
-	width: 235px;
-}
-@media (orientation: landscape) {
-	.txt {
-	 	font-size: 1.45vw;
-		height: 45%;
-		width: 45%;
-		top: 2.5%;
-		left: 2.5%;
-		margin: 0;
-	}
-	.obj {
-		height: 95%;
-		width: 45%;
-		top: 2.5%;
-		right: 2.5%;
-		margin: 0;
-	}
-	@media (pointer:none), (pointer:coarse) {
-		.txt {
-			font-size: 1.45vw;
-			height: 95%;
-			width: 45%;
-			top: 2.5%;
-			left: 2.5%;
-			margin: 0;
-		}
-	}
-	.ad {
-		display: block;
-	}
-}
-
-
