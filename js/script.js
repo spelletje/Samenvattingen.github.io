@@ -557,9 +557,15 @@ window.addEventListener('touchend', function(e) {
 function changeJaar() {
     if ($("#kiesJaar").val() == 5) {
         $("#nav5de").css({
-        "display": "block"
+            "display": "block"
         });
         $("#nav6de").css({
+            "display": "none"
+        });
+        $("#change5").css({
+            "display": "block"
+        });
+        $("#change6").css({
             "display": "none"
         });
         m3();
@@ -571,6 +577,12 @@ function changeJaar() {
             "display": "none"
         });
         $("#nav6de").css({
+            "display": "block"
+        });
+        $("#change5").css({
+            "display": "none"
+        });
+        $("#change6").css({
             "display": "block"
         });
         m4();
