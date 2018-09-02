@@ -161,25 +161,7 @@ function home() {
         "display": "none"
     });
 };
-function Leerkrachten() {
-    closeTopNav_check = false;
-    closeNav();
-    closeAll();
-    openTopNav();
-    $("#pdf").css({
-        "z-index": "0"
-    });
-    $(".home").css({
-        "display": "none"
-    });
-    $("#pdf").attr("data", "Corda/index.html");
-    $("#loading").css({
-        "display": "none"
-    });
-    $("#summSwipe").css({
-        "display": "none"
-    });
-};
+
 function show(vak) {
     $(vak).fadeIn(200);
     $("#closePopup").fadeIn(200);
@@ -195,36 +177,7 @@ function closeAll() {
     $("#closePopup").fadeOut(200);
     popup_check = false;
 }
-$(document).ready(function() {
-    if(Math.random() >= 0.5){
-        document.getElementById("TeacherM1").style.display = "block";
-        document.getElementById("TeacherM2").style.display = "block";
-        document.getElementById("TeacherM3").style.display = "block";
-        document.getElementById("TeacherF1").style.display = "none";
-        document.getElementById("TeacherF2").style.display = "none";
-        document.getElementById("TeacherF3").style.display = "none";
-    }
-    else {
-        document.getElementById("TeacherF1").style.display = "block";
-        document.getElementById("TeacherF2").style.display = "block";
-        document.getElementById("TeacherF3").style.display = "block";
-        document.getElementById("TeacherM1").style.display = "none";
-        document.getElementById("TeacherM2").style.display = "none";
-        document.getElementById("TeacherM3").style.display = "none";
-    }
-    $(window).on('orientationchange', function(event) {
-        if (screen.height < screen.width){
-            $(".nav").css({
-                "height": "12%"
-            });
-        }
-        else {
-            $(".nav").css({
-                "height": "10%"
-            });
-        }
-    });
-});
+
 
 function m1() {
     $(".list1").css({
@@ -534,6 +487,9 @@ function mobile() {
             $(".icon").css({
                 "margin-top": "0.1rem"
             });
+             $(".ad").css({
+                "display": "none"
+            });
         });
     }
 };
@@ -609,4 +565,23 @@ function changeJaar() {
         });
         closeNav();
     }
+
+    $(".m1").css({
+        "background-color": ""
+    });
+    $(".m2").css({
+        "background-color": ""
+    });
+    $(".m3").css({
+        "background-color": ""
+    });
+    $(".m4").css({
+        "background-color": ""
+    });
+    $(".m5").css({
+        "background-color": ""
+    });
+    $(".m6").css({
+        "background-color": ""
+    });
 };

@@ -403,11 +403,22 @@ img:hover {
 	.obj {
 		height: 95%;
 		width: 45%;
-		bottom: 2.15%;
+		top: 2.5%;
 		right: 2.5%;
 		margin: 0;
 	}
+	@media (pointer:none), (pointer:coarse) {
+		.txt {
+			font-size: 1.45vw;
+			height: 95%;
+			width: 45%;
+			top: 2.5%;
+			left: 2.5%;
+			margin: 0;
+		}
+	}
 }
+
 #nav5de {
 	display: none;
 	position: absolute;
