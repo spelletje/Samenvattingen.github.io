@@ -640,3 +640,53 @@ function changeJaar() {
         "background-color": ""
     });
 };
+
+function help() {
+    $("#introText").css({
+        "display": "none"
+    });
+    $("#helpChoice").css({
+        "display": "block"
+    });
+}
+function jaarHelp() {
+    $("#helpChoice").css({
+        "display": "none"
+    });
+    $("#jaarHelp").css({
+        "display": "block"
+    });
+}
+function summHelp() {
+    $("#helpChoice").css({
+        "display": "none"
+    });
+    $("#summHelp").css({
+        "display": "block"
+    });
+}
+function lesHelp() {
+    $("#helpChoice").css({
+        "display": "none"
+    });
+    $("#lesHelp").css({
+        "display": "block"
+    });
+}
+function closeHelp() {
+    $("#introText").css({
+        "display": "block"
+    });
+    $("#helpChoice").css({
+        "display": "none"
+    });
+    $("#jaarHelp").css({
+        "display": "none"
+    });
+    $("#summHelp").css({
+        "display": "none"
+    });
+    $("#lesHelp").css({
+        "display": "none"
+    });
+}
