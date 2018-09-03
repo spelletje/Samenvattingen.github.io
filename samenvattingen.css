@@ -357,6 +357,12 @@ img:hover {
 	left: 0.4rem;
 	margin-top: 0.3rem;
 }
+.icon2 {
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	margin-top: 1px;
+}
 #closePopup {
 	display: none;
 	position: absolute;
@@ -488,8 +494,23 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-tr:nth-child(6) {
-    border-top: 3px solid black;
+tr:nth-child(6) td:nth-child(2) {border-top: 3px solid #C70450;}
+tr:nth-child(6) td:nth-child(3) {border-top: 3px solid #C70450;}
+tr:nth-child(6) td:nth-child(4) {border-top: 3px solid #C70450;}
+tr:nth-child(6) td:nth-child(5) {border-top: 3px solid #C70450;}
+tr:nth-child(6) td:nth-child(6) {border-top: 3px solid #C70450;}
+
+tr:nth-child(2) td:nth-child(2) {border-top: 3px solid #C70450;}
+tr:nth-child(2) td:nth-child(3) {border-top: 3px solid #C70450;}
+tr:nth-child(2) td:nth-child(4) {border-top: 3px solid #C70450;}
+tr:nth-child(2) td:nth-child(5) {border-top: 3px solid #C70450;}
+tr:nth-child(2) td:nth-child(6) {border-top: 3px solid #C70450;}
+th {
+	color: #C70450;
+}
+td:nth-child(1) {
+	color: #C70450;
+	border-right: 3px solid #C70450;
 }
 a:hover {
 	cursor: pointer;
