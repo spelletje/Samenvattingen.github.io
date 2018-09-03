@@ -20,45 +20,6 @@ var isMobile = {
     }
 }
 
-window.onload=function(){
-    var table = document.getElementById("table");
-    var collumns = table.getElementsByTagName("td");
-    var headers = table.getElementsByTagName("th");
-
-    var d = new Date();
-    var n = d.getDay();
-    if(n == 1){
-        for(var i = 1; i <= 37; i += 6){
-            collumns[i].style.backgroundColor = "#dddddd";
-        }
-        headers[1].style.backgroundColor = "#dddddd";
-    }
-    else if(n == 2){
-        for(var i = 2; i <= 38; i += 6){
-            collumns[i].style.backgroundColor = "#dddddd";
-        }
-        headers[2].style.backgroundColor = "#dddddd";
-    }
-    else if(n == 3){
-        for(var i = 3; i <= 39; i += 6){
-            collumns[i].style.backgroundColor = "#dddddd";
-        }
-        headers[3].style.backgroundColor = "#dddddd";
-    }
-    else if(n == 4){
-        for(var i = 4; i <= 40; i += 6){
-            collumns[i].style.backgroundColor = "#dddddd";
-        }
-        headers[4].style.backgroundColor = "#dddddd";
-    }
-    else if(n == 5){
-        for(var i = 5; i <= 41; i += 6){
-            collumns[i].style.backgroundColor = "#dddddd";
-        }
-        headers[5].style.backgroundColor = "#dddddd";
-    }
-}
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
@@ -532,6 +493,43 @@ function mobile() {
                 "display": "none"
             });
         });
+    }
+    //table
+    var table = document.getElementById("table");
+    var collumns = table.getElementsByTagName("td");
+    var headers = table.getElementsByTagName("th");
+
+    var d = new Date();
+    var n = d.getDay();
+    if(n == 1){
+        for(var i = 1; i <= 37; i += 6){
+            collumns[i].style.backgroundColor = "#dddddd";
+        }
+        headers[1].style.backgroundColor = "#dddddd";
+    }
+    else if(n == 2){
+        for(var i = 2; i <= 38; i += 6){
+            collumns[i].style.backgroundColor = "#dddddd";
+        }
+        headers[2].style.backgroundColor = "#dddddd";
+    }
+    else if(n == 3){
+        for(var i = 3; i <= 39; i += 6){
+            collumns[i].style.backgroundColor = "#dddddd";
+        }
+        headers[3].style.backgroundColor = "#dddddd";
+    }
+    else if(n == 4){
+        for(var i = 4; i <= 40; i += 6){
+            collumns[i].style.backgroundColor = "#dddddd";
+        }
+        headers[4].style.backgroundColor = "#dddddd";
+    }
+    else if(n == 5){
+        for(var i = 5; i <= 41; i += 6){
+            collumns[i].style.backgroundColor = "#dddddd";
+        }
+        headers[5].style.backgroundColor = "#dddddd";
     }
 };
 
