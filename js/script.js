@@ -642,6 +642,7 @@ function changeJaar() {
 };
 
 function help() {
+	$(".titel3").text("Sluit help");
     $("#introText").css({
         "display": "none"
     });
@@ -674,6 +675,7 @@ function lesHelp() {
     });
 }
 function closeHelp() {
+	$(".titel3").text("Samenvattingen");
     $("#introText").css({
         "display": "block"
     });
